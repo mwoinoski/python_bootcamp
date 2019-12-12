@@ -4,8 +4,11 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="ch01_examples" />
+    <orderEntry type="module" module-name="FrankKanesTamingBigDatawithApacheSparkandPython_code" />
   </component>
   <component name="TestRunnerService">
-    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+    <option name="projectConfiguration" value="pytest" />
+    <option name="PROJECT_TEST_RUNNER" value="pytest" />
   </component>
 </module>

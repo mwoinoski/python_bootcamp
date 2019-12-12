@@ -1,12 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba71ba54-52fd-4ffc-99f2-077d2ad957bd" name="Default Changelist" comment="" />
+    <list default="true" id="ba71ba54-52fd-4ffc-99f2-077d2ad957bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Mike.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage_accounts/person_dao_mongodb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage_accounts/person_dao_readonly.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage_accounts/person_dao_spark.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/person.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/person_dao_spark_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_oop/.idea/ex02_oop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_oop/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_oop/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_oop/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_oop/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_oop/people/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_oop/people/patient.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_oop/people/person.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_oop/people/provider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_oop/tests/context.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_oop/tests/patient_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_oop/tests/person_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_oop/tests/provider_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/FrankKanesTamingBigDatawithApacheSparkandPython_code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/FrankKanesTamingBigDatawithApacheSparkandPython_code.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ch01_examples.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ch01_examples.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage_accounts/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage_accounts/person.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage_accounts/person_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage_accounts/person_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/person_dao_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/person_dao_mongodb_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/person_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/person_test.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.41233373">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/manage_accounts/person_dao_spark.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="18" selection-start-line="18" selection-end-line="18" />
+                  <folding>
+                    <element signature="e#48#80#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tests/person_dao_spark_test.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1258">
+                  <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -15,10 +77,65 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>, debug=False</find>
+      <find>spark</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/manage_accounts/person_dao_readonly.py" />
+        <option value="$PROJECT_DIR$/tests/person_dao_spark_test.py" />
+        <option value="$PROJECT_DIR$/manage_accounts/person_dao_spark.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="267" />
+    <option name="y" value="-11" />
+    <option name="width" value="1418" />
+    <option name="height" value="1056" />
+  </component>
   <component name="ProjectId" id="1TX4Mskv221Q5dTuqcFBM1SbRUn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ch01_examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ch01_examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch01_examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ch01_examples" type="462c0819:PsiDirectoryNode" />
+              <item name="manage_accounts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch01_examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ch01_examples" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -38,7 +155,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in person_test.py">
+  <component name="RunManager" selected="Python tests.Unittests in person_dao_spark_test.py">
     <configuration name="hello" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ch01_examples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,6 +198,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for person_dao_spark_test.PersonDaoSparkTest.test_find_by_id_csv" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="ch01_examples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;person_dao_spark_test.PersonDaoSparkTest.test_find_by_id_csv&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in person_dao_spark_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="ch01_examples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/person_dao_spark_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in person_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="ch01_examples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,8 +240,17 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.hello" />
+      <item itemvalue="Python.person_dao_test" />
+      <item itemvalue="Python tests.Unittests in person_dao_spark_test.py" />
+      <item itemvalue="Python tests.Unittests in person_test.py" />
+      <item itemvalue="Python tests.Unittests for person_dao_spark_test.PersonDaoSparkTest.test_find_by_id_csv" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in person_dao_spark_test.py" />
+        <item itemvalue="Python tests.Unittests for person_dao_spark_test.PersonDaoSparkTest.test_find_by_id_csv" />
         <item itemvalue="Python tests.Unittests in person_test.py" />
         <item itemvalue="Python.person_dao_test" />
         <item itemvalue="Python.hello" />
@@ -115,5 +269,112 @@
       <updated>1573593061717</updated>
     </task>
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_person_dao_spark_test_py - 2019.12.12 at 15h 35m 21s.xml">
+      <configuration name="Unittests in person_dao_spark_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_person_dao_spark_test_py - 2019.12.12 at 15h 43m 10s.xml">
+      <configuration name="Unittests in person_dao_spark_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_person_dao_spark_test_py - 2019.12.12 at 15h 46m 30s.xml">
+      <configuration name="Unittests in person_dao_spark_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_person_dao_spark_test_PersonDaoSparkTest_test_find_by_id_csv - 2019.12.12 at 15h 50m 44s.xml">
+      <configuration name="Unittests for person_dao_spark_test.PersonDaoSparkTest.test_find_by_id_csv" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_person_dao_spark_test_py - 2019.12.12 at 15h 51m 59s.xml">
+      <configuration name="Unittests in person_dao_spark_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_person_dao_spark_test_PersonDaoSparkTest_test_find_by_id_csv - 2019.12.12 at 15h 58m 24s.xml">
+      <configuration name="Unittests for person_dao_spark_test.PersonDaoSparkTest.test_find_by_id_csv" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_person_dao_spark_test_PersonDaoSparkTest_test_find_by_id_csv - 2019.12.12 at 15h 58m 51s.xml">
+      <configuration name="Unittests for person_dao_spark_test.PersonDaoSparkTest.test_find_by_id_csv" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_person_dao_spark_test_py - 2019.12.12 at 15h 59m 23s.xml">
+      <configuration name="Unittests in person_dao_spark_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_person_dao_spark_test_PersonDaoSparkTest_test_find_by_id_csv - 2019.12.12 at 16h 00m 42s.xml">
+      <configuration name="Unittests for person_dao_spark_test.PersonDaoSparkTest.test_find_by_id_csv" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_person_dao_spark_test_py - 2019.12.12 at 16h 04m 40s.xml">
+      <configuration name="Unittests in person_dao_spark_test.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13006397" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50053304" side_tool="true" weight="0.26435536" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.26435536" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Python Console" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tests/person.jsonl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage_accounts/person_dao_readonly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/person_dao_spark_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1258">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage_accounts/person_dao_spark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#48#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

@@ -15,9 +15,9 @@ class PersonTest(TestCase):
     def test_init(self):
         person = Person("Marie", None, "Curie")
 
-        self.assertEqual("Marie", person.first_name)
-        self.assertEqual("", person.middle_name)
-        self.assertEqual("Curie", person.last_name)
+        self.assertEqual("Marie", person.given)
+        self.assertEqual("", person.middle)
+        self.assertEqual("Curie", person.family)
 
     def test_full_name(self):
         person = Person("Marie", "Skłodowska", "Curie")
@@ -75,7 +75,7 @@ class PersonTest(TestCase):
         person._id = ObjectId("5dcd7273b35ba17779361c4e")
         person.created_time = datetime.fromisoformat(timestamp)
         value = f"_id='5dcd7273b35ba17779361c4e'," \
-            "first_name='Marie',middle_name='Skłodowska'," \
+            "given='Marie',middle='Skłodowska'," \
             f"last_name='Curie',created_time='{timestamp}'"
         self.assertEqual(value, repr(person))
 

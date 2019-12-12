@@ -38,7 +38,7 @@ class PersonDaoTest(TestCase):
         self.assertIsInstance(p, Person)
         self.assertIsInstance(p._id, ObjectId)
         self.assertEqual(("Gottfried", "Wilhelm", "Leibniz"),
-                          (p.first_name, p.middle_name, p.last_name))
+                         (p.given, p.middle, p.family))
         self.assertTrue(p.created_time < datetime.utcnow())
 
 
