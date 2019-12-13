@@ -46,7 +46,7 @@ class Person:
     def __repr__(self):
         """ Result is useful for a developer (for example, in a debugger) """
         return f"id='{self.id}'," \
-            f"first_name='{self.given}'," \
-            f"middle_name='{self.middle}'," \
-            f"last_name='{self.family}'," \
+            f"given='{self.given}'," \
+            f"middle='{self.middle}'," \
+            f"family='{self.family}'," \
             f"created_time='{self.created_time.isoformat()}'"

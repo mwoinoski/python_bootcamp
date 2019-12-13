@@ -5,7 +5,7 @@ from collections import Iterable
 from typing import Optional
 from abc import ABCMeta, abstractmethod
 
-from manage_accounts.person import Person
+from manage_accounts.model.person import Person
 
 
 class PersonDaoReadonly(metaclass=ABCMeta):

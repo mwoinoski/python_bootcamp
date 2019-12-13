@@ -1,12 +1,10 @@
 """
 DAO for Persons
 """
-from collections import Iterable
-from typing import Optional
 from abc import ABCMeta, abstractmethod
 
-from manage_accounts.person import Person
-from manage_accounts.person_dao_readonly import PersonDaoReadonly
+from manage_accounts.model.person import Person
+from manage_accounts.persistence.person_dao_readonly import PersonDaoReadonly
 
 
 class PersonDao(PersonDaoReadonly, metaclass=ABCMeta):

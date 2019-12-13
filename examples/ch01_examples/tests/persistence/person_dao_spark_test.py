@@ -3,13 +3,14 @@ Unit tests for PersonDao
 """
 from datetime import datetime
 import os
-import re
+from os.path import dirname, abspath, join
 from tempfile import mkstemp
-from typing import List, Optional, TextIO
+from typing import ClassVar, List, Optional, TextIO
+from textwrap import dedent
 from unittest import TestCase, main
 
-from manage_accounts.person import Person
-from manage_accounts.person_dao_spark import PersonDaoSpark
+from manage_accounts.model.person import Person
+from manage_accounts.persistence.person_dao_spark import PersonDaoSpark
 # from pprint import pprint  # pretty-print Python data structures
 
 
@@ -18,8 +19,11 @@ class PersonDaoSparkTest(TestCase):
     temp_file: Optional[TextIO]
     temp_file_handle: int
     temp_file_path: str
+    data_file: ClassVar[str] = join(dirname(abspath(__file__)),
+                                    "person_test.jsonl")
 
     def setUp(self) -> None:
+        print(self.data_file)
         # create temp file
         self.temp_file_handle, self.temp_file_path = mkstemp(text=True)
         self.temp_file = open(self.temp_file_path, "w")
@@ -34,12 +38,12 @@ class PersonDaoSparkTest(TestCase):
             os.remove(self.temp_file_path)
 
     def init_test_data(self, test_data: str) -> None:
-        self.temp_file.write(re.sub(r"^ +", "", test_data, flags=re.MULTILINE))
+        self.temp_file.write(dedent(test_data))
         self.temp_file.close()
         self.temp_file = None
 
     def test_find_all_parts(self) -> None:
-        self.dao = PersonDaoSpark("person.jsonl")
+        self.dao = PersonDaoSpark(PersonDaoSparkTest.data_file)
         # self.dao.df.printSchema()
 
         results = [person for person in self.dao.find(
@@ -52,7 +56,7 @@ class PersonDaoSparkTest(TestCase):
         self.assertTrue(p.created_time < datetime.utcnow())
 
     def test_find_given_only(self) -> None:
-        self.dao = PersonDaoSpark("person.jsonl")
+        self.dao = PersonDaoSpark(PersonDaoSparkTest.data_file)
 
         results = [person for person in self.dao.find("Elizabeth")]
         self.assertEqual(1, len(results))
@@ -63,7 +67,7 @@ class PersonDaoSparkTest(TestCase):
         self.assertTrue(p.created_time < datetime.utcnow())
 
     def test_find_given_only_two_results(self) -> None:
-        self.dao = PersonDaoSpark("person.jsonl")
+        self.dao = PersonDaoSpark(PersonDaoSparkTest.data_file)
 
         results = [person for person in self.dao.find("Thomas")]
         self.assertEqual(2, len(results))
@@ -73,29 +77,29 @@ class PersonDaoSparkTest(TestCase):
             [(4, "Thomas", "", "Addison"), (5, "Thomas", "", "Sydenham")])
 
     def test_find_several_queries(self) -> None:
-        self.dao = PersonDaoSpark("person.jsonl")
+        self.dao = PersonDaoSpark(PersonDaoSparkTest.data_file)
 
         # next(iter(...)) performs one iteration of the Iterable argument
         p: Person = next(iter(self.dao.find("Vivien", "Theodore", "Thomas")))
-        self.assertEquals(("Vivien", "Theodore", "Thomas"),
+        self.assertEqual(("Vivien", "Theodore", "Thomas"),
                           (p.given, p.middle, p.family))
 
         p = next(iter(self.dao.find("Elizabeth", family="Blackwell")))
-        self.assertEquals(("Elizabeth", "", "Blackwell"),
+        self.assertEqual(("Elizabeth", "", "Blackwell"),
                           (p.given, p.middle, p.family))
 
         p = next(iter(self.dao.find("Hippocrates")))
-        self.assertEquals(("Hippocrates", "", ""),
+        self.assertEqual(("Hippocrates", "", ""),
                           (p.given, p.middle, p.family))
 
     def test_find_not_present(self) -> None:
-        self.dao = PersonDaoSpark("person.jsonl")
+        self.dao = PersonDaoSpark(PersonDaoSparkTest.data_file)
 
         results: List[Person] = [person for person in self.dao.find("NotThere")]
         self.assertEqual(0, len(results))
 
     def test_find_no_args(self) -> None:
-        self.dao = PersonDaoSpark("person.jsonl")
+        self.dao = PersonDaoSpark(PersonDaoSparkTest.data_file)
 
         with self.assertRaisesRegex(ValueError, r"arguments.*empty"):
             next(iter(self.dao.find()))
@@ -103,13 +107,13 @@ class PersonDaoSparkTest(TestCase):
             # it's used for iteration
 
     def test_find_by_id_success(self) -> None:
-        self.dao = PersonDaoSpark("person.jsonl")
+        self.dao = PersonDaoSpark(PersonDaoSparkTest.data_file)
 
         person: Person = self.dao.find_by_id(3)
         self.assertEqual("Hippocrates", person.given)
 
     def test_find_by_id_not_present(self) -> None:
-        self.dao = PersonDaoSpark("person.jsonl")
+        self.dao = PersonDaoSpark(PersonDaoSparkTest.data_file)
 
         self.assertIsNone(self.dao.find_by_id(0))
 
@@ -126,7 +130,7 @@ class PersonDaoSparkTest(TestCase):
         self.assertEqual("Hippocrates", person.given)
 
     def test_find_by_id_csv(self) -> None:
-        self.init_test_data("""
+        self.init_test_data("""\
             1,Vivien,Theodore,Thomas,1576109811
             2,Hippocrates,,1576109812
             3,Thomas,,Addison,1576109813
@@ -138,7 +142,7 @@ class PersonDaoSparkTest(TestCase):
         self.assertEqual("Hippocrates", person.given)
 
     def test_find_by_id_duplicate_id(self) -> None:
-        self.init_test_data("""
+        self.init_test_data("""\
             {"id": 1, "given": "Vivien", "middle": "Theodore", "family": "Thomas", "created_time": 1576109811}
             {"id": 2, "given": "Hippocrates", "created_time": 1576109813}
             {"id": 2, "given": "Thomas", "family": "Addison", "created_time": 1576109814}

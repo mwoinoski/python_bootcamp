@@ -6,8 +6,8 @@ from typing import Optional
 
 from pymongo import MongoClient
 
-from manage_accounts.person import Person
-from manage_accounts.person_dao import PersonDao
+from manage_accounts.model.person import Person
+from manage_accounts.persistence.person_dao import PersonDao
 
 
 class PersonDaoMongoDb(PersonDao):

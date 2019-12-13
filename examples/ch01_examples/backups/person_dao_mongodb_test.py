@@ -7,9 +7,8 @@ from unittest import TestCase, main, skip
 from bson import ObjectId
 from pymongo import MongoClient
 
-from manage_accounts.person import Person
-from manage_accounts.person_dao import PersonDao
-from pprint import pprint
+from manage_accounts.model.person import Person
+from manage_accounts.persistence.person_dao import PersonDao
 
 
 class PersonDaoTest(TestCase):
@@ -30,6 +29,7 @@ class PersonDaoTest(TestCase):
         self.dao.insert(person)
         self.assertIsNotNone(person._id)
 
+    @skip
     def test_find(self):
         results = [person for person in self.dao.find(
                     "Gottfried", "Wilhelm", "Leibniz")]

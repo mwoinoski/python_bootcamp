@@ -1,15 +1,15 @@
 """
 Spark implementation of DAO for Persons
 """
-from collections import Iterable
+from collections.abc import Iterable
 from typing import ClassVar, Optional, List
 
 from pyspark.sql import SparkSession, DataFrame, Row
 
-from manage_accounts.person import Person
-from manage_accounts.person_dao_readonly import PersonDaoReadonly
+from manage_accounts.model.person import Person
+from manage_accounts.persistence.person_dao_readonly import PersonDaoReadonly
 
-default_data_file_path: str = "file:///person_mgmt/person.jsonl"
+default_data_file_path: str = "file:///person_mgmt/person_test.jsonl"
 
 
 class PersonDaoSpark(PersonDaoReadonly):

@@ -7,7 +7,7 @@ from unittest import TestCase, main
 # from .context import manage_accounts
 from bson import ObjectId
 
-from manage_accounts.person import Person
+from manage_accounts.model.person import Person
 from datetime import datetime
 
 
