@@ -9,7 +9,7 @@ from pyspark.sql import SparkSession, DataFrame, Row
 from manage_accounts.model.person import Person
 from manage_accounts.persistence.person_dao_readonly import PersonDaoReadonly
 
-default_data_file_path: str = "file:///person_mgmt/person_test.jsonl"
+default_data_file_path: str = "file:///person_mgmt/person_dao_spark_test.jsonl"
 
 
 class PersonDaoSpark(PersonDaoReadonly):

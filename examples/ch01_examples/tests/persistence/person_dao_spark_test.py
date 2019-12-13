@@ -20,10 +20,9 @@ class PersonDaoSparkTest(TestCase):
     temp_file_handle: int
     temp_file_path: str
     data_file: ClassVar[str] = join(dirname(abspath(__file__)),
-                                    "person_test.jsonl")
+                                    "person_dao_spark_test.jsonl")
 
     def setUp(self) -> None:
-        print(self.data_file)
         # create temp file
         self.temp_file_handle, self.temp_file_path = mkstemp(text=True)
         self.temp_file = open(self.temp_file_path, "w")
@@ -79,7 +78,7 @@ class PersonDaoSparkTest(TestCase):
     def test_find_several_queries(self) -> None:
         self.dao = PersonDaoSpark(PersonDaoSparkTest.data_file)
 
-        # next(iter(...)) performs one iteration of the Iterable argument
+        # next(iter(...)) performs one iteration of the Iterable    argument
         p: Person = next(iter(self.dao.find("Vivien", "Theodore", "Thomas")))
         self.assertEqual(("Vivien", "Theodore", "Thomas"),
                           (p.given, p.middle, p.family))

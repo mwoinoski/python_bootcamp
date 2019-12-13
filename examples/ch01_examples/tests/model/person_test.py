@@ -3,8 +3,6 @@ Unit tests for the Person class.
 """
 
 from unittest import TestCase, main
-# In certain situations, you may need to add the following:
-# from ..context import manage_accounts
 
 from manage_accounts.model.person import Person
 from datetime import datetime
