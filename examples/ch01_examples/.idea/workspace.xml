@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba71ba54-52fd-4ffc-99f2-077d2ad957bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manage_accounts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/model/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/persistence/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backups/person_dao_spark_unittest_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backups/person_unittest_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage_accounts/model/address.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage_accounts/model/insurance_info.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage_accounts/model/patient.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage_accounts/model/provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ch01_examples.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ch01_examples.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage_accounts/persistence/person_dao_spark.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage_accounts/persistence/person_dao_spark.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/context.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage_accounts/model/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage_accounts/model/person.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage_accounts/persistence/person_dao_mongodb.py" beforeDir="false" afterPath="$PROJECT_DIR$/backups/person_dao_mongodb.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/model/person_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/model/person_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/persistence/person_dao_spark_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/persistence/person_dao_spark_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/persistence/person_test.jsonl" beforeDir="false" afterPath="$PROJECT_DIR$/tests/persistence/person_dao_spark_test.jsonl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,10 +25,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.41233373">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/manage_accounts/persistence/person_dao_spark.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
+                <state relative-caret-position="-368">
                   <caret line="21" selection-start-line="21" selection-end-line="21" />
                   <folding>
                     <element signature="e#48#84#0" expanded="true" />
@@ -38,8 +40,20 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/manage_accounts/model/person.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="833">
-                  <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+                <state relative-caret-position="361">
+                  <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#33#60#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/manage_accounts/model/provider.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="425">
+                  <caret line="29" selection-start-line="29" selection-end-line="29" />
                 </state>
               </provider>
             </entry>
@@ -48,13 +62,34 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tests/persistence/person_dao_spark_test.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="21" column="63" lean-forward="true" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+                <state relative-caret-position="187">
+                  <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/manage_accounts/model/patient.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="459">
+                  <caret line="27" column="75" lean-forward="true" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
                   <folding>
-                    <element signature="e#33#62#0" expanded="true" />
+                    <element signature="e#34#38#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/manage_accounts/model/insurance_info.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
+                  <folding>
+                    <element signature="e#50#83#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -63,8 +98,11 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tests/model/person_test.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" selection-start-line="5" selection-end-line="5" />
+                <state relative-caret-position="1275">
+                  <caret line="75" column="50" lean-forward="true" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="50" />
+                  <folding>
+                    <element signature="e#42#89#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -86,9 +124,14 @@
       <find>spark</find>
       <find>&quot;person.jsonl&quot;</find>
       <find>equals</find>
+      <find>self</find>
+      <find>self\.assertEqual\(</find>
+      <find>self\.</find>
+      <find>PersonDaoSparkTest\.</find>
     </findStrings>
     <replaceStrings>
       <replace>PersonDaoSparkTest.data_file</replace>
+      <replace>assert</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -102,7 +145,6 @@
         <option value="$PROJECT_DIR$/manage_accounts/person_dao_spark.py" />
         <option value="$PROJECT_DIR$/manage_accounts/model/__init__.py" />
         <option value="$PROJECT_DIR$/manage_accounts/persistence/__init__.py" />
-        <option value="$PROJECT_DIR$/manage_accounts/model/person.py" />
         <option value="$PROJECT_DIR$/tests/persistence/person_dao_mongodb_test.py" />
         <option value="$PROJECT_DIR$/manage_accounts/persistence/person_dao_spark.py" />
         <option value="$PROJECT_DIR$/tests/model/__init__.py" />
@@ -111,6 +153,12 @@
         <option value="$PROJECT_DIR$/manage_accounts/__init__.py" />
         <option value="$PROJECT_DIR$/tests/model/person_test.py" />
         <option value="$PROJECT_DIR$/tests/persistence/person_dao_spark_test.py" />
+        <option value="$PROJECT_DIR$/manage_accounts/model/InsuranceInfo.py" />
+        <option value="$PROJECT_DIR$/manage_accounts/model/provider.py" />
+        <option value="$PROJECT_DIR$/manage_accounts/model/address.py" />
+        <option value="$PROJECT_DIR$/manage_accounts/model/person.py" />
+        <option value="$PROJECT_DIR$/manage_accounts/model/insurance_info.py" />
+        <option value="$PROJECT_DIR$/manage_accounts/model/patient.py" />
       </list>
     </option>
   </component>
@@ -179,17 +227,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backups" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manage_accounts/model" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\manage_accounts\model" />
+      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\tests\persistence" />
+      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\tests\model" />
       <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\backups" />
       <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\tests\persistence" />
       <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\backups" />
+      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\tests\persistence" />
       <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\tests" />
       <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\manage_accounts\persistence" />
       <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\manage_accounts\model" />
@@ -207,22 +258,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in person_dao_spark_test.py">
-    <configuration name="Unittests for tests.persistence.person_dao_spark_test.PersonDaoSparkTest.test_find_by_id_csv" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest in person_test.py">
+    <configuration name="pytest in person_dao_spark_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="ch01_examples" />
-      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_OPTIONS" value="-W ignore::DeprecationWarning" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/persistence" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.persistence.person_dao_spark_test.PersonDaoSparkTest.test_find_by_id_csv&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/persistence/person_dao_spark_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in model" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in person_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="ch01_examples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -231,67 +283,20 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/model&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in person_dao_spark_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="ch01_examples" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/persistence/person_dao_spark_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in person_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="ch01_examples" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/model/person_test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="ch01_examples" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests in person_dao_spark_test.py" />
-      <item itemvalue="Python tests.Unittests in person_test.py" />
-      <item itemvalue="Python tests.Unittests for tests.persistence.person_dao_spark_test.PersonDaoSparkTest.test_find_by_id_csv" />
-      <item itemvalue="Python tests.Unittests in tests" />
-      <item itemvalue="Python tests.Unittests in model" />
+      <item itemvalue="Python tests.pytest in person_test.py" />
+      <item itemvalue="Python tests.pytest in person_dao_spark_test.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in person_dao_spark_test.py" />
-        <item itemvalue="Python tests.Unittests in person_test.py" />
-        <item itemvalue="Python tests.Unittests in model" />
-        <item itemvalue="Python tests.Unittests in tests" />
-        <item itemvalue="Python tests.Unittests for tests.persistence.person_dao_spark_test.PersonDaoSparkTest.test_find_by_id_csv" />
+        <item itemvalue="Python tests.pytest in person_test.py" />
+        <item itemvalue="Python tests.pytest in person_dao_spark_test.py" />
       </list>
     </recent_temporary>
   </component>
@@ -309,18 +314,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_person_test_py - 2019.12.13 at 12h 02m 07s.xml">
-      <configuration name="Unittests in person_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_tests - 2019.12.13 at 12h 03m 46s.xml">
-      <configuration name="Unittests in tests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_model - 2019.12.13 at 12h 03m 55s.xml">
-      <configuration name="Unittests in model" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_model - 2019.12.13 at 12h 47m 10s.xml">
-      <configuration name="Unittests in model" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_person_dao_spark_test_py - 2019.12.13 at 12h 47m 46s.xml">
       <configuration name="Unittests in person_dao_spark_test.py" configurationId="tests" />
     </history-entry>
@@ -339,17 +332,29 @@
     <history-entry file="Unittests_in_person_dao_spark_test_py - 2019.12.13 at 13h 10m 05s.xml">
       <configuration name="Unittests in person_dao_spark_test.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_in_person_test_py - 2019.12.13 at 14h 10m 46s.xml">
+      <configuration name="pytest in person_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_person_dao_spark_test_py - 2019.12.13 at 14h 34m 55s.xml">
+      <configuration name="pytest in person_dao_spark_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_person_dao_spark_test_py - 2019.12.13 at 14h 36m 28s.xml">
+      <configuration name="pytest in person_dao_spark_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_person_test_py - 2019.12.13 at 15h 37m 31s.xml">
+      <configuration name="pytest in person_test.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12961012" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12961012" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.26435536" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.16793066" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -420,23 +425,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage_accounts/model/person.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage_accounts/persistence/person_dao_spark.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#48#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/persistence/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -459,19 +447,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/model/person_test.py">
+    <entry file="file://$PROJECT_DIR$/backups/person_unittest_test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backups/person_dao_spark_unittest_test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage_accounts/persistence/person_dao_spark.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="-368">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#48#84#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/persistence/person_dao_spark_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="21" column="63" lean-forward="true" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+        <state relative-caret-position="187">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Software/python-3.7/Lib/datetime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="1647" column="8" selection-start-line="1647" selection-start-column="8" selection-end-line="1647" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage_accounts/model/address.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="e#33#62#0" expanded="true" />
+            <element signature="e#73#106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage_accounts/model/person.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding>
+            <element signature="e#33#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage_accounts/model/provider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/model/person_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="75" column="50" lean-forward="true" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="50" />
+          <folding>
+            <element signature="e#42#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage_accounts/model/insurance_info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#50#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage_accounts/model/patient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="75" lean-forward="true" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
+          <folding>
+            <element signature="e#34#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
