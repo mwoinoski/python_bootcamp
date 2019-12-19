@@ -129,23 +129,17 @@ result: List[Row] = df.selectExpr(f'`{state}` as state', f'`{score}` as score') 
 # """
 
 # show() doesn't support formatting options, so we'll resort to DIY
-<<<<<<< HEAD
 print(f'+----+-----+----------------+-----------+')
 print(f'|Rank|State|Dialysis Centers|Average TPS|')
 print(f'+----+-----+----------------+-----------+')
 for i, row in enumerate(result):
     print(f'|{i:>4d}|{row.state:>5s}|{row.num:>16d}|{row.avg:>11.2f}|')
 print(f'+----+-----+----------------+-----------+')
-=======
-print(f'+----+-----+-----------+')
-print(f'|Rank|State|Average TPS|')
-print(f'+----+-----+-----------+')
-for i, row in enumerate(result):
-    print(f'|{i:>4d}|{row.state:>5s}|{row.avg:>11.2f}|')
-print(f'+----+-----+-----------+')
->>>>>>> 4832b03b9debbc35471859f87e421fd055bf84fd
 
 
+# MW TODO: measure mean performance by dialysis center owner
+
+# MW TODO: look at a different measure than TPS
 
 
 # result: List[Row] = df.toDF('cust_id', 'order_id', 'amount') \
