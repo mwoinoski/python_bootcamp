@@ -9,11 +9,6 @@ from pyspark.sql.functions import sum as sum_col  # pylint: disable=no-name-in-m
 import util
 
 
-def parse_line(line):
-    fields = line.split(',')
-    return int(fields[0]), float(fields[2])
-
-
 # initialize spark
 ss: SparkSession = SparkSession.builder \
                                .appName('Total Customer Spend (CSV with header)') \
