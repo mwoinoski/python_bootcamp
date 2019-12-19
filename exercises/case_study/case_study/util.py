@@ -9,7 +9,7 @@ import pathlib
 
 def file_url(filepath: str) -> str:
     """ Generate a file:// URL for the given filename in the current dir """
-    return pathlib.Path(filepath).resolve().as_uri().replace("%20", " ")
+    return pathlib.Path(filepath).absolute().resolve().as_uri().replace("%20", " ")
 
 
 def get_db_credentials() -> Namespace:

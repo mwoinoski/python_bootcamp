@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5912c98a-4c28-46c6-89eb-462ef13c5fbb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/case_study/analyze_esrd_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/analyze_esrd_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/util.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,27 +11,31 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="case_study" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/ESRD QIP - Complete QIP Data - Payment Year 2018.csv">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/case_study/analyze_hospital_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="44" selection-start-column="14" selection-end-column="44" />
+            <state relative-caret-position="416">
+              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+              <folding>
+                <element signature="e#53#82#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/case_study/analyze_esrd_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="130" column="17" lean-forward="true" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
-              <folding>
-                <element signature="e#54#77#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/hvbp_efficiency_11_07_2017.csv">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/hvbp_safety_11_07_2017.csv">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -47,9 +52,11 @@
       <find>user_options</find>
       <find>&quot;</find>
       <find>avg_col</find>
+      <find>F.</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
+      <replace>f.</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -63,16 +70,17 @@
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/case_study/analzye_esrd_data.py" />
         <option value="$PROJECT_DIR$/case_study/__init__.py" />
-        <option value="$PROJECT_DIR$/case_study/util.py" />
         <option value="$PROJECT_DIR$/data/ESRD QIP - Complete QIP Data - Payment Year 2018.csv" />
         <option value="$PROJECT_DIR$/case_study/analyze_esrd_data.py" />
+        <option value="$PROJECT_DIR$/case_study/util.py" />
+        <option value="$PROJECT_DIR$/case_study/analyze_hospital_data.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="712" />
+    <option name="x" value="583" />
     <option name="y" value="-7" />
-    <option name="width" value="1214" />
+    <option name="width" value="1343" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -132,7 +140,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.analyze_hospital_data">
     <configuration name="analyze_esrd_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="case_study" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -154,8 +162,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="analyze_hospital_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="case_study" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case_study" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case_study/analyze_hospital_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.analyze_hospital_data" />
         <item itemvalue="Python.analyze_esrd_data" />
       </list>
     </recent_temporary>
@@ -174,21 +204,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="712" y="-7" width="1214" height="1056" extended-state="0" />
+    <frame x="583" y="-7" width="1343" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25170067" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991511" visible="true" weight="0.22681992" />
+      <window_info id="Structure" order="1" sideWeight="0.5008489" side_tool="true" weight="0.25170067" />
+      <window_info id="Favorites" order="2" sideWeight="0.5008489" side_tool="true" weight="0.25170067" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35536295" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34236187" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3618635" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3618635" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -198,17 +228,6 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/case_study/util.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.rst">
@@ -230,16 +249,6 @@
     <entry file="file://$PROJECT_DIR$/case_study/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/case_study/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-          <folding>
-            <element signature="e#48#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/ESRD QIP - Complete QIP Data - Payment Year 2018.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -247,12 +256,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Software/python-3.7/Lib/site-packages/pyspark/sql/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_study/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding>
+            <element signature="e#48#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/hvbp_tps_11_07_2017.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/case_study/analyze_esrd_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="130" column="17" lean-forward="true" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
+        <state relative-caret-position="272">
+          <caret line="19" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="19" />
           <folding>
             <element signature="e#54#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/hvbp_efficiency_11_07_2017.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/hvbp_safety_11_07_2017.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_study/analyze_hospital_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+          <folding>
+            <element signature="e#53#82#0" expanded="true" />
           </folding>
         </state>
       </provider>
