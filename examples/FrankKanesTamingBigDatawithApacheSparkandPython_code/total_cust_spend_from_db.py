@@ -5,16 +5,15 @@ CREATE TABLE Customer_Order (customer_id INT, order_id INT, amount SMALLMONEY)
 
 You must supply the path to the jar file with the SQLServer JDBC driver
 as the spark-submit options "--driver-class-path" and "--jars":
-    spark-submit --driver-class-path mssql-jdbc-7.4.1.jre8.jar \
-                 --jars mssql-jdbc-7.4.1.jre8.jar total_cust_spend_from_db.py
+    spark-submit --driver-class-path ~/lib/sqljdbc_7.4/enu/mssql-jdbc-7.4.1.jre8.jar \
+                 --jars ~/lib/sqljdbc_7.4/enu/mssql-jdbc-7.4.1.jre8.jar total_cust_spend_from_db.py
 """
 
 from typing import List
 from argparse import Namespace
 
 from pyspark.sql import SparkSession, DataFrame, Row
-from pyspark.sql.functions import desc
-# from pyspark.sql.functions import sum as sum_col  # pylint: disable=no-name-in-module
+import pyspark.sql.functions as f  # pylint: disable=no-name-in-module
 from util import get_db_credentials
 
 # Initialize spark.
@@ -55,19 +54,22 @@ query: str = """
       SELECT customer_id, SUM(amount) AS total
         FROM customer_order
     GROUP BY customer_id
-    ORDER BY total
+    ORDER BY total desc
 """
 resultDF: DataFrame = spark.sql(query)
 
 # This also works:
-# resultDF: DataFrame = df.select('customer_id', 'amount') \
-#                         .groupBy('customer_id') \
-#                         .agg(sum_col('amount').alias('total')) \
-#                         .orderBy('total')
+# resultDF: DataFrame = df.groupBy('customer_id') \
+#                         .agg(f.sum('amount').alias('total')) \
+#                         .orderBy('total', ascending=False) \
+#                         .select('customer_id', 'total')
 
 result: List[Row] = resultDF.collect()
 
 row: Row
+print(f'+-----------+------------+')
+print(f'|Customer ID|Total Amount|')
+print(f'+-----------+------------+')
 for row in result:
-    d = row.asDict()
-    print(f"{d['customer_id']} {d['total']:.2f}")
+    print(f'|{row.customer_id:>11d}|{row.total:>12.2f}|')
+print(f'+-----------+------------+')

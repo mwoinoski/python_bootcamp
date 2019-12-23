@@ -23,12 +23,11 @@ data_files: List[str] = [
 spark: SparkSession = SparkSession.builder \
                                   .appName('Hospital Data Analytics') \
                                   .getOrCreate()
-# df = spark.read.csv('file:///Users/Mike/Classes/Articulate Design/Sutter Health Python/python_bootcamp/exercises/case_study/data/hvbp_tps_11_07_2017.csv', inferSchema=True, header=True)
 
 dfs: Dict[str, DataFrame] = {}
+data_uri: str = 'hdfs://localhost:9000/user/sutter/data/'
 for file in data_files:
-    df = spark.read.csv(util.file_url('../data/' + file),
-                        inferSchema=True, header=True)
+    df = spark.read.csv(data_uri + file, inferSchema=True, header=True)
     col_aliases = [f.col(col_name).alias(normalize_name(col_name))
                    for col_name, col_type in df.dtypes]
     # col_names_normalized = [f.col(c).alias(normalize_name(c))

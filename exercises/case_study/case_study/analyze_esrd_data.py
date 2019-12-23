@@ -3,20 +3,19 @@ Perform data analytics on Medicare ESRD data
 """
 
 from typing import List
-from pyspark.sql import SparkSession, DataFrame, Window, Row
-import pyspark.sql.functions as F
-from case_study import util
+from pyspark.sql import SparkSession, DataFrame, Row
+import pyspark.sql.functions as f
 
 
 # initialize spark
 spark: SparkSession = SparkSession.builder \
-                                  .appName('ERSE QIP Data Analytics') \
+                                  .appName('ESRD QIP Data Analytics') \
                                   .getOrCreate()
 
-file: str = '../data/ESRD QIP - Complete QIP Data - Payment Year 2018.csv'
-df_unfiltered: DataFrame = spark.read.csv(util.file_url(file),
+data_uri: str = 'hdfs://localhost:9000/user/sutter/data/'
+file: str = 'ESRD_QIP-Complete_QIP_Data-Payment_Year_2018.csv'
+df_unfiltered: DataFrame = spark.read.csv(data_uri + file,
                                           inferSchema=True, header=True)
-# df = spark.read.csv('file:///Users/Mike/Classes/Articulate Design/Sutter Health Python/python_bootcamp/exercises/case_study/data/ESRD QIP - Complete QIP Data - Payment Year 2018.csv', inferSchema=True, header=True)
 
 # spark.read.csv(file, inferSchemna=True) will identify numeric columns if the
 # column has no non-numeric values. In this case, some 'Total Performace Score'
@@ -41,9 +40,9 @@ stats = ["count", "min", "20%", "40%", "60%", "80%", "max", "mean", "stddev"]
 df.select(score).summary(*stats).show()
 
 # get the high and low total performance score
-tpf_max = df.agg(F.max(score)) \
+tpf_max = df.agg(f.max(score)) \
             .head(1)[0][0]
-tpf_min = df.agg(F.min(score)) \
+tpf_min = df.agg(f.min(score)) \
             .head(1)[0][0]
 # agg() creates a new DatatFrame with one Row, which has the result of the
 # aggregate function
@@ -93,7 +92,7 @@ print()
 
 print(f'Facilities with highest {score}')
 
-max_tpf: float = df.select(F.max(score)).collect()[0][0]
+max_tpf: float = df.select(f.max(score)).collect()[0][0]
 # max_tpf = df_filtered.agg(F.max(score)).head(1)[0][0]  # same result
 df.select(name, state, ccn, score) \
   .where(df_unfiltered[score] == max_tpf) \
@@ -102,8 +101,8 @@ df.select(name, state, ccn, score) \
 # calculate mean total performance of each state's dialysis center
 
 result: List[Row] = df.selectExpr(f'`{state}` as state', f'`{score}` as score') \
-                      .groupBy(F.col('state')) \
-                      .agg(F.mean(F.col('score')).alias('avg'), F.count(F.col('score')).alias('num')) \
+                      .groupBy(f.col('state')) \
+                      .agg(f.mean(f.col('score')).alias('avg'), f.count(f.col('score')).alias('num')) \
                       .sort('avg', ascending=False) \
                       .collect()
 

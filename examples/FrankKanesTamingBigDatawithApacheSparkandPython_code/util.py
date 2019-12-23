@@ -20,5 +20,5 @@ def get_db_credentials() -> Namespace:
     parser.add_argument('-p', '--password', type=str)
     args: Namespace = parser.parse_args()
     if not args.password:
-            args.password = getpass(f"\nEnter password for DB user {args.user}: ")
+        args.password = getpass(f"\nEnter password for DB user {args.user}: ")
     return args
