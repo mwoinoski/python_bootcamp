@@ -1,6 +1,8 @@
+# Hive
 metastore_db/
-*.ipynb
 
+# Spark
+spark-warehouse/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -79,6 +81,7 @@ docs/_build/
 target/
 
 # Jupyter Notebook
+*.ipynb
 .ipynb_checkpoints
 
 # IPython

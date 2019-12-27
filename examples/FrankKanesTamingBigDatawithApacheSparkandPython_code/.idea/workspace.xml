@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8926faf-650c-4cc8-b9b4-c92394a955ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/case_study/data/ESRD_QIP-Complete_QIP_Data-Payment_Year_2018.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/total_cust_spend_from_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/total_cust_spend_from_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/case_study/case_study/analyze_esrd_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/case_study/analyze_esrd_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/case_study/case_study/analyze_hospital_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/case_study/analyze_hospital_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/case_study/data/ESRD QIP - Complete QIP Data - Payment Year 2018.csv" beforeDir="false" />
-    </list>
+    <list default="true" id="f8926faf-650c-4cc8-b9b4-c92394a955ba" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -2,15 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5912c98a-4c28-46c6-89eb-462ef13c5fbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/ESRD_QIP-Complete_QIP_Data-Payment_Year_2018.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/etl_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/write_csv_to_dbtable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/write_to_hive.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_from_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_from_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/case_study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/case_study.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MANIFEST.in" beforeDir="false" afterPath="$PROJECT_DIR$/MANIFEST.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/README.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study/analyze_esrd_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/analyze_esrd_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study/analyze_hospital_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/analyze_hospital_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ESRD QIP - Complete QIP Data - Payment Year 2018.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ESRD_QIP-Complete_QIP_Data-Payment_Year_2018.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/ESRD_QIP-Complete_QIP_Data-Payment_Year_2018.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hvbp_clinical_care_11_07_2017.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/hvbp_clinical_care_11_07_2017.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hvbp_efficiency_11_07_2017.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/hvbp_efficiency_11_07_2017.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hvbp_hcahps_11_07_2017.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/hvbp_hcahps_11_07_2017.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hvbp_safety_11_07_2017.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/hvbp_safety_11_07_2017.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hvbp_tps_11_07_2017.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/hvbp_tps_11_07_2017.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,18 +45,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>user_options</find>
-      <find>&quot;</find>
-      <find>avg_col</find>
-      <find>F.</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>'</replace>
-      <replace>f.</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
@@ -51,11 +56,15 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_from_db.py" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/case_study" />
       <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\exercises\case_study\case_study" />
       <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\exercises\case_study\data" />
       <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\exercises\case_study" />
@@ -144,7 +153,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
