@@ -123,12 +123,11 @@ class MyTestCase(TestCase):
 
         assert actual == expected
 
-    @mark.skip("""TODO""")
     def test_identify_duplicate_columns_after_normalization(self) -> None:
         cols: List[str] = [
             'domain_score', 'state', 'city', 'country', 'street1', 'street2',
             'domain_score', 'state', 'city',
-            'domain_score_max', 'domain_score_min',
+            'domain_score', 'domain_score',
         ]
         expected: Dict[str, int] = {
             'domain_score': 4,
@@ -136,7 +135,7 @@ class MyTestCase(TestCase):
             'city': 2
         }
 
-        actual: Dict[str, int] = identify_duplicate_columns(cols, max_len=12)
+        actual: Dict[str, int] = identify_duplicate_columns(cols)
 
         assert actual == expected
 

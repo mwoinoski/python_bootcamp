@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5912c98a-4c28-46c6-89eb-462ef13c5fbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/transformations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_transformations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/word-count-better.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/word-count-better.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/etl_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/transformations.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/transformations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_transformations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_transformations.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
