@@ -2,11 +2,13 @@
 Transformation functions for ETL procesing.
 """
 from collections import Counter
+from datetime import datetime
 import re
 from typing import List, Dict
 
 
 def normalize_column_name(name: str, max_len: int) -> str:
+    """ Return a normalized version of the column name """
     name = name.lower()
     name = re.sub(r'\W', '_', name)
     name = name.strip('_')
@@ -24,6 +26,11 @@ def count_occurrences(cols: List[str]) -> Dict[str, int]:
 
 def identify_duplicate_columns(
         cols: List[str], how_many: Dict[str, int] = None) -> Dict[str, int]:
+    """
+    Return a dictionary with the name and count of occurrences for each
+    duplicate name in the argument `cols`. Names that are not duplicated
+    are not present in the returned dictionary.
+    """
     if not how_many:
         how_many = count_occurrences(cols)
     how_many_dupes_left: Dict[str, int] = {}
@@ -73,3 +80,77 @@ def make_column_names_unique(cols: List[str], max_len: int = 64) -> List[str]:
     #     new_columns.append(new_col)
 
     return new_cols
+
+
+# Date formats in use:
+# YMD: ISO 8601, CN, JP, CA, others
+# DMY: IN, EU, RU, others
+# MDY: US, others
+date_format_patterns: Dict[str, re.Pattern] = {
+    'YMD': re.compile(r'^(?P<year>\d+)\D(?P<month>\d+)\D(?P<day>\d+)$'),
+    'MDY': re.compile(r'^(?P<month>\d+)\D(?P<day>\d+)\D(?P<year>\d+)$'),
+    'DMY': re.compile(r"""
+        ^                # beginning of line
+        (?P<day>\d+)     # group named 'day' that captures one or more digits 
+        \D               # one non-digit
+        (?P<month>\d+)   # group named 'month' that captures one or more digits
+        \D               # one non-digit
+        (?P<year>\d+)    # group named 'year' that captures one or more digits
+        $                # end of line
+      """, re.VERBOSE),  # VERBOSE allows whitespace or comments in the pattern
+}
+
+
+def get_valid_year(year_str: str) -> int:
+    """
+    Convert year_str to an int in the range 1890 < year < 2150.
+    Return 0 if year_str is not a valid 2- or 4-digit year.
+    """
+    valid_year: int = 0;
+    if year_str:
+        # year must be 2 or 4 digits
+        if len(year_str) == 2 or len(year_str) == 4:
+            year: int = int(year_str)
+            if year >= 0 and (year < 100 or (1890 <= year <= 2150)):
+                if year < 100:
+                    year += 2000
+                valid_year = year
+    return valid_year
+
+
+def normalize_date(date: str, date_format: str = 'YMD') -> str:
+    """ Normalizes a date string to ISO 8601 format YYYY-MM-DD """
+    normalized_date: str = ''
+    if date:
+        date = date.strip()
+        pattern = date_format_patterns.get(date_format)
+        if pattern:
+            match = pattern.match(date)
+            if match:
+                year_str: str = match.group('year')
+                # year must be 2 or 4 digits
+                if len(year_str) == 2 or len(year_str) == 4:
+                    year: int = int(year_str)
+                    if year >= 0 and (year < 100 or (1890 < year < 2150)):
+                        if year < 100:
+                            year += 2000
+                        month: int = int(match.group('month'))
+                        day: int = int(match.group('day'))
+                        try:
+                            normalized_date = datetime(year, month, day).isoformat()[:10]
+                        except ValueError:
+                            pass
+                        # normalized_date = f'{year}-{month:02d}-{day:02d}'
+    return normalized_date
+
+
+# TODO: add timezone offset?
+# See https://docs.python.org/3.7/library/datetime.html?highlight=timestamp#datetime.datetime.utcoffset
+def convert_date_to_timestamp(date: datetime) -> str:
+    """ Return a timestamp string in ISO 8601 format YYYY-MM-DDTHH:MM:SS """
+    timestamp: str = ''
+    if date:
+        date = datetime(date.year, date.month, date.day,
+                        date.hour, date.minute, date.second)
+        timestamp = date.isoformat()
+    return timestamp
