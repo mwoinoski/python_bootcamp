@@ -2,14 +2,14 @@
 Unit tests for transformation logic
 """
 from datetime import datetime
-from typing import List, Dict, Optional
+from typing import List, Dict, Any
 from unittest import TestCase
 import pytest
 from pytest import mark
 
 from case_study.transformations import (
     make_column_names_unique, normalize_column_name, identify_duplicate_columns,
-    normalize_date, convert_date_to_timestamp, get_valid_year
+    normalize_date, convert_date_to_timestamp, get_valid_year, DateFormat
 )
 
 
@@ -33,39 +33,39 @@ def test_normalize_column_names(name, max_len, expected) -> None:
     ('2020/01/02', '2020-01-02', None),
     ('2020/1/2', '2020-01-02', None),
     (' 2020-01-02 ', '2020-01-02', None),
-    ('2020-01-02', '2020-01-02', 'YMD'),
-    ('01/02/2020', '2020-01-02', 'MDY'),
-    ('1/2/2020', '2020-01-02', 'MDY'),
-    ('01/02/20', '2020-01-02', 'MDY'),
-    ('1/2/20', '2020-01-02', 'MDY'),
-    ('02/01/2020', '2020-01-02', 'DMY'),
-    ('2/1/2020', '2020-01-02', 'DMY'),
-    ('02/01/20', '2020-01-02', 'DMY'),
-    ('2/1/20', '2020-01-02', 'DMY'),
-    ('1/2/20/20', '', 'MDY'),
-    ('1/2', '', 'MDY'),
-    ('1/2/020', '', 'MDY'),
-    ('1/2/20202', '', 'MDY'),
-    ('222/1/2020', '', 'MDY'),
-    ('2/29/2020', '2020-02-29', 'MDY'),
-    ('2/29/2021', '', 'MDY'),
-    ('January 2, 2020', '', 'MDY'),
-    ('2 Jan 2020', '', 'MDY'),
-    ('1/2/2020 12:34', '', 'MDY'),
-    ('1/2/2020 12:34 PM', '', 'MDY'),
-    ('2019-12-28T14:27:25', '', 'MDY'),  # ISO 8601
-    ('2019-12-28T14:27:25+00:00', '', 'MDY'),  # ISO 8601 with timezone info
-    ('2019-12-28T14:27:25', '', 'MDY'),  # ISO 8601
-    ('2019-12-28T14:27:25Z', '', 'MDY'),  # ISO 8601 (Z == GMT/UTC)
-    ('20191228T142725Z', '', 'MDY'),  # ISO 8601 with timezone
-    ('--01-02', '', 'MDY'),  # ISO 8601 date without a year
-    ('', '', 'MDY'),  # ISO 8601
+    ('2020-01-02', '2020-01-02', DateFormat.YMD),
+    ('01/02/2020', '2020-01-02', DateFormat.MDY),
+    ('1/2/2020', '2020-01-02', DateFormat.MDY),
+    ('01/02/20', '2020-01-02', DateFormat.MDY),
+    ('1/2/20', '2020-01-02', DateFormat.MDY),
+    ('02/01/2020', '2020-01-02', DateFormat.DMY),
+    ('2/1/2020', '2020-01-02', DateFormat.DMY),
+    ('02/01/20', '2020-01-02', DateFormat.DMY),
+    ('2/1/20', '2020-01-02', DateFormat.DMY),
+    ('1/2/20/20', '', DateFormat.MDY),
+    ('1/2', '', DateFormat.MDY),
+    ('1/2/020', '', DateFormat.MDY),
+    ('1/2/20202', '', DateFormat.MDY),
+    ('222/1/2020', '', DateFormat.MDY),
+    ('2/29/2020', '2020-02-29', DateFormat.MDY),
+    ('2/29/2021', '', DateFormat.MDY),
+    ('January 2, 2020', '', DateFormat.MDY),
+    ('2 Jan 2020', '', DateFormat.MDY),
+    ('1/2/2020 12:34', '', DateFormat.MDY),
+    ('1/2/2020 12:34 PM', '', DateFormat.MDY),
+    ('2019-12-28T14:27:25', '', DateFormat.MDY),  # ISO 8601
+    ('2019-12-28T14:27:25+00:00', '', DateFormat.MDY),  # ISO 8601 with timezone info
+    ('2019-12-28T14:27:25', '', DateFormat.MDY),  # ISO 8601
+    ('2019-12-28T14:27:25Z', '', DateFormat.MDY),  # ISO 8601 (Z == GMT/UTC)
+    ('20191228T142725Z', '', DateFormat.MDY),  # ISO 8601 with timezone
+    ('--01-02', '', DateFormat.MDY),  # ISO 8601 date without a year
+    ('', '', DateFormat.MDY),  # ISO 8601
     ('', '', None),
     (None, '', None),
 ])
 # pylint: disable=missing-function-docstring
 def test_normalize_dates(
-        date_str: str, expected: str, date_format: Optional[str]) -> None:
+        date_str: str, expected: str, date_format: Any) -> None:
     if not date_format:
         assert normalize_date(date_str) == expected
     else:

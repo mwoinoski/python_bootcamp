@@ -3,6 +3,7 @@ Transformation functions for ETL procesing.
 """
 from collections import Counter
 from datetime import datetime
+from enum import Enum, unique
 import re
 from typing import List, Dict
 
@@ -82,14 +83,25 @@ def make_column_names_unique(cols: List[str], max_len: int = 64) -> List[str]:
     return new_cols
 
 
+@unique
+class DateFormat(Enum):
+    """ Valid values for date formats """
+    YMD = 1
+    MDY = 2
+    DMY = 3
+
+
 # Date formats in use:
 # YMD: ISO 8601, CN, JP, CA, others
 # DMY: IN, EU, RU, others
 # MDY: US, others
-date_format_patterns: Dict[str, re.Pattern] = {
-    'YMD': re.compile(r'^(?P<year>\d+)\D(?P<month>\d+)\D(?P<day>\d+)$'),
-    'MDY': re.compile(r'^(?P<month>\d+)\D(?P<day>\d+)\D(?P<year>\d+)$'),
-    'DMY': re.compile(r"""
+date_format_patterns: Dict[DateFormat, re.Pattern] = {
+    DateFormat.YMD:
+        re.compile(r'^(?P<year>\d+)\D(?P<month>\d+)\D(?P<day>\d+)$'),
+    DateFormat.MDY:
+        re.compile(r'^(?P<month>\d+)\D(?P<day>\d+)\D(?P<year>\d+)$'),
+    DateFormat.DMY:
+        re.compile(r"""
         ^                # beginning of line
         (?P<day>\d+)     # group named 'day' that captures one or more digits 
         \D               # one non-digit
@@ -118,7 +130,7 @@ def get_valid_year(year_str: str) -> int:
     return valid_year
 
 
-def normalize_date(date: str, date_format: str = 'YMD') -> str:
+def normalize_date(date: str, date_format: DateFormat = DateFormat.YMD) -> str:
     """
     Normalizes a date string to ISO 8601 format YYYY-MM-DD
     Valid date_format values:
@@ -127,8 +139,8 @@ def normalize_date(date: str, date_format: str = 'YMD') -> str:
         'DMY' (day-month-year)
     """
     if date_format not in date_format_patterns.keys():
-        msg: str = f'invalid date_format value "{date_format}". ' \
-                   f'Valid values are {date_format_patterns.keys()}'
+        msg: str = f'invalid date_format value "{date_format}". Valid values' \
+                   f'are {list(date_format_patterns)}'
         raise ValueError(msg)
 
     normalized_date: str = ''
