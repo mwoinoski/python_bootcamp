@@ -30,12 +30,12 @@ class CleanCommand(Command):
                     os.remove(name)
 
 
-# Get the long description from the README.rst file.
+# Get the long description from the README.md file.
 # This will be become the contents of the project's home page on PyPI.
 # Note that we can't assume that the Python interpreter's working directory is
-# this directory, so we can't use a relative path to access README.rst
+# this directory, so we can't use a relative path to access README.md
 here = os.path.abspath(os.path.dirname(__file__))
-with codecs.open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
+with codecs.open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
@@ -44,7 +44,7 @@ setup(
     description='Case study project for Sutter Python Bootcamp',
     long_description=long_description,
     platforms=['all'],
-    install_requires=['pyspark'],  # not used; just an example
+    install_requires=['pyspark', 'pytest'],  # not used; just an example
     author='Sutter Python Dev',
     author_email='pythondev@sutter.com',
     #  find_packages() function saves you from listing all packages explicitly:
