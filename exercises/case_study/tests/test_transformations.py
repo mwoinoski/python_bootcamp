@@ -4,6 +4,7 @@ Unit tests for transformation logic
 from datetime import datetime
 from typing import List, Dict, Optional
 from unittest import TestCase
+import pytest
 from pytest import mark
 
 from case_study.transformations import (
@@ -22,6 +23,7 @@ from case_study.transformations import (
     ('  state province  ', 64, 'state_province'),
     ('state province', 10, 'state_prov'),
 ])
+# pylint: disable=missing-function-docstring
 def test_normalize_column_names(name, max_len, expected) -> None:
     assert expected == normalize_column_name(name, max_len)
 
@@ -61,12 +63,19 @@ def test_normalize_column_names(name, max_len, expected) -> None:
     ('', '', None),
     (None, '', None),
 ])
+# pylint: disable=missing-function-docstring
 def test_normalize_dates(
         date_str: str, expected: str, date_format: Optional[str]) -> None:
     if not date_format:
         assert normalize_date(date_str) == expected
     else:
         assert normalize_date(date_str, date_format) == expected
+
+
+# pylint: disable=missing-function-docstring
+def test_normalize_dates_bad_date_format() -> None:
+    with pytest.raises(ValueError):
+        normalize_date('20/1/2', 'YDM')
 
 
 @mark.parametrize('date, expected', [
@@ -77,6 +86,7 @@ def test_normalize_dates(
     (None, ''),
     ('', ''),
 ])
+# pylint: disable=missing-function-docstring
 def test_convert_date_to_timestamp(date: datetime, expected: str) -> None:
     assert convert_date_to_timestamp(date) == expected
 
@@ -94,11 +104,14 @@ def test_convert_date_to_timestamp(date: datetime, expected: str) -> None:
     (None, 0),
     ('', 0),
 ])
+# pylint: disable=missing-function-docstring
 def test_get_valid_year(year_str: str, expected: int) -> None:
     assert get_valid_year(year_str) == expected
 
 
-class MyTestCase(TestCase):
+class TransformationsTest(TestCase):
+    """ Unit test cases for functions in transformations.py """
+
     # def test_make_column_names_unique_no_dupes(self) -> None:
     #     cols: List[str] = ['first', 'second', 'third', 'fourth', 'fifth']
     #     expected: List[str] = ['first_001', 'second_002', 'third_003',
@@ -117,6 +130,7 @@ class MyTestCase(TestCase):
     #
     #     assert actual == expected
 
+    # pylint: disable=no-self-use,missing-function-docstring
     def test_make_column_names_unique_no_dupes(self) -> None:
         cols: List[str] = ['first', 'second', 'third', 'fourth', 'fifth']
         expected: List[str] = ['first', 'second', 'third', 'fourth', 'fifth']
@@ -125,6 +139,7 @@ class MyTestCase(TestCase):
 
         assert actual == expected
 
+    # pylint: disable=no-self-use,missing-function-docstring
     def test_make_column_names_unique_dupes(self) -> None:
         cols: List[str] = ['first', 'second', 'third', 'second',
                            'third', 'fourth']
@@ -135,6 +150,7 @@ class MyTestCase(TestCase):
 
         assert actual == expected
 
+    # pylint: disable=no-self-use,missing-function-docstring
     def test_make_column_names_unique_dupes_different_case(self) -> None:
         cols: List[str] = ['first', 'second', 'third', 'SECOND',
                            'Third', 'fourth']
@@ -145,6 +161,7 @@ class MyTestCase(TestCase):
 
         assert actual == expected
 
+    # pylint: disable=no-self-use,missing-function-docstring
     def test_make_column_names_unique_dupes_two_digit_suffix(self) -> None:
         cols: List[str] = ['x', 'y'] + ['a'] * 20
         expected: List[str] = ['x', 'y'] + [f'a_{i:02d}' for i in range(1, 21)]
@@ -153,6 +170,7 @@ class MyTestCase(TestCase):
 
         assert actual == expected
 
+    # pylint: disable=no-self-use,missing-function-docstring
     def test_make_column_names_unique_dupes_three_digit_suffix(self) -> None:
         cols: List[str] = ['x', 'y'] + ['a'] * 200
         expected: List[str] = ['x', 'y'] + [f'a_{i:03d}' for i in range(1, 201)]
@@ -161,6 +179,7 @@ class MyTestCase(TestCase):
 
         assert actual == expected
 
+    # pylint: disable=no-self-use,missing-function-docstring
     def test_make_column_names_unique_dupes_after_truncation(self) -> None:
         cols: List[str] = ['domain_score', 'domain_score_unweighted']
         expected: List[str] = ['domain_s_1', 'domain_s_2']
@@ -169,6 +188,7 @@ class MyTestCase(TestCase):
 
         assert actual == expected
 
+    # pylint: disable=no-self-use,missing-function-docstring
     def test_make_column_names_unique_dupe_after_trunc_boundary(self) -> None:
         cols: List[str] = ['domain_score', 'domain_score_unweighted']
         expected: List[str] = ['domain_sco_1', 'domain_sco_2']
@@ -177,6 +197,7 @@ class MyTestCase(TestCase):
 
         assert actual == expected
 
+    # pylint: disable=no-self-use,missing-function-docstring
     def test_make_column_names_unique_dupe_max_len_minus_one(self) -> None:
         cols: List[str] = ['domain_score', 'domain_score']
         expected: List[str] = ['domain_scor_1', 'domain_scor_2']
@@ -185,6 +206,7 @@ class MyTestCase(TestCase):
 
         assert actual == expected
 
+    # pylint: disable=no-self-use,missing-function-docstring
     def test_make_column_names_unique_last_char_is_underscore(self) -> None:
         cols: List[str] = ['domain_score_', 'domain_score_']
         expected: List[str] = ['domain_score_1', 'domain_score_2']
@@ -193,6 +215,7 @@ class MyTestCase(TestCase):
 
         assert actual == expected
 
+    # pylint: disable=no-self-use,missing-function-docstring
     def test_make_column_names_unique_last_char_after_truncation_is_underscore(
             self) -> None:
         cols: List[str] = ['domain_score_min', 'domain_score_max']
@@ -202,6 +225,7 @@ class MyTestCase(TestCase):
 
         assert actual == expected
 
+    # pylint: disable=no-self-use,missing-function-docstring
     def test_make_column_names_unique_dupe_one_and_two_digit_suffix(
             self) -> None:
         """
@@ -218,6 +242,7 @@ class MyTestCase(TestCase):
 
         assert actual == expected
 
+    # pylint: disable=no-self-use,missing-function-docstring
     def test_identify_duplicate_columns_after_normalization(self) -> None:
         cols: List[str] = [
             'domain_score', 'state', 'city', 'country', 'street1', 'street2',
@@ -235,7 +260,6 @@ class MyTestCase(TestCase):
         assert actual == expected
 
     @mark.skip("""TODO""")
+    # pylint: disable=no-self-use,missing-function-docstring
     def test_supply_mappings_for_duplicate_column_names(self) -> None:
         pass
-
-

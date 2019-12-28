@@ -106,7 +106,7 @@ def get_valid_year(year_str: str) -> int:
     Convert year_str to an int in the range 1890 < year < 2150.
     Return 0 if year_str is not a valid 2- or 4-digit year.
     """
-    valid_year: int = 0;
+    valid_year: int = 0
     if year_str:
         # year must be 2 or 4 digits
         if len(year_str) == 2 or len(year_str) == 4:
@@ -119,33 +119,39 @@ def get_valid_year(year_str: str) -> int:
 
 
 def normalize_date(date: str, date_format: str = 'YMD') -> str:
-    """ Normalizes a date string to ISO 8601 format YYYY-MM-DD """
+    """
+    Normalizes a date string to ISO 8601 format YYYY-MM-DD
+    Valid date_format values:
+        'YMD' (year-month-day)
+        'MDY' (month-day-year)
+        'DMY' (day-month-year)
+    """
+    if date_format not in date_format_patterns.keys():
+        msg: str = f'invalid date_format value "{date_format}". ' \
+                   f'Valid values are {date_format_patterns.keys()}'
+        raise ValueError(msg)
+
     normalized_date: str = ''
     if date:
         date = date.strip()
         pattern = date_format_patterns.get(date_format)
-        if pattern:
-            match = pattern.match(date)
-            if match:
-                year_str: str = match.group('year')
-                # year must be 2 or 4 digits
-                if len(year_str) == 2 or len(year_str) == 4:
-                    year: int = int(year_str)
-                    if year >= 0 and (year < 100 or (1890 < year < 2150)):
-                        if year < 100:
-                            year += 2000
-                        month: int = int(match.group('month'))
-                        day: int = int(match.group('day'))
-                        try:
-                            normalized_date = datetime(year, month, day).isoformat()[:10]
-                        except ValueError:
-                            pass
-                        # normalized_date = f'{year}-{month:02d}-{day:02d}'
+        match = pattern.match(date)
+        if match:
+            year: int = get_valid_year(match.group('year'))
+            if year:
+                month: int = int(match.group('month'))
+                day: int = int(match.group('day'))
+                # normalized_date = f'{year}-{month:02d}-{day:02d}'
+                try:
+                    normalized_date = \
+                        datetime(year, month, day).isoformat()[:10]
+                except ValueError:
+                    pass
     return normalized_date
 
 
-# TODO: add timezone offset?
-# See https://docs.python.org/3.7/library/datetime.html?highlight=timestamp#datetime.datetime.utcoffset
+# pylint: disable=line-too-long,W0511
+# TODO: add timezone offset? See https://docs.python.org/3.7/library/datetime.html?highlight=timestamp#datetime.datetime.utcoffset
 def convert_date_to_timestamp(date: datetime) -> str:
     """ Return a timestamp string in ISO 8601 format YYYY-MM-DDTHH:MM:SS """
     timestamp: str = ''
