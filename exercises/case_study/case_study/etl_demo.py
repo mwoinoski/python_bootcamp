@@ -27,6 +27,9 @@ import pyspark.sql.functions as f
 
 # MW TODO: convert to class
 
+# MW TODO: send email in case of errors
+#          https://realpython.com/python-send-email/
+
 default_config_file: str = 'config.ini'
 logging_config_file: str = 'logging.ini'
 logger_name: str = 'etl_demo'  # MW TODO: replace with EtlDemo.__module__
