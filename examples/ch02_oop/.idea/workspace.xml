@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ba71ba54-52fd-4ffc-99f2-077d2ad957bd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/tests/model/person_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/model/person_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07_error_handling/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch07_error_handling/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>, debug=False</find>
+      <find>spark</find>
+      <find>&quot;person.jsonl&quot;</find>
+      <find>equals</find>
+      <find>self</find>
+      <find>self\.assertEqual\(</find>
+      <find>self\.</find>
+      <find>PersonDaoSparkTest\.</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>PersonDaoSparkTest.data_file</replace>
+      <replace>assert</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1TX4Mskv221Q5dTuqcFBM1SbRUn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manage_accounts/model" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\manage_accounts\model" />
+      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\tests\persistence" />
+      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\tests\model" />
+      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\backups" />
+      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\backups" />
+      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\tests\persistence" />
+      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\tests" />
+      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\manage_accounts\persistence" />
+      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\manage_accounts\model" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python tests.pytest in provider_test.py">
+    <configuration name="pytest in person_dao_spark_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="ch01_examples" />
+      <option name="INTERPRETER_OPTIONS" value="-W ignore::DeprecationWarning" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/persistence" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/persistence/person_dao_spark_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in person_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="ch01_examples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/model/person_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in provider_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="ch01_examples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manage_accounts/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/manage_accounts/model/provider_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python tests.pytest in person_dao_spark_test.py" />
+      <item itemvalue="Python tests.pytest in person_test.py" />
+      <item itemvalue="Python tests.pytest in provider_test.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest in provider_test.py" />
+        <item itemvalue="Python tests.pytest in person_test.py" />
+        <item itemvalue="Python tests.pytest in person_dao_spark_test.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba71ba54-52fd-4ffc-99f2-077d2ad957bd" name="Default Changelist" comment="" />
+      <created>1573593061717</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573593061717</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_in_provider_test_py - 2019.12.16 at 15h 09m 54s.xml">
+      <configuration name="pytest in provider_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_provider_test_py - 2019.12.16 at 15h 12m 46s.xml">
+      <configuration name="pytest in provider_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_provider_test_py - 2019.12.16 at 15h 13m 44s.xml">
+      <configuration name="pytest in provider_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_provider_test_py - 2019.12.16 at 15h 14m 51s.xml">
+      <configuration name="pytest in provider_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_provider_test_py - 2019.12.16 at 15h 16m 20s.xml">
+      <configuration name="pytest in provider_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_provider_test_py - 2019.12.16 at 15h 18m 23s.xml">
+      <configuration name="pytest in provider_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_provider_test_py - 2019.12.16 at 15h 22m 07s.xml">
+      <configuration name="pytest in provider_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_provider_test_py - 2019.12.16 at 15h 22m 26s.xml">
+      <configuration name="pytest in provider_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_provider_test_py - 2019.12.16 at 15h 23m 46s.xml">
+      <configuration name="pytest in provider_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_provider_test_py - 2019.12.16 at 15h 24m 17s.xml">
+      <configuration name="pytest in provider_test.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="55a5af72-8fdc-4efa-869a-e275e0833cfc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/python_bootcamp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ch01_unit_testing.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data_cleansing_parameterize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ch02_oop/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ch02_oop/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ch02_oop/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ch02_oop/manage_accounts/persistence/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ch02_oop/tests/model/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ch02_oop/tests/persistence/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/.idea/ch01_examples.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/.idea/ch01_examples.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/.idea/dictionaries/CORP_facilitator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/.idea/dictionaries/CORP_facilitator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/.idea/dictionaries/Mike.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/.idea/dictionaries/Mike.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/backups/person_dao_mongodb.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/backups/person_dao_mongodb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/backups/person_dao_mongodb_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/backups/person_dao_mongodb_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/backups/person_dao_spark_unittest_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/backups/person_dao_spark_unittest_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/backups/person_mongodb_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/backups/person_mongodb_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/backups/person_unittest_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/backups/person_unittest_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/hello.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/manage_accounts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_cleansing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/manage_accounts/model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_data_cleansing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/manage_accounts/model/address.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/manage_accounts/model/address.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/manage_accounts/model/insurance_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/manage_accounts/model/insurance_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/manage_accounts/model/patient.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/manage_accounts/model/patient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/manage_accounts/model/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/manage_accounts/model/person.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/manage_accounts/model/provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/manage_accounts/model/provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/manage_accounts/model/provider_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/manage_accounts/model/provider_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/manage_accounts/persistence/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/manage_accounts/persistence/person_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/manage_accounts/persistence/person_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/manage_accounts/persistence/person_dao_readonly.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/manage_accounts/persistence/person_dao_readonly.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/manage_accounts/persistence/person_dao_spark.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/manage_accounts/persistence/person_dao_spark.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/person.jsonl" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/person.jsonl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/manage_accounts/model/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/tests/model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/manage_accounts/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/tests/model/person_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/tests/model/person_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/tests/persistence/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/tests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/tests/persistence/person_dao_spark_test.jsonl" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/tests/persistence/person_dao_spark_test.jsonl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_examples/tests/persistence/person_dao_spark_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_oop/tests/persistence/person_dao_spark_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07_error_handling/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch07_error_handling/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1VoYRAFCAGHvkObD784gbRQwDeJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55a5af72-8fdc-4efa-869a-e275e0833cfc" name="Default Changelist" comment="" />
+      <created>1577920903112</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577920903112</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,4 +1,7 @@
 #! /usr/bin/python
+"""
+Simple Python demo.
+"""
 
 
 def main():

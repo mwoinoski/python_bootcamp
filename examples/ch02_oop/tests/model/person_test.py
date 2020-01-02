@@ -2,6 +2,7 @@
 Unit tests for the Person class.
 """
 
+import copy
 from manage_accounts.model.person import Person
 from datetime import datetime
 from pytest import raises
@@ -56,11 +57,18 @@ def test_init_all_args_empty() -> None:
         Person("", "", "")
 
 
+def test_eq_instances_are_exact_copies() -> None:
+    p1 = Person("Marie", "Skłodowska", "Curie")
+    p2 = copy.deepcopy(p1)
+
+    assert p1 == p2  # "==" calls p1.__eq__(p2)
+
+
 def test_eq_instances_equal() -> None:
     p1 = Person("Marie", "Skłodowska", "Curie")
     p2 = Person("Marie", "Skłodowska", "Curie")
 
-    assert p1 == p2  # "==" calls p1.__eq__(p2)
+    assert p1 != p2  # created_time attributes are (almost certainly) different
 
 
 def test_eq_instances_not_equal() -> None:
