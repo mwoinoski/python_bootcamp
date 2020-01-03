@@ -71,5 +71,6 @@ print(f'+-----------+------------+')
 print(f'|Customer ID|Total Amount|')
 print(f'+-----------+------------+')
 for row in result:
-    print(f'|{row.customer_id:>11d}|{row.total:>12.2f}|')
+    print(f'|{row["customer_id"]:>11d}|{row["total"]:>12.2f}|')
+    # print(f'|{row.customer_id:>11d}|{row.total:>12.2f}|')
 print(f'+-----------+------------+')
