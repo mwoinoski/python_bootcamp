@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5912c98a-4c28-46c6-89eb-462ef13c5fbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/ex01_unit_testing.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_from_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_from_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_unit_testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch01_unit_testing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_unit_testing/test_data_cleansing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch01_unit_testing/test_data_cleansing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structors/.idea/ch03_control_structors.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structors/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structors/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structors/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structors/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structors/date_normalization.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structors/test_date_normalization.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structors/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structors/date_normalization.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structors/test_date_normalization.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_control_structures/date_normalization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/test_date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_control_structures/test_date_normalization.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
