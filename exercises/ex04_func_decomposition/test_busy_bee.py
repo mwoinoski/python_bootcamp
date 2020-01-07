@@ -24,12 +24,12 @@ class TestBusyBee:
     def test_find_all_words_three_letters_all_results_max_len_success(self):
         letters = 'but'
         words = self.busy_bee.find_all_words(letters)
-        assert set(words) == set(['but', 'btu', 'bu', 'bt', 'tb', 'tu', 'tub', 'ut'])
+        assert set(words) == set(['but', 'tub', 'ut'])
 
     def test_find_all_words_three_letters_results_different_lengths_success(self):
         letters = 'cat'
         words = self.busy_bee.find_all_words(letters)
-        assert set(words) == set(['a', 'at', 'act', 'ca', 'ct', 'cat', 'ta', 'tc'])
+        assert set(words) == set(['a', 'at', 'act', 'cat', 'ta'])
 
     def test_find_all_words_seven_letters_success(self):
         letters = 'tadflow'
@@ -37,9 +37,10 @@ class TestBusyBee:
         all_words = self.busy_bee.find_all_words(letters)
 
         assert set(all_words).issuperset(set(
-            ['a', 'ado', 'aft', 'aloft', 'alto', 'at', 'awl', 'daft', 'do',
-             'dot', 'dolt', 'fad', 'flat', 'float', 'flow', 'fowl', 'lad',
-             'loaf', 'lot', 'low', 'loft', 'oaf', 'oat', 'oft', 'old', 'owl',
-             'tad', 'tao', 'toad', 'told', 'tow', 'two', 'waft', 'wold',
+            ['a', 'ado', 'aft', 'aloft', 'alto', 'at', 'awl', 'awol', 'daft', 'do',
+             'dot', 'dolt', 'fad', 'flat', 'float', 'flaw', 'fat', 'foal', 'fold',
+             'flow', 'fowl', 'lad', 'law', 'load',
+             'loaf', 'lot', 'low', 'loft', 'of', 'oaf', 'oat', 'oft', 'old', 'owl',
+             'tad', 'to', 'tao', 'toad', 'told', 'tow', 'two', 'wad', 'waft', 'wold',
              'wolf']
         ))
