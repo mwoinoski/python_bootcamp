@@ -2,61 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea160917-6aa6-4729-8142-05f5b7500c28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ex04_func_decomposition.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/busy_bee.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_busy_bee.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch01_examples/facility_locations.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/process_csv_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch01_examples/process_csv_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/test_process_csv_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch01_examples/test_process_csv_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_busy_bee.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_busy_bee.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5483425">
-      <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test_busy_bee.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="12" selection-start-line="12" selection-end-line="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/busy_bee.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="8" column="77" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test_busy_bee.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="264">
-                  <caret line="32" selection-start-line="32" selection-end-line="32" />
-                  <folding>
-                    <element signature="e#56#79#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -68,59 +24,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/test_busy_bee.py" />
-        <option value="$PROJECT_DIR$/busy_bee.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="583" />
-    <option name="y" value="-7" />
-    <option name="width" value="1343" />
-    <option name="height" value="1056" />
-  </component>
+  <component name="ProjectId" id="1W1p2qlGVPkiAFq4Aw52o24Hb8t" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ex04_func_decomposition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex04_func_decomposition" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python tests.pytest in test_busy_bee.py">
     <configuration default="true" type="tests" factoryName="py.test">
@@ -207,6 +124,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -220,83 +149,30 @@
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="pytest_for_test_busy_bee_TestBusyBee_test_find_all_words_three_letters_results_different_lengths_success - 2020.01.04 at 14h 19m 11s.xml">
-      <configuration name="pytest for test_busy_bee.TestBusyBee.test_find_all_words_three_letters_results_different_lengths_success" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_busy_bee_TestBusyBee_test_find_all_words_three_letters_results_different_lengths_success - 2020.01.04 at 14h 22m 08s.xml">
-      <configuration name="pytest for test_busy_bee.TestBusyBee.test_find_all_words_three_letters_results_different_lengths_success" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_busy_bee_TestBusyBee_test_find_all_words_three_letters_results_different_lengths_success - 2020.01.04 at 14h 22m 12s.xml">
-      <configuration name="pytest for test_busy_bee.TestBusyBee.test_find_all_words_three_letters_results_different_lengths_success" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_busy_bee_py - 2020.01.04 at 14h 22m 22s.xml">
-      <configuration name="pytest in test_busy_bee.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_busy_bee_TestBusyBee_test_find_all_words_three_letters_all_results_max_len_success - 2020.01.04 at 14h 23m 45s.xml">
-      <configuration name="pytest for test_busy_bee.TestBusyBee.test_find_all_words_three_letters_all_results_max_len_success" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_busy_bee_TestBusyBee_test_find_all_words_three_letters_all_results_max_len_success - 2020.01.04 at 14h 23m 50s.xml">
-      <configuration name="pytest for test_busy_bee.TestBusyBee.test_find_all_words_three_letters_all_results_max_len_success" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_busy_bee_TestBusyBee_test_find_all_words_three_letters_all_results_max_len_success - 2020.01.04 at 14h 24m 25s.xml">
-      <configuration name="pytest for test_busy_bee.TestBusyBee.test_find_all_words_three_letters_all_results_max_len_success" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_busy_bee_TestBusyBee_test_find_all_words_three_letters_all_results_max_len_success - 2020.01.04 at 14h 24m 29s.xml">
-      <configuration name="pytest for test_busy_bee.TestBusyBee.test_find_all_words_three_letters_all_results_max_len_success" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_busy_bee_py - 2020.01.04 at 14h 24m 37s.xml">
-      <configuration name="pytest in test_busy_bee.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_busy_bee_py - 2020.01.04 at 14h 25m 39s.xml">
-      <configuration name="pytest in test_busy_bee.py" configurationId="tests" />
-    </history-entry>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="583" y="-7" width="1343" height="1056" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23831418" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2156013" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3217768" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/words.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6011264" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_busy_bee.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wq">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/busy_bee.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="77" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="427" y="241" width="436" height="489" key="FileChooserDialogImpl" timestamp="1578326845599">
+      <screen x="0" y="24" width="1289" height="910" />
+    </state>
+    <state x="427" y="241" width="436" height="489" key="FileChooserDialogImpl/0.24.1289.910@0.24.1289.910" timestamp="1578326845599" />
+    <state width="1189" height="340" key="GridCell.Tab.0.bottom" timestamp="1578328076048">
+      <screen x="0" y="24" width="1210" height="910" />
+    </state>
+    <state width="1189" height="340" key="GridCell.Tab.0.bottom/0.24.1210.910@0.24.1210.910" timestamp="1578328076048" />
+    <state width="1189" height="340" key="GridCell.Tab.0.center" timestamp="1578328076046">
+      <screen x="0" y="24" width="1210" height="910" />
+    </state>
+    <state width="1189" height="340" key="GridCell.Tab.0.center/0.24.1210.910@0.24.1210.910" timestamp="1578328076046" />
+    <state width="1189" height="340" key="GridCell.Tab.0.left" timestamp="1578328076046">
+      <screen x="0" y="24" width="1210" height="910" />
+    </state>
+    <state width="1189" height="340" key="GridCell.Tab.0.left/0.24.1210.910@0.24.1210.910" timestamp="1578328076046" />
+    <state width="1189" height="340" key="GridCell.Tab.0.right" timestamp="1578328076047">
+      <screen x="0" y="24" width="1210" height="910" />
+    </state>
+    <state width="1189" height="340" key="GridCell.Tab.0.right/0.24.1210.910@0.24.1210.910" timestamp="1578328076047" />
+    <state x="133" y="116" key="SettingsEditor" timestamp="1578326859606">
+      <screen x="0" y="24" width="1289" height="910" />
+    </state>
+    <state x="133" y="116" key="SettingsEditor/0.24.1289.910@0.24.1289.910" timestamp="1578326859606" />
   </component>
 </project>

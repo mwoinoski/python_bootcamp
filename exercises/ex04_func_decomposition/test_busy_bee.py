@@ -30,3 +30,16 @@ class TestBusyBee:
         letters = 'cat'
         words = self.busy_bee.find_all_words(letters)
         assert set(words) == set(['a', 'at', 'act', 'ca', 'ct', 'cat', 'ta', 'tc'])
+
+    def test_find_all_words_seven_letters_success(self):
+        letters = 'tadflow'
+
+        all_words = self.busy_bee.find_all_words(letters)
+
+        assert set(all_words).issuperset(set(
+            ['a', 'ado', 'aft', 'aloft', 'alto', 'at', 'awl', 'daft', 'do',
+             'dot', 'dolt', 'fad', 'flat', 'float', 'flow', 'fowl', 'lad',
+             'loaf', 'lot', 'low', 'loft', 'oaf', 'oat', 'oft', 'old', 'owl',
+             'tad', 'tao', 'toad', 'told', 'tow', 'two', 'waft', 'wold',
+             'wolf']
+        ))
