@@ -24,18 +24,18 @@ class Person:
         names = [self.given_name, self.middle_name, self.family_name]
         return " ".join(n for n in names if n)
 
-    def __eq__(self, other):
-        """ Called when Person instances are compared with == operator """
+    def __eq__(self, other) -> bool:
+        """ Called when Person instances are compared with == or != operators """
         return isinstance(other, Person) and \
             other.given_name == self.given_name and \
             other.middle_name == self.middle_name and \
             other.family_name == self.family_name
 
-    def __str__(self):
+    def __str__(self) -> str:
         """ Result is useful for to a client (e.g., in a report) """
         return self.full_name()
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         """ Result is useful for a developer (e.g., in a debugger) """
         return f"given_name='{self.given_name}'," \
             f"middle_name='{self.middle_name}'," \

@@ -1,10 +1,10 @@
 """
-Busy Bee word game module.
+Scrabble Helper word game module.
 """
 
 
-class BusyBee:
-    """ Busy Bee game solver """
+class ScrabbleHelper:
+    """ Scrabble Helper game solver """
 
     # TODO: find better word list. words.txt has too many abbreviations, etc.
 

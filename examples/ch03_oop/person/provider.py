@@ -35,7 +35,6 @@ class Provider(Person):
     def __str__(self):
         return repr(self)
 
-    @staticmethod
     def is_valid_npi(npi: str) -> bool:
         """
         NPI must be 10 digits long

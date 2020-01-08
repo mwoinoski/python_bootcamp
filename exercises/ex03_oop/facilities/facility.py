@@ -2,13 +2,11 @@
 Base class for all facilities
 """
 
-from abc import ABCMeta, abstractmethod
-
 from facilities.address import Address
 
 
 # TODO: define a class named Facility
-class Facility(metaclass=ABCMeta):
+class Facility:
     address: Address
 
     # TODO: define __init__ method
@@ -17,6 +15,5 @@ class Facility(metaclass=ABCMeta):
         pass
 
     # TODO: define abstract method
-    @abstractmethod
     def calculate_quality_score(self):
         pass
