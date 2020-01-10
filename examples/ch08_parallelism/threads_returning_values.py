@@ -56,7 +56,7 @@ def main():
 
     best = max(rating_threads, key=lambda thread: thread.rating)
 
-    print(f'\nhighest rating is {best.rating:.1f}%s for {best.facility}')
+    print(f'\nhighest rating is {best.rating:.1f}% for {best.facility}')
 
 
 if __name__ == '__main__':
