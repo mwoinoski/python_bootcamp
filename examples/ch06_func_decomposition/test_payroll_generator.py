@@ -1,7 +1,8 @@
 from unittest.mock import Mock
 from pytest import raises
 from employee_dao import DaoError
-from payroll_generator import PayrollGenerator
+from payroll_generator import PayrollGenerator, PayrollGeneratorError
+
 
 class TestPayrollGenerator:
     def setup_method(self, method):

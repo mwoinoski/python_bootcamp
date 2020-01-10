@@ -2,103 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5912c98a-4c28-46c6-89eb-462ef13c5fbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../examples/ch02_control_structs/.idea/ch03_control_structors.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch03_oop/.idea/ch01_examples.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch03_oop/.idea/dictionaries/CORP_facilitator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch03_oop/.idea/dictionaries/Mike.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch03_oop/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch03_oop/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex02_control_structures/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex03_oop/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex03_oop/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex03_oop/facilities/address.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex03_oop/tests/test_hospital.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex03_oop/tests/test_in_patient_rehab.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/.idea/ch01_examples.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/hvbp_clinical_care_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/person_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/process_csv_files.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/solution_person_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/solution_test_person_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/test_person_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/test_process_csv_files.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_unit_testing/data_cleansing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_unit_testing/hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch01_unit_testing/hello.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_unit_testing/test_data_cleansing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_unit_testing/test_data_cleansing_full.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_unit_testing/test_data_cleansing_parameterize.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/ch01_examples.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/dictionaries/CORP_facilitator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/dictionaries/Mike.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/assets/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/backups/person_dao_mongodb.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/backups/person_dao_mongodb_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/backups/person_dao_spark_unittest_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/backups/person_mongodb_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/backups/person_unittest_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/model/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/model/address.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/model/insurance_info.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/model/patient.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/model/person.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/model/provider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/model/provider_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/persistence/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/persistence/person_dao.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/persistence/person_dao_readonly.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/persistence/person_dao_spark.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/person.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/tests/model/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/tests/model/test_person.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/tests/model/test_person_unittest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/tests/persistence/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/tests/persistence/person_dao_spark_test.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/tests/persistence/person_dao_spark_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structures/.idea/ch03_control_structors.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structures/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structures/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structures/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structures/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structures/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_examples/type_hints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_examples/type_hints_fixed.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/.idea/ex02_oop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/.idea/ex03_oop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch03_oop/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch03_oop/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/people/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/people/patient.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/facilities/hospital.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/people/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/facilities/facility.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/people/provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/facilities/in_patient_rehab.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/tests/context.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/tests/patient_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/facilities/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/tests/person_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/tests/test_facility.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/tests/provider_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/tests/test_address.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch03_oop/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/.idea/ex03_control_structors.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02_control_structures/.idea/ex03_control_structors.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02_control_structures/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02_control_structures/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02_control_structures/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02_control_structures/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02_control_structures/date_normalization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/test_date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02_control_structures/test_date_normalization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex04_func_decomposition/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_func_decomposition/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex04_func_decomposition/test_busy_bee.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_func_decomposition/test_busy_bee.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/logging.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/logging_decorator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/recursion_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/recursion_search_btree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/recursion_tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/structure_chart_pseudocode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/structure_chart_working.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/tower_of_hanoi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/tower_of_hanoi_iterative.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch08_parallelism/thread_demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/payroll_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/payroll_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/test_payroll_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/test_payroll_generator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,11 +141,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest in test_etl_process.py" />
-      <item itemvalue="Python tests.pytest in test_send_email.py" />
       <item itemvalue="Python tests.pytest for test_send_email.SendEmailTest.test_send_secured_email" />
       <item itemvalue="Python tests.pytest for test_send_email.SendEmailTest.test_send_secured_html_email" />
       <item itemvalue="Python tests.pytest for test_send_email.SendEmailTest.test_send_unsecured_email" />
+      <item itemvalue="Python tests.pytest in test_etl_process.py" />
+      <item itemvalue="Python tests.pytest in test_send_email.py" />
     </list>
     <recent_temporary>
       <list>

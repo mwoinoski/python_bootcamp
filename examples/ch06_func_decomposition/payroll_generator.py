@@ -1,3 +1,6 @@
+from employee_dao import DaoError
+
+
 class PayrollGenerator:
     def __init__(self, employee_dao, pay_calculator, check_printer):
         self.employee_dao = employee_dao
@@ -10,7 +13,11 @@ class PayrollGenerator:
         valid_payroll_record_count = 0
 
         self.employee_dao.start_payroll_batch()
-        valid_payroll_records = self.employee_dao.get_valid_payroll_records()
+        try:
+            valid_payroll_records = self.employee_dao.get_valid_payroll_records()
+        except DaoError as de:
+            raise PayrollGeneratorError from de
+
         for payroll_record in valid_payroll_records:
             valid_payroll_record_count += 1
             payroll_check_data = self.pay_calculator.calculate_net_pay(payroll_record)
@@ -24,3 +31,7 @@ class PayrollGenerator:
             valid_payroll_record_count, \
             payroll_check_data_record_count, \
             printed_check_count
+
+
+class PayrollGeneratorError(Exception):
+    pass
