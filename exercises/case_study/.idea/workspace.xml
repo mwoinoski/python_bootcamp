@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5912c98a-4c28-46c6-89eb-462ef13c5fbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/logging.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/logging_decorator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/recursion_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/recursion_search_btree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/recursion_tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/structure_chart_pseudocode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/structure_chart_working.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/tower_of_hanoi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/tower_of_hanoi_iterative.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch08_parallelism/thread_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/payroll_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/payroll_generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/test_payroll_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch06_func_decomposition/test_payroll_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/orders.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/test_total_cust_spend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_from_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_from_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_rdd.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_rdd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/ch09_pyspark/spark_sql_mw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/ch09_pyspark/total_cust_spend.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/total_cust_spend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/ch09_pyspark/total_cust_spend_rdd.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/total_cust_spend_rdd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/ch09_pyspark/total_cust_spend_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/total_cust_spend_sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,6 +201,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="208" y="218" width="686" height="518" key="find.popup" timestamp="1578780315048">
+      <screen x="0" y="24" width="1102" height="902" />
+    </state>
+    <state x="208" y="218" width="686" height="518" key="find.popup/0.24.1102.902@0.24.1102.902" timestamp="1578780315048" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -6,20 +6,44 @@ from typing import List
 from pyspark.sql import SparkSession, DataFrame, Row
 from pyspark.sql.functions import sum  # pylint: disable=no-name-in-module
 from pathlib import Path
+from textwrap import dedent
 
 
 # initialize Spark
+from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DoubleType
+
 app_name: str = 'Total Customer Spend (CSV)'
 spark: SparkSession = SparkSession.builder \
                                   .appName(app_name) \
                                   .getOrCreate()
 
-file: str = 'customer-orders.csv'
-file_url: str = f'file://{Path().absolute()}/{file}'
-print(f'\nReading customer spend data from {file_url}\n')
+data_schema = StructType([
+    StructField("Customer ID", IntegerType()),
+    StructField("Order ID", IntegerType()),
+    StructField("Order Total", DoubleType())
+])
 
-file_schema = '`Customer ID` integer, `Order ID` integer, `Order Total` double'
-df: DataFrame = spark.read.csv(file_url, header=True, schema=file_schema)
+input_data = """\
+    44,8602,37.19
+    35,5368,65.89
+    2,3391,40.64
+    47,6694,14.98
+    29,680,13.08
+    91,8900,24.59
+    70,3959,68.68
+    85,1733,28.53
+    53,9900,83.55
+    14,1505,4.32"""
+
+records = [line.split(',') for line in dedent(input_data).split('\n')]
+
+df: DataFrame = spark.createDataFrame(records, schema=data_schema)
+
+# file: str = 'customer-orders.csv'
+# file_url: str = f'file://{Path().absolute()}/{file}'
+#
+# file_schema = '`Customer ID` integer, `Order ID` integer, `Order Total` double'
+# df: DataFrame = spark.read.csv(file_url, header=True, schema=file_schema)
 
 result_limit = 5
 result_df = df.toDF('cust_id', 'order_id', 'amount') \

@@ -16,7 +16,7 @@ spark: SparkSession = SparkSession.builder \
 # Customer ID,Order ID,Order Total
 # 44,8602,37.19
 file: str = 'customer-orders.csv'
-file_url: str = f'file://{str(Path().absolute())}/{file}'
+file_url: str = f'file://{Path().absolute()}/{file}'
 print(f'\nReading customer spend data from {file_url}\n')
 
 df: DataFrame = spark.read.csv(file_url, inferSchema=True, header=True) \

@@ -15,7 +15,7 @@ spark: SparkSession = SparkSession.builder \
                                   .getOrCreate()
 
 file: str = 'customer-orders.csv'
-file_url: str = f'file://{str(Path().absolute())}/{file}'
+file_url: str = f'file://{Path().absolute()}/{file}'
 print(f'\nReading customer spend data from {file_url}\n')
 
 file_schema = '`Customer ID` integer, `Order ID` integer, `Order Total` double'
