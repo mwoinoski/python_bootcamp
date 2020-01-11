@@ -18,8 +18,8 @@ lines = spark.read.textFile(util.file_url("fakefriends.csv"))
 people = lines.map(mapper)
 
 # Infer the schema, and register the DataFrame as a table.
-schemaPeople = spark.createDataFrame(people).cache()
-schemaPeople.createOrReplaceTempView("people")
+df = spark.createDataFrame(people).cache()
+df.createOrReplaceTempView("people")
 
 # SQL can be run over DataFrames that have been registered as a table.
 teenagers = spark.sql("SELECT * FROM people WHERE age >= 13 AND age <= 19")
@@ -29,6 +29,6 @@ for teen in teenagers.collect():
     print(teen)
 
 # We can also use functions instead of SQL queries:
-schemaPeople.groupBy("age").count().orderBy("age").show()
+df.groupBy("age").count().orderBy("age").show()
 
 spark.stop()

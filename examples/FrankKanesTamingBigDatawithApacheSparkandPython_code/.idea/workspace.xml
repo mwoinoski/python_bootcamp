@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8926faf-650c-4cc8-b9b4-c92394a955ba" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="f8926faf-650c-4cc8-b9b4-c92394a955ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/total_cust_spend_sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-orders-with-header.csv" beforeDir="false" afterPath="$PROJECT_DIR$/customer-orders-without-header.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-orders.csv" beforeDir="false" afterPath="$PROJECT_DIR$/customer-orders.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_sql_mw.py" beforeDir="false" afterPath="$PROJECT_DIR$/spark_sql_mw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/total-spent-by-customer-sorted.py" beforeDir="false" afterPath="$PROJECT_DIR$/total-spent-by-customer-sorted.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/total-spent-by-customer.py" beforeDir="false" afterPath="$PROJECT_DIR$/total-spent-by-customer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/total_cust_spend.py" beforeDir="false" afterPath="$PROJECT_DIR$/total_cust_spend_rdd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/total_cust_spend_with_header.py" beforeDir="false" afterPath="$PROJECT_DIR$/total_cust_spend.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +22,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1UXPuR92kgl15ENZjMj5nnehgaw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,15 +41,87 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="RunManager" selected="Python.total_cust_spend">
+    <configuration name="spark_sql_mw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FrankKanesTamingBigDatawithApacheSparkandPython_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spark_sql_mw.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="total_cust_spend" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FrankKanesTamingBigDatawithApacheSparkandPython_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/total_cust_spend.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="total_cust_spend_sql" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FrankKanesTamingBigDatawithApacheSparkandPython_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/total_cust_spend_sql.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <item itemvalue="Python.total_cust_spend" />
+        <item itemvalue="Python.total_cust_spend_sql" />
+        <item itemvalue="Python.spark_sql_mw" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -73,6 +157,22 @@
     </state>
     <state x="505" y="259" width="424" height="491" key="FileChooserDialogImpl/0.28.1412.907@0.28.1412.907" timestamp="1575914701174" />
     <state x="560" y="273" width="424" height="491" key="FileChooserDialogImpl/0.28.1566.962@0.28.1566.962" timestamp="1575500371345" />
+    <state width="970" height="350" key="GridCell.Tab.0.bottom" timestamp="1578711978494">
+      <screen x="0" y="24" width="1189" height="916" />
+    </state>
+    <state width="970" height="350" key="GridCell.Tab.0.bottom/0.24.1189.916@0.24.1189.916" timestamp="1578711978494" />
+    <state width="970" height="350" key="GridCell.Tab.0.center" timestamp="1578711978494">
+      <screen x="0" y="24" width="1189" height="916" />
+    </state>
+    <state width="970" height="350" key="GridCell.Tab.0.center/0.24.1189.916@0.24.1189.916" timestamp="1578711978494" />
+    <state width="970" height="350" key="GridCell.Tab.0.left" timestamp="1578711978493">
+      <screen x="0" y="24" width="1189" height="916" />
+    </state>
+    <state width="970" height="350" key="GridCell.Tab.0.left/0.24.1189.916@0.24.1189.916" timestamp="1578711978493" />
+    <state width="970" height="350" key="GridCell.Tab.0.right" timestamp="1578711978494">
+      <screen x="0" y="24" width="1189" height="916" />
+    </state>
+    <state width="970" height="350" key="GridCell.Tab.0.right/0.24.1189.916@0.24.1189.916" timestamp="1578711978494" />
     <state x="252" y="137" width="908" height="737" key="SettingsEditor" timestamp="1575914681713">
       <screen x="0" y="28" width="1412" height="907" />
     </state>
@@ -85,6 +185,10 @@
     <state x="405" y="318" key="com.intellij.ide.util.TipDialog/0.28.1412.907@0.28.1412.907" timestamp="1575915451250" />
     <state x="406" y="319" key="com.intellij.ide.util.TipDialog/0.28.1414.910@0.28.1414.910" timestamp="1575917367637" />
     <state x="449" y="336" key="com.intellij.ide.util.TipDialog/0.28.1566.962@0.28.1566.962" timestamp="1575500196926" />
+    <state x="344" y="98" width="833" height="777" key="find.popup" timestamp="1578700321351">
+      <screen x="0" y="24" width="1189" height="916" />
+    </state>
+    <state x="344" y="98" width="833" height="777" key="find.popup/0.24.1189.916@0.24.1189.916" timestamp="1578700321351" />
     <state x="370" y="224" key="search.everywhere.popup" timestamp="1575923452262">
       <screen x="0" y="28" width="1414" height="910" />
     </state>
