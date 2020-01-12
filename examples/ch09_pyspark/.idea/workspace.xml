@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0985c91c-3232-412a-92e0-b883a6942c04" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-orders-totals.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/etl_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/total_cust_spend_oo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_total_cust_spend.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_total_cust_spend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +29,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -31,7 +38,28 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_total_cust_spend.py">
+  <component name="RunManager" selected="Python.total_cust_spend_oo">
+    <configuration name="total_cust_spend_oo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ch09_pyspark" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/total_cust_spend_oo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for test_total_cust_spend.TestEtlTotalCustSpend.test_calculation" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="ch09_pyspark" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -65,9 +93,11 @@
     <list>
       <item itemvalue="Python tests.pytest in test_total_cust_spend.py" />
       <item itemvalue="Python tests.pytest for test_total_cust_spend.TestEtlTotalCustSpend.test_calculation" />
+      <item itemvalue="Python.total_cust_spend_oo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.total_cust_spend_oo" />
         <item itemvalue="Python tests.pytest in test_total_cust_spend.py" />
         <item itemvalue="Python tests.pytest for test_total_cust_spend.TestEtlTotalCustSpend.test_calculation" />
       </list>
@@ -107,26 +137,30 @@
       <screen x="0" y="24" width="997" height="1040" />
     </state>
     <state x="29" y="200" width="809" height="845" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.24.997.1040@0.24.997.1040" timestamp="1578835080912" />
-    <state width="976" height="275" key="GridCell.Tab.0.bottom" timestamp="1578840211976">
+    <state x="231" y="296" width="536" height="506" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578849867301">
+      <screen x="0" y="24" width="997" height="1040" />
+    </state>
+    <state x="231" y="296" width="536" height="506" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.24.997.1040@0.24.997.1040" timestamp="1578849867301" />
+    <state width="976" height="275" key="GridCell.Tab.0.bottom" timestamp="1578857189452">
       <screen x="0" y="24" width="997" height="1040" />
     </state>
     <state width="970" height="282" key="GridCell.Tab.0.bottom/0.24.1102.902@0.24.1102.902" timestamp="1578784563883" />
-    <state width="976" height="275" key="GridCell.Tab.0.bottom/0.24.997.1040@0.24.997.1040" timestamp="1578840211976" />
-    <state width="976" height="275" key="GridCell.Tab.0.center" timestamp="1578840211976">
+    <state width="976" height="275" key="GridCell.Tab.0.bottom/0.24.997.1040@0.24.997.1040" timestamp="1578857189452" />
+    <state width="976" height="275" key="GridCell.Tab.0.center" timestamp="1578857189451">
       <screen x="0" y="24" width="997" height="1040" />
     </state>
     <state width="970" height="282" key="GridCell.Tab.0.center/0.24.1102.902@0.24.1102.902" timestamp="1578784563882" />
-    <state width="976" height="275" key="GridCell.Tab.0.center/0.24.997.1040@0.24.997.1040" timestamp="1578840211976" />
-    <state width="976" height="275" key="GridCell.Tab.0.left" timestamp="1578840211975">
+    <state width="976" height="275" key="GridCell.Tab.0.center/0.24.997.1040@0.24.997.1040" timestamp="1578857189451" />
+    <state width="976" height="275" key="GridCell.Tab.0.left" timestamp="1578857189450">
       <screen x="0" y="24" width="997" height="1040" />
     </state>
     <state width="970" height="282" key="GridCell.Tab.0.left/0.24.1102.902@0.24.1102.902" timestamp="1578784563881" />
-    <state width="976" height="275" key="GridCell.Tab.0.left/0.24.997.1040@0.24.997.1040" timestamp="1578840211975" />
-    <state width="976" height="275" key="GridCell.Tab.0.right" timestamp="1578840211976">
+    <state width="976" height="275" key="GridCell.Tab.0.left/0.24.997.1040@0.24.997.1040" timestamp="1578857189450" />
+    <state width="976" height="275" key="GridCell.Tab.0.right" timestamp="1578857189452">
       <screen x="0" y="24" width="997" height="1040" />
     </state>
     <state width="970" height="282" key="GridCell.Tab.0.right/0.24.1102.902@0.24.1102.902" timestamp="1578784563882" />
-    <state width="976" height="275" key="GridCell.Tab.0.right/0.24.997.1040@0.24.997.1040" timestamp="1578840211976" />
+    <state width="976" height="275" key="GridCell.Tab.0.right/0.24.997.1040@0.24.997.1040" timestamp="1578857189452" />
     <state width="970" height="282" key="GridCell.Tab.1.bottom" timestamp="1578784563885">
       <screen x="0" y="24" width="1102" height="902" />
     </state>
@@ -147,5 +181,9 @@
       <screen x="0" y="24" width="997" height="826" />
     </state>
     <state x="164" y="264" key="com.intellij.ide.util.TipDialog/0.24.997.826@0.24.997.826" timestamp="1578831977156" />
+    <state x="155" y="158" width="686" height="777" key="find.popup" timestamp="1578845021130">
+      <screen x="0" y="24" width="997" height="1040" />
+    </state>
+    <state x="155" y="158" width="686" height="777" key="find.popup/0.24.997.1040@0.24.997.1040" timestamp="1578845021130" />
   </component>
 </project>

@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5912c98a-4c28-46c6-89eb-462ef13c5fbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/orders.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/test_total_cust_spend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_from_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_from_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_rdd.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_rdd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch09_pyspark/spark_sql_mw.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch09_pyspark/total_cust_spend.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/total_cust_spend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch09_pyspark/total_cust_spend_rdd.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/total_cust_spend_rdd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch09_pyspark/total_cust_spend_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/total_cust_spend_sql.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/customer-orders-totals.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/etl_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/logging.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/total_cust_spend_oo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/ch09_pyspark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/ch09_pyspark/test_total_cust_spend.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/test_total_cust_spend.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,10 +199,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="208" y="218" width="686" height="518" key="find.popup" timestamp="1578780315048">
-      <screen x="0" y="24" width="1102" height="902" />
+    <state x="188" y="248" width="686" height="598" key="find.popup" timestamp="1578845039985">
+      <screen x="0" y="24" width="997" height="1040" />
     </state>
     <state x="208" y="218" width="686" height="518" key="find.popup/0.24.1102.902@0.24.1102.902" timestamp="1578780315048" />
+    <state x="188" y="248" width="686" height="598" key="find.popup/0.24.997.1040@0.24.997.1040" timestamp="1578845039985" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

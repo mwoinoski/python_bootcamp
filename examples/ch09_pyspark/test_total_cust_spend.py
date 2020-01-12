@@ -34,7 +34,7 @@ class TestEtlTotalCustSpend:
 
     def create_data_frame(self, csv_string: str) -> DataFrame:
         """ Read a CSV string into a DataFrame """
-        # input: '    44, 8602, 37.19\n    35, 5368, 65.89\n     ...'
+        # '    44, 8602, 37.19\n    35, 5368, 65.89\n     ...'
 
         csv_lines: List[str] = dedent(csv_string).split('\n')
         # ['44, 8602, 37.19', '35, 5368, 65.89', ...]
@@ -43,8 +43,9 @@ class TestEtlTotalCustSpend:
             [line.split(',') for line in csv_lines]
         # [['44', '8602', '37.19'], ['35', '5368', '65.89'], ...]
 
-        records_of_numbers = [(int(rec[0]), int(rec[1]), float(rec[2]))
-                              for rec in records_of_strings]
+        records_of_numbers: List[Tuple[int, int, float]] = \
+            [(int(rec[0]), int(rec[1]), float(rec[2]))
+             for rec in records_of_strings]
         # [(44, 8602, 37.19), (35, 5368, 65.89), ...]
 
         return self.spark.createDataFrame(records_of_numbers,
