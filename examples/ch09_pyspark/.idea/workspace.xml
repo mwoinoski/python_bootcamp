@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0985c91c-3232-412a-92e0-b883a6942c04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/orders.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_total_cust_spend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_from_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_from_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_rdd.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_rdd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_sql_mw.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/total_cust_spend.py" beforeDir="false" afterPath="$PROJECT_DIR$/total_cust_spend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/total_cust_spend_rdd.py" beforeDir="false" afterPath="$PROJECT_DIR$/total_cust_spend_rdd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/total_cust_spend_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/total_cust_spend_sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_total_cust_spend.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_total_cust_spend.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +31,25 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="pytest in test_total_cust_spend.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest in test_total_cust_spend.py">
+    <configuration name="pytest for test_total_cust_spend.TestEtlTotalCustSpend.test_calculation" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="ch09_pyspark" />
       <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_total_cust_spend.TestEtlTotalCustSpend.test_calculation&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_total_cust_spend.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="ch09_pyspark" />
+      <option name="INTERPRETER_OPTIONS" value="-W ignore::DeprecationWarning" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -57,9 +62,14 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python tests.pytest in test_total_cust_spend.py" />
+      <item itemvalue="Python tests.pytest for test_total_cust_spend.TestEtlTotalCustSpend.test_calculation" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in test_total_cust_spend.py" />
+        <item itemvalue="Python tests.pytest for test_total_cust_spend.TestEtlTotalCustSpend.test_calculation" />
       </list>
     </recent_temporary>
   </component>
@@ -89,22 +99,34 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="970" height="282" key="GridCell.Tab.0.bottom" timestamp="1578784563883">
-      <screen x="0" y="24" width="1102" height="902" />
+    <state x="0" y="204" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578836888330">
+      <screen x="0" y="24" width="997" height="1040" />
+    </state>
+    <state x="0" y="204" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.24.997.1040@0.24.997.1040" timestamp="1578836888330" />
+    <state x="29" y="200" width="809" height="845" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1578835080912">
+      <screen x="0" y="24" width="997" height="1040" />
+    </state>
+    <state x="29" y="200" width="809" height="845" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.24.997.1040@0.24.997.1040" timestamp="1578835080912" />
+    <state width="976" height="275" key="GridCell.Tab.0.bottom" timestamp="1578840211976">
+      <screen x="0" y="24" width="997" height="1040" />
     </state>
     <state width="970" height="282" key="GridCell.Tab.0.bottom/0.24.1102.902@0.24.1102.902" timestamp="1578784563883" />
-    <state width="970" height="282" key="GridCell.Tab.0.center" timestamp="1578784563882">
-      <screen x="0" y="24" width="1102" height="902" />
+    <state width="976" height="275" key="GridCell.Tab.0.bottom/0.24.997.1040@0.24.997.1040" timestamp="1578840211976" />
+    <state width="976" height="275" key="GridCell.Tab.0.center" timestamp="1578840211976">
+      <screen x="0" y="24" width="997" height="1040" />
     </state>
     <state width="970" height="282" key="GridCell.Tab.0.center/0.24.1102.902@0.24.1102.902" timestamp="1578784563882" />
-    <state width="970" height="282" key="GridCell.Tab.0.left" timestamp="1578784563881">
-      <screen x="0" y="24" width="1102" height="902" />
+    <state width="976" height="275" key="GridCell.Tab.0.center/0.24.997.1040@0.24.997.1040" timestamp="1578840211976" />
+    <state width="976" height="275" key="GridCell.Tab.0.left" timestamp="1578840211975">
+      <screen x="0" y="24" width="997" height="1040" />
     </state>
     <state width="970" height="282" key="GridCell.Tab.0.left/0.24.1102.902@0.24.1102.902" timestamp="1578784563881" />
-    <state width="970" height="282" key="GridCell.Tab.0.right" timestamp="1578784563882">
-      <screen x="0" y="24" width="1102" height="902" />
+    <state width="976" height="275" key="GridCell.Tab.0.left/0.24.997.1040@0.24.997.1040" timestamp="1578840211975" />
+    <state width="976" height="275" key="GridCell.Tab.0.right" timestamp="1578840211976">
+      <screen x="0" y="24" width="997" height="1040" />
     </state>
     <state width="970" height="282" key="GridCell.Tab.0.right/0.24.1102.902@0.24.1102.902" timestamp="1578784563882" />
+    <state width="976" height="275" key="GridCell.Tab.0.right/0.24.997.1040@0.24.997.1040" timestamp="1578840211976" />
     <state width="970" height="282" key="GridCell.Tab.1.bottom" timestamp="1578784563885">
       <screen x="0" y="24" width="1102" height="902" />
     </state>
@@ -121,5 +143,9 @@
       <screen x="0" y="24" width="1102" height="902" />
     </state>
     <state width="970" height="282" key="GridCell.Tab.1.right/0.24.1102.902@0.24.1102.902" timestamp="1578784563884" />
+    <state x="164" y="264" key="com.intellij.ide.util.TipDialog" timestamp="1578831977156">
+      <screen x="0" y="24" width="997" height="826" />
+    </state>
+    <state x="164" y="264" key="com.intellij.ide.util.TipDialog/0.24.997.826@0.24.997.826" timestamp="1578831977156" />
   </component>
 </project>
