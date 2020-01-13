@@ -10,7 +10,7 @@ from textwrap import dedent
 from pytest import approx
 
 
-def transform(df: DataFrame) -> List[Row]:
+def transform(df: DataFrame) -> DataFrame:
     result_limit = 5
     result_df = df.toDF('cust_id', 'order_id', 'amount') \
                   .select('cust_id', 'amount') \
@@ -18,7 +18,7 @@ def transform(df: DataFrame) -> List[Row]:
                   .agg(sum('amount').alias('total')) \
                   .orderBy('total', ascending=False) \
                   .limit(result_limit)
-    return result_df.collect()
+    return result_df
 
 
 class TestEtlTotalCustSpend:
@@ -52,13 +52,14 @@ class TestEtlTotalCustSpend:
                                           schema=self.input_schema)
 
     @staticmethod
-    def assert_rows_equal_tuples(actuals: List[Row],  # Row[int, float]
-                                 expecteds: List[Tuple[int, float]]) -> None:
+    def assert_dataframe_contents(df: DataFrame,
+                                  expected_values: List[Tuple[int, float]]):
         """ Compare each Row attribute to a value in a tuple """
-        actual_tuples = [(actual.cust_id, actual.total) for actual in actuals]
+        df_contents: List[Row] = df.collect()  # Row[int, float]
+        df_values = [(row.cust_id, row.total) for row in df_contents]
 
-        for expected_tuple, actual_tuple in zip(expecteds, actual_tuples):
-            assert actual_tuple == approx(expected_tuple)
+        for df_value, expected_value in zip(df_values, expected_values):
+            assert df_value == approx(expected_value)
 
     def test_transform_success(self) -> None:
         input_data = """\
@@ -74,9 +75,9 @@ class TestEtlTotalCustSpend:
             14,1505,4.32"""
         data_frame = self.create_data_frame(input_data)
 
-        result = transform(data_frame)
+        result: DataFrame = transform(data_frame)
 
-        self.assert_rows_equal_tuples(result, [
+        self.assert_dataframe_contents(result, [
             (53, 152.23),
             (44, 80.7),
             (35, 65.89),
