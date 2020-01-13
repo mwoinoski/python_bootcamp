@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2485280d-4126-425e-8282-aaf55c4bc02c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ch09_etl_process.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch09_pyspark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch09_pyspark/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch09_pyspark/customer-orders-totals.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch09_pyspark/test_total_cust_spend.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch09_pyspark/test_total_cust_spend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch09_pyspark/total_cust_spend_oo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch09_pyspark/total_cust_spend_to_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etl_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/etl_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_transformer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/transformer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +36,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in ch09_etl_process">
+  <component name="RunManager" selected="Python tests.pytest in test_etl_process.py">
     <configuration name="etl_process" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ch09_etl_process" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,10 +127,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_etl_process.py" />
         <item itemvalue="Python tests.pytest in ch09_etl_process" />
         <item itemvalue="Python tests.pytest in test_loader.py" />
         <item itemvalue="Python.etl_process" />
-        <item itemvalue="Python tests.pytest in test_etl_process.py" />
         <item itemvalue="Python tests.pytest in test_extractor.py" />
       </list>
     </recent_temporary>
@@ -171,21 +165,33 @@
       <screen x="0" y="24" width="993" height="1036" />
     </state>
     <state x="0" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.24.993.1036@0.24.993.1036" timestamp="1578874583552" />
-    <state width="972" height="180" key="GridCell.Tab.0.bottom" timestamp="1578877044799">
-      <screen x="0" y="24" width="993" height="1036" />
+    <state width="813" height="177" key="GridCell.Tab.0.bottom" timestamp="1578886949901">
+      <screen x="0" y="24" width="968" height="1036" />
     </state>
+    <state width="972" height="180" key="GridCell.Tab.0.bottom/0.24.718.1036@0.24.718.1036" timestamp="1578880466151" />
+    <state width="813" height="177" key="GridCell.Tab.0.bottom/0.24.834.1036@0.24.834.1036" timestamp="1578883240934" />
+    <state width="813" height="177" key="GridCell.Tab.0.bottom/0.24.968.1036@0.24.968.1036" timestamp="1578886949901" />
     <state width="972" height="180" key="GridCell.Tab.0.bottom/0.24.993.1036@0.24.993.1036" timestamp="1578877044799" />
-    <state width="972" height="180" key="GridCell.Tab.0.center" timestamp="1578877044797">
-      <screen x="0" y="24" width="993" height="1036" />
+    <state width="813" height="177" key="GridCell.Tab.0.center" timestamp="1578886949899">
+      <screen x="0" y="24" width="968" height="1036" />
     </state>
+    <state width="972" height="180" key="GridCell.Tab.0.center/0.24.718.1036@0.24.718.1036" timestamp="1578880466150" />
+    <state width="813" height="177" key="GridCell.Tab.0.center/0.24.834.1036@0.24.834.1036" timestamp="1578883240933" />
+    <state width="813" height="177" key="GridCell.Tab.0.center/0.24.968.1036@0.24.968.1036" timestamp="1578886949899" />
     <state width="972" height="180" key="GridCell.Tab.0.center/0.24.993.1036@0.24.993.1036" timestamp="1578877044797" />
-    <state width="972" height="180" key="GridCell.Tab.0.left" timestamp="1578877044797">
-      <screen x="0" y="24" width="993" height="1036" />
+    <state width="813" height="177" key="GridCell.Tab.0.left" timestamp="1578886949899">
+      <screen x="0" y="24" width="968" height="1036" />
     </state>
+    <state width="972" height="180" key="GridCell.Tab.0.left/0.24.718.1036@0.24.718.1036" timestamp="1578880466150" />
+    <state width="813" height="177" key="GridCell.Tab.0.left/0.24.834.1036@0.24.834.1036" timestamp="1578883240932" />
+    <state width="813" height="177" key="GridCell.Tab.0.left/0.24.968.1036@0.24.968.1036" timestamp="1578886949899" />
     <state width="972" height="180" key="GridCell.Tab.0.left/0.24.993.1036@0.24.993.1036" timestamp="1578877044797" />
-    <state width="972" height="180" key="GridCell.Tab.0.right" timestamp="1578877044798">
-      <screen x="0" y="24" width="993" height="1036" />
+    <state width="813" height="177" key="GridCell.Tab.0.right" timestamp="1578886949900">
+      <screen x="0" y="24" width="968" height="1036" />
     </state>
+    <state width="972" height="180" key="GridCell.Tab.0.right/0.24.718.1036@0.24.718.1036" timestamp="1578880466151" />
+    <state width="813" height="177" key="GridCell.Tab.0.right/0.24.834.1036@0.24.834.1036" timestamp="1578883240933" />
+    <state width="813" height="177" key="GridCell.Tab.0.right/0.24.968.1036@0.24.968.1036" timestamp="1578886949900" />
     <state width="972" height="180" key="GridCell.Tab.0.right/0.24.993.1036@0.24.993.1036" timestamp="1578877044798" />
     <state x="153" y="285" width="686" height="518" key="find.popup" timestamp="1578874277746">
       <screen x="0" y="24" width="993" height="1036" />

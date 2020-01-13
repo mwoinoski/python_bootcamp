@@ -9,9 +9,6 @@ from pyspark.sql.functions import sum
 class Transformer:
     """ Transform implements the "transform" process of ETL """
 
-    def __init__(self):
-        pass
-
     def transform(self, spark: SparkSession, df: DataFrame) -> DataFrame:
         """ Apply transformations to a DataFrame """
         result_limit = 5

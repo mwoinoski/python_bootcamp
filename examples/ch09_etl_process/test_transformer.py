@@ -37,12 +37,13 @@ class TestTransformer:
             44,1733,28.53
             53,9900,83.55
             14,1505,4.32"""
-        input_df: DataFrame = self.create_data_frame_from_csv_string(input_data)
+        initial_df: DataFrame = self.create_data_frame_from_csv_string(input_data)
 
         transformer = Transformer()
-        result: DataFrame = transformer.transform(spark=Mock(), df=input_df)
+        transformed_dataframe: DataFrame = transformer.transform(spark=Mock(),
+                                                                 df=initial_df)
 
-        self.assert_dataframe_contents(result, [
+        self.assert_dataframe_contents(transformed_dataframe, [
             (53, 152.23),
             (44, 80.7),
             (35, 65.89),

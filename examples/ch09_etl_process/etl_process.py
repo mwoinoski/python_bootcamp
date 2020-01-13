@@ -49,26 +49,12 @@ class EtlProcess:
         """ Run the ETL process """
         self.logger.debug('starting run')
         try:
-            original_df: DataFrame = self.extract()
-            transformed_df: DataFrame = self.transform(original_df)
-            self.load(transformed_df)
+            initial_df: DataFrame = self.extractor.extract(self.spark)
+            transformed_df: DataFrame = \
+                self.transformer.transform(self.spark, initial_df)
+            self.loader.load(self.spark, transformed_df)
         finally:
             self.spark.stop()
-
-    def extract(self) -> DataFrame:
-        """ Extract the data to be transformed """
-        self.logger.debug('starting extract')
-        return self.extractor.extract(self.spark)
-
-    def transform(self, df: DataFrame) -> DataFrame:
-        """ Apply the transformations to the extracted data """
-        self.logger.debug('starting transform')
-        return self.transformer.transform(self.spark, df)
-
-    def load(self, df: DataFrame) -> None:
-        """ Load the transformed data to the target """
-        self.logger.debug('starting load')
-        self.loader.load(self.spark, df)
 
 
 class EtlProcessError(Exception):

@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5912c98a-4c28-46c6-89eb-462ef13c5fbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../examples/ch09_etl_process/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch09_etl_process/.idea/ch09_etl_process.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch09_etl_process/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch09_etl_process/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch09_etl_process/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch09_etl_process/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch09_etl_process/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch09_etl_process/logging.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch09_pyspark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch09_pyspark/customer-orders-totals.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch09_pyspark/test_total_cust_spend.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/test_total_cust_spend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch09_pyspark/total_cust_spend_oo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch09_pyspark/total_cust_spend_to_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/ch09_etl_process/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch09_etl_process/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/ch09_etl_process/etl_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch09_etl_process/etl_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

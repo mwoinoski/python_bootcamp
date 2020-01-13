@@ -13,12 +13,10 @@ class Extractor:
     input_schema: ClassVar[str] = \
         '`Customer ID` integer, `Order ID` integer, `Order Total` double'
 
-    def __init__(self):
-        pass
-
     def extract(self, spark: SparkSession) -> DataFrame:
         file = 'customer-orders.csv'
         path = f'file://{Path().absolute()}/{file}'
+        # path = f'hdfs://user/sutter/data/{file}'  # write to Hadoop HDFS
 
         df: DataFrame = spark.read.csv(path, header=True,
                                        schema=Extractor.input_schema)

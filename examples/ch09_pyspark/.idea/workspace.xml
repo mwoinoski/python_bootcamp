@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0985c91c-3232-412a-92e0-b883a6942c04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ch09_etl_process/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch09_etl_process/.idea/ch09_etl_process.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch09_etl_process/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch09_etl_process/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch09_etl_process/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch09_etl_process/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch09_etl_process/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ch09_etl_process/logging.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-orders-totals.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_total_cust_spend.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_total_cust_spend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/total_cust_spend_oo.py" beforeDir="false" afterPath="$PROJECT_DIR$/total_cust_spend_to_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch09_etl_process/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch09_etl_process/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch09_etl_process/etl_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch09_etl_process/etl_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch09_etl_process/extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch09_etl_process/extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch09_etl_process/loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch09_etl_process/loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch09_etl_process/test_transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch09_etl_process/test_transformer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch09_etl_process/transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch09_etl_process/transformer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
