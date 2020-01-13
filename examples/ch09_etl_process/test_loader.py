@@ -8,12 +8,12 @@ from pathlib import Path
 
 from pyspark.sql import DataFrame, SparkSession
 
-from loader import Loader
+from loader import LoaderCsv
 
 
 class TestLoader:
     spark: ClassVar[SparkSession]
-    output_file: ClassVar[str] = 'customer-orders-totals.csv'
+    output_file: ClassVar[str] = f'/tmp/test-etl-process-loader.csv'
 
     @classmethod
     def setup_class(cls):
@@ -21,8 +21,7 @@ class TestLoader:
         app_name: str = 'Total Customer Spend ETL Process'
         cls.spark = SparkSession.builder.appName(app_name).getOrCreate()
 
-    @classmethod
-    def teardown_class(cls):
+    def teardown_method(self, method):
         try:
             os.remove(TestLoader.output_file)
         except Exception:
@@ -40,12 +39,13 @@ class TestLoader:
             44,28.53
             53,83.55
             14,4.32"""
-        data_frame = self.create_data_frame_from_csv_string(input_data)
-        loader = Loader()
+        data_frame: DataFrame = self.create_data_frame_from_csv_string(input_data)
+
+        loader: LoaderCsv = LoaderCsv({'path': TestLoader.output_file})
 
         loader.load(TestLoader.spark, data_frame)
 
-        path = f'file://{Path().absolute()}/customer-orders-totals.csv'
+        path = f'file://{TestLoader.output_file}'
         df: DataFrame = TestLoader.spark.read.csv(path, header=True)
         assert len(df.collect()) == 10
 

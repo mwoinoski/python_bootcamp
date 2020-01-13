@@ -10,7 +10,7 @@ from textwrap import dedent
 
 from pytest import approx, raises
 
-from transformer import Transformer
+from transformer import TransformerTopFiveCust
 from etl_process import EtlProcessError
 
 
@@ -39,7 +39,7 @@ class TestTransformer:
             14,1505,4.32"""
         initial_df: DataFrame = self.create_data_frame_from_csv_string(input_data)
 
-        transformer = Transformer()
+        transformer = TransformerTopFiveCust()
         transformed_dataframe: DataFrame = transformer.transform(spark=Mock(),
                                                                  df=initial_df)
 

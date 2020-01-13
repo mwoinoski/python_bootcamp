@@ -1,12 +1,12 @@
 """
 Unit tests for Extractor
 """
-from typing import ClassVar
-from unittest.mock import Mock
+from typing import ClassVar, Any, Dict
+from pathlib import Path
 
 from pyspark.sql import DataFrame, SparkSession
 
-from extractor import Extractor
+from extractor import ExtractorCsv
 
 
 class TestExtractor:
@@ -19,7 +19,10 @@ class TestExtractor:
         cls.spark = SparkSession.builder.appName(app_name).getOrCreate()
 
     def test_extract_success(self):
-        extractor = Extractor()
+        path = f'file://{Path().absolute()}/customer-orders.csv'
+        # path = f'hdfs://user/sutter/data/{file}'  # read from Hadoop HDFS
+
+        extractor = ExtractorCsv({'path': path})
 
         result: DataFrame = extractor.extract(TestExtractor.spark)
 

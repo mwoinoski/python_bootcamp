@@ -8,18 +8,18 @@ from pyspark.sql import SparkSession
 from pytest import raises
 
 from etl_process import EtlProcess, EtlProcessError
-from extractor import Extractor
-from loader import Loader
-from transformer import Transformer
+from extractor import ExtractorCsv
+from loader import LoaderCsv
+from transformer import TransformerTopFiveCust
 
 
 class TestEtlProcess:
     def test_run_success(self):
         spark = Mock(spec=SparkSession)
-        extractor = Mock(spec=Extractor)
-        transformer = Mock(spec=Transformer)
-        loader = Mock(spec=Loader)
-        etl_process = EtlProcess(spark, extractor, transformer, loader)
+        extractor = Mock(spec=ExtractorCsv)
+        transformer = Mock(spec=TransformerTopFiveCust)
+        loader = Mock(spec=LoaderCsv)
+        etl_process = EtlProcess(extractor, transformer, loader, spark)
 
         etl_process.run()
 
@@ -30,12 +30,12 @@ class TestEtlProcess:
 
     def test_run_extract_raises_exception(self):
         spark = Mock(spec=SparkSession)
-        extractor = Mock(spec=Extractor)
+        extractor = Mock(spec=ExtractorCsv)
         extractor.extract.side_effect = EtlProcessError()
-        transformer = Mock(spec=Transformer)
-        loader = Mock(spec=Loader)
+        transformer = Mock(spec=TransformerTopFiveCust)
+        loader = Mock(spec=LoaderCsv)
 
-        etl_process = EtlProcess(spark, extractor, transformer, loader)
+        etl_process = EtlProcess(extractor, transformer, loader, spark)
 
         with raises(EtlProcessError):
             etl_process.run()
@@ -47,12 +47,12 @@ class TestEtlProcess:
 
     def test_run_transform_raises_exception(self):
         spark = Mock(spec=SparkSession)
-        extractor = Mock(spec=Extractor)
-        transformer = Mock(spec=Transformer)
+        extractor = Mock(spec=ExtractorCsv)
+        transformer = Mock(spec=TransformerTopFiveCust)
         transformer.transform.side_effect = EtlProcessError()
-        loader = Mock(spec=Loader)
+        loader = Mock(spec=LoaderCsv)
 
-        etl_process = EtlProcess(spark, extractor, transformer, loader)
+        etl_process = EtlProcess(extractor, transformer, loader, spark)
 
         with raises(EtlProcessError):
             etl_process.run()
@@ -64,12 +64,12 @@ class TestEtlProcess:
 
     def test_run_load_raises_exception(self):
         spark = Mock(spec=SparkSession)
-        extractor = Mock(spec=Extractor)
-        transformer = Mock(spec=Transformer)
-        loader = Mock(spec=Loader)
+        extractor = Mock(spec=ExtractorCsv)
+        transformer = Mock(spec=TransformerTopFiveCust)
+        loader = Mock(spec=LoaderCsv)
         loader.load.side_effect = EtlProcessError()
 
-        etl_process = EtlProcess(spark, extractor, transformer, loader)
+        etl_process = EtlProcess(extractor, transformer, loader, spark)
 
         with raises(EtlProcessError):
             etl_process.run()
