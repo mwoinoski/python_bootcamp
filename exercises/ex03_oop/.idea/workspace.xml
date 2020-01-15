@@ -1,105 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8205f49-03a2-47f8-8924-3db9ff91d1dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../examples/ch02_control_structs/.idea/ch03_control_structors.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch03_oop/.idea/ch01_examples.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch03_oop/.idea/dictionaries/CORP_facilitator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch03_oop/.idea/dictionaries/Mike.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch03_oop/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../examples/ch03_oop/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex02_control_structures/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facilities/address.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_hospital.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_in_patient_rehab.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/.idea/ch01_examples.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/hvbp_clinical_care_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/person_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/process_csv_files.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/solution_person_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/solution_test_person_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/test_person_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/test_process_csv_files.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_unit_testing/data_cleansing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_unit_testing/hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch01_unit_testing/hello.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_unit_testing/test_data_cleansing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_unit_testing/test_data_cleansing_full.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_unit_testing/test_data_cleansing_parameterize.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/ch01_examples.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/dictionaries/CORP_facilitator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/dictionaries/Mike.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/assets/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/backups/person_dao_mongodb.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/backups/person_dao_mongodb_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/backups/person_dao_spark_unittest_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/backups/person_mongodb_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/backups/person_unittest_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/model/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/model/address.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/model/insurance_info.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/model/patient.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/model/person.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/model/provider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/model/provider_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/persistence/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/persistence/person_dao.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/persistence/person_dao_readonly.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/manage_accounts/persistence/person_dao_spark.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/person.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/tests/model/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/tests/model/test_person.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/tests/model/test_person_unittest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/tests/persistence/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/tests/persistence/person_dao_spark_test.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/tests/persistence/person_dao_spark_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structures/.idea/ch03_control_structors.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structures/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structures/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structures/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structures/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structures/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_examples/type_hints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_examples/type_hints_fixed.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/.idea/ex02_oop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ex03_oop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch03_oop/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch03_oop/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/people/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/data/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/people/patient.py" beforeDir="false" afterPath="$PROJECT_DIR$/facilities/hospital.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/people/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/facilities/facility.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/people/provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/facilities/in_patient_rehab.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/tests/context.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/tests/patient_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/facilities/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/tests/person_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_facility.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex02_oop/tests/provider_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_address.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch03_oop/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/.idea/ex03_control_structors.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02_control_structures/.idea/ex03_control_structors.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02_control_structures/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02_control_structures/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02_control_structures/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02_control_structures/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02_control_structures/date_normalization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/test_date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02_control_structures/test_date_normalization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex04_func_decomposition/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_func_decomposition/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex04_func_decomposition/test_busy_bee.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_func_decomposition/test_busy_bee.py" afterDir="false" />
+    <list default="true" id="d6f12e26-4c72-417a-ab9f-e8029f5cae1c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/dictionaries/CORP_facilitator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex02_control_structures/process_csv_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex02_control_structures/test_process_csv_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facilities/populate_facilities.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/health_care_facilities.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_populate_facilities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01_unit_testing/.idea/ex01_unit_testing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/ex01_unit_testing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01_unit_testing/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01_unit_testing/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01_unit_testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01_unit_testing/date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_unit_testing/date_normalization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01_unit_testing/test_date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_unit_testing/test_date_normalization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ex03_oop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ex03_oop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,154 +35,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="267" />
-    <option name="y" value="-11" />
-    <option name="width" value="1418" />
-    <option name="height" value="1056" />
-  </component>
-  <component name="ProjectId" id="1W26QudWGXG9HijeMXWjcu8lMlw" />
+  <component name="ProjectId" id="1WQxbq65waM7oD3CYSa3f8Hkgx9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\tests" />
-      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\manage_accounts" />
-      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\exercises\ex02_oop\tests" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\examples\ch01_examples\tests" />
-      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\exercises\ex02_oop\tests" />
-      <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\exercises\ex02_oop\people" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python tests.pytest in test_address.py">
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="FrankKanesTamingBigDatawithApacheSparkandPython_code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="FrankKanesTamingBigDatawithApacheSparkandPython_code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="FrankKanesTamingBigDatawithApacheSparkandPython_code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="FrankKanesTamingBigDatawithApacheSparkandPython_code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_address.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="ex03_oop" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_address.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_facility.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="ex03_oop" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_facility.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Python tests.pytest in test_facility.py" />
-      <item itemvalue="Python tests.pytest in test_address.py" />
-    </list>
-    <recent_temporary>
+  <component name="RunDashboard">
+    <option name="ruleStates">
       <list>
-        <item itemvalue="Python tests.pytest in test_address.py" />
-        <item itemvalue="Python tests.pytest in test_facility.py" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
       </list>
     </option>
   </component>
@@ -271,49 +60,23 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e8205f49-03a2-47f8-8924-3db9ff91d1dd" name="Default Changelist" comment="" />
-      <created>1576104051131</created>
+      <changelist id="d6f12e26-4c72-417a-ab9f-e8029f5cae1c" name="Default Changelist" comment="" />
+      <created>1579095693915</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1576104051131</updated>
+      <updated>1579095693915</updated>
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="63" y="139" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578339056088">
-      <screen x="0" y="24" width="1210" height="910" />
-    </state>
-    <state x="63" y="139" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.24.1210.910@0.24.1210.910" timestamp="1578339056088" />
-    <state width="1189" height="204" key="GridCell.Tab.0.bottom" timestamp="1578340502678">
-      <screen x="0" y="24" width="1210" height="910" />
-    </state>
-    <state width="1189" height="204" key="GridCell.Tab.0.bottom/0.24.1210.910@0.24.1210.910" timestamp="1578340502678" />
-    <state width="1189" height="204" key="GridCell.Tab.0.center" timestamp="1578340502677">
-      <screen x="0" y="24" width="1210" height="910" />
-    </state>
-    <state width="1189" height="204" key="GridCell.Tab.0.center/0.24.1210.910@0.24.1210.910" timestamp="1578340502677" />
-    <state width="1189" height="204" key="GridCell.Tab.0.left" timestamp="1578340502677">
-      <screen x="0" y="24" width="1210" height="910" />
-    </state>
-    <state width="1189" height="204" key="GridCell.Tab.0.left/0.24.1210.910@0.24.1210.910" timestamp="1578340502677" />
-    <state width="1189" height="204" key="GridCell.Tab.0.right" timestamp="1578340502677">
-      <screen x="0" y="24" width="1210" height="910" />
-    </state>
-    <state width="1189" height="204" key="GridCell.Tab.0.right/0.24.1210.910@0.24.1210.910" timestamp="1578340502677" />
-    <state x="94" y="116" key="SettingsEditor" timestamp="1578339042846">
-      <screen x="0" y="24" width="1210" height="910" />
-    </state>
-    <state x="94" y="116" key="SettingsEditor/0.24.1210.910@0.24.1210.910" timestamp="1578339042846" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../../examples/ch01_examples/manage_accounts/person_dao_mongodb.py</url>
-          <line>3</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

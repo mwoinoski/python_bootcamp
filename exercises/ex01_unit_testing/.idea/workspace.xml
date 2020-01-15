@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd3103b7-e225-4fcd-9f4b-30118c549112" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ex01_unit_testing.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_unit_testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch01_unit_testing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_unit_testing/test_data_cleansing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch01_unit_testing/test_data_cleansing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structors/.idea/ch03_control_structors.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structors/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structors/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structors/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structors/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structors/date_normalization.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch03_control_structors/test_date_normalization.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structors/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structors/date_normalization.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structors/test_date_normalization.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_control_structures/date_normalization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03_control_structures/test_date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_control_structures/test_date_normalization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/CORP_facilitator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ex01_unit_testing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ex01_unit_testing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/date_normalization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_date_normalization.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +23,8 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ex02_control_structures" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -70,7 +56,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
