@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55a5af72-8fdc-4efa-869a-e275e0833cfc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test_data_cleansing_full.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/case_study/.coveragerc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/case_study/assets/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/case_study/pytest_report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex01_tdd/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex01_tdd/payroll_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex01_tdd/payroll_recs_week_4.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex01_tdd/provider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex01_tdd/test_payroll_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex01_tdd/test_provider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex01_unit_testing/payroll.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex01_unit_testing/test_payroll.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_control_structures/facility_locations.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_control_structures/hvbp_clinical_care_1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_control_structures/process_csv_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_control_structures/test_process_csv_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex07_git_jenkins/git_practice/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data_cleansing.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_data_cleansing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch09_pyspark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch09_pyspark/.idea/workspace.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,9 +30,15 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ch03_control_structors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -33,15 +46,15 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
