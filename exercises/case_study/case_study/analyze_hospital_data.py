@@ -35,7 +35,8 @@ for file in data_files:
     dfs[file] = df.select(*col_aliases)
 
 for k, v in dfs.items():
-    print(f'{k} - Number of rows: {v.count()}, Number of columns: {len(v.columns)}')
+    print(f'{k} - Number of rows: {v.count()}, Number of columns: '
+          f'{len(v.columns)}')
 
 key_col: str = 'provider_number'
 
@@ -51,4 +52,5 @@ for i in range(1, len(data_files)):
     print(f'adding {len(df_to_join.columns)} columns from {file}\n')
     df_joined = df_joined.join(df_to_join, on=key_col, how='left')
 
-print(f'final joined DF has {len(df_joined.columns)} columns: {df_joined.columns}\n')
+print(f'final joined DF has {len(df_joined.columns)} columns: '
+      f'{df_joined.columns}\n')
