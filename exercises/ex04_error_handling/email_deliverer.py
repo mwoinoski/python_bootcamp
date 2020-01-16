@@ -94,13 +94,12 @@ class GmailDeliverer(EmailDeliverer):
 
 
 if __name__ == '__main__':
-    username: str = os.environ['USER'].replace('CORP\\',
-                                               '')  # Delete Amazon's junk
+    username: str = os.environ['USER'].replace('CORP\\', '')  # Delete Amazon junk
     sender: str = f'{username}.python.bootcamp@gmail.com'
     # For GMail, you'll need to enable "Allow less secure apps" in the sender's
     # GMail account settings (because we're not using OAuth for sign-in)
     password: str = '824HZ_k2Pan7iH'
-    receiver: str = f'{username}.python.bootcamp@gmail.com'
+    receiver: str = f'{username}@sutterhealth.org'
 
     time: str = dt.now().strftime('%A %b %w, %Y at %-I:%M %p')
 

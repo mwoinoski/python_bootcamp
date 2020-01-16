@@ -1,7 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0985c91c-3232-412a-92e0-b883a6942c04" name="Default Changelist" comment="" />
+    <list default="true" id="0985c91c-3232-412a-92e0-b883a6942c04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/FrankKanesTamingBigDatawithApacheSparkandPython_code.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/dictionaries/pydev.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/1800.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/1800_with_header.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/Marvel-graph.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/Marvel-names.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/book.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/customer-orders-without-header.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/customer-orders.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/degrees-of-separation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/fakefriends.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/friends-by-age.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/max-temperatures.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/max_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/min-temperatures.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/min_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/allbut.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/mku.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/u.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/u.genre" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/u.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/u.item" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/u.occupation" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/u.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/u1.base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/u1.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/u2.base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/u2.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/u3.base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/u3.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/u4.base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/u4.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/u5.base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/u5.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/ua.base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/ua.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/ub.base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-100k/ub.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ml-latest-small.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/most-popular-superhero.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/movie-recommendations-als-1m.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/movie-recommendations-als.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/movie-similarities-1m.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/movie-similarities-cluster.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/movie-similarities.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/movie_most_popular.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/mssql-jdbc-7.4.1.jre8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/orders.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/popular-movies-dataframe.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/popular-movies.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/popular_movies_nicer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/pyspark_template.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/ratings_counter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/regression.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/spark-linear-regression.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/spark_sql.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/spark_sql_mw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/total-spent-by-customer-sorted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/total-spent-by-customer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_from_db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_rdd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/total_cust_spend_sql.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/word-count-better-sorted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/word-count-better.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/word-count.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FrankKanesTamingBigDatawithApacheSparkandPython_code/word_cnt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch01_unit_testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch01_unit_testing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch02_control_structs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_control_structs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch09_etl_process/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch09_etl_process/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/case_study/tests/test_send_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/tests/test_send_email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ex01_unit_testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex01_unit_testing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ex04_error_handling/email_deliverer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex04_error_handling/email_deliverer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ex04_error_handling/send_html_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex04_error_handling/send_html_email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ex04_error_handling/send_secure_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex04_error_handling/send_secure_email.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +117,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ch08_parallelism" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -39,6 +127,18 @@
       <recent name="$PROJECT_DIR$/etl_process" />
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Python tests.pytest in test_loader.py">
     <configuration name="etl_driver_csv_to_csv" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -145,18 +245,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -169,6 +257,17 @@
       <updated>1578782795900</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="204" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578946153119">

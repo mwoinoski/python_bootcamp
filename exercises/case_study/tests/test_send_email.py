@@ -1,3 +1,4 @@
+from os import environ
 import smtplib
 import ssl
 from datetime import datetime as dt
@@ -9,11 +10,12 @@ from unittest import TestCase
 
 
 class SendEmailTest(TestCase):
-    sender_email: str = 'pydev.bootcamp@gmail.com'
+    username: str = environ['USER'].replace('CORP\\', '')
+    sender_email: str = f'{username}.python.bootcamp@gmail.com'
     # For GMail, you'll need to enable "Allow less secure apps" in the sender's
     # GMail account settings (because we're not using OAuth for sign-in)
     sender_password: str = '824HZ_k2Pan7iH'
-    receiver_email: str = 'pydev.bootcamp@gmail.com'
+    receiver_email: str = f'{username}@sutterhealth.org'
 
     # for GMail
     smtp_host: str = 'smtp.gmail.com'
