@@ -1,5 +1,5 @@
 """
-Demo of threading module
+Demo of threading module for chapter 8
 """
 
 from dataclasses import dataclass

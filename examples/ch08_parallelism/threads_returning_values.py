@@ -14,11 +14,11 @@ class Facility:
     city: Optional[str]
     state: Optional[str]
 
-    def __str__(self):
+    def __str__(self) -> None:
         return f'{self.name} {self.city} {self.state}'
 
 
-def get_facilities_info():
+def get_facilities_info() -> List[Facility]]:
     return [
         Facility('Getwell Hospital', 'Sacremento', 'CA'),
         Facility('Qwik-E-Health Emergent Care', 'Denver', 'CO'),
@@ -27,8 +27,10 @@ def get_facilities_info():
 
 
 class FacilityRater(Thread):
+    """ FacilityRater calculates the rating for a facility """
+
     def __init__(self, facility):
-        super().__init__()
+        super().__init__()  # Thread subclass must call Thread constructor
         self.facility = facility
 
     def run(self):

@@ -1,5 +1,5 @@
 """
-Demo of multiprocessing module
+Demo of multiprocessing module for chapter 8
 """
 
 from dataclasses import dataclass

@@ -1,5 +1,5 @@
 """
-Demo of the ThreadPoolExecutor.
+Demo of the ThreadPoolExecutor for chapter 8
 """
 
 from concurrent.futures.process import ProcessPoolExecutor

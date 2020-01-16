@@ -1,5 +1,5 @@
 """
-Demo of a race condition between processes
+Demo of a race condition between processes for chapter 8
 """
 
 from dataclasses import dataclass
