@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea160917-6aa6-4729-8142-05f5b7500c28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../examples/ch01_examples/facility_locations.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/process_csv_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch01_examples/process_csv_files.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch01_examples/test_process_csv_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch01_examples/test_process_csv_files.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch02_oop/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9dfe5afe-4d0f-4a0e-bbe4-f3fed9ea2422" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../examples/ch04_error_handling/logging.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex01_unit_testing/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_csv_processor/.idea/ex03_csv_processor.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_csv_processor/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_csv_processor/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_csv_processor/csv_processor/process_csv_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_csv_processor/driver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_csv_processor/hvbp_clinical_care.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_csv_processor/tests/test_process_csv_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_oop/health_care_facilities.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_error_handling/.idea/ex04_error_handling.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_error_handling/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_error_handling/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_error_handling/email_deliverer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_error_handling/handler_raises_exception.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_error_handling/invoice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_error_handling/invoice_caller_handles_error.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_error_handling/invoice_data_access_object.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_error_handling/invoice_error_caller_does_nothing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_error_handling/logging.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_error_handling/send_html_email.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_error_handling/send_secure_email.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_error_handling/test_invoice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_error_handling/user_defined_exception.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex05_testing_with_mocks/check_printer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex05_testing_with_mocks/employee_dao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex05_testing_with_mocks/etl_logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex05_testing_with_mocks/logging.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex05_testing_with_mocks/pay_calculator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex05_testing_with_mocks/payroll_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex05_testing_with_mocks/test_payroll_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/walk_directory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examples/ch09_etl_process/etl_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../examples/ch09_etl_process/etl_logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03_oop/.idea/ex03_oop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/.idea/ex03_oop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03_oop/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03_oop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03_oop/facilities/populate_facilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/populate_facilities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03_oop/tests/health_care_facilities.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_csv_processor/csv_processor/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03_oop/tests/test_populate_facilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/tests/test_populate_facilities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex04_error_handling/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_error_handling/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex04_error_handling/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex04_error_handling/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_error_handling/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ex05_func_decomposition.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_busy_bee.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_busy_bee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corncob_lowercase.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/words.txt" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,115 +68,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1W1p2qlGVPkiAFq4Aw52o24Hb8t" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
+  <component name="ProjectId" id="1WSY3OeSACF6Pp2yX8iKbSdF8xW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_busy_bee.py">
-    <configuration default="true" type="tests" factoryName="py.test">
-      <module name="ex04_func_decomposition" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="C:\Users\Mike\Software\python-3.7\python.exe" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_busy_bee.TestBusyBee" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="ex04_func_decomposition" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="C:\Users\Mike\Software\python-3.7\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_busy_bee.TestBusyBee&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_busy_bee.TestBusyBee.test_find_all_words_three_letters_all_results_max_len_success" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="ex04_func_decomposition" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="C:\Users\Mike\Software\python-3.7\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_busy_bee.TestBusyBee.test_find_all_words_three_letters_all_results_max_len_success&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_busy_bee.TestBusyBee.test_find_all_words_three_letters_results_different_lengths_success" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="ex04_func_decomposition" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="C:\Users\Mike\Software\python-3.7\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_busy_bee.TestBusyBee.test_find_all_words_three_letters_results_different_lengths_success&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_busy_bee.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="ex04_func_decomposition" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="C:\Users\Mike\Software\python-3.7\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_busy_bee.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
+  <component name="RunDashboard">
+    <option name="ruleStates">
       <list>
-        <item itemvalue="Python tests.pytest in test_busy_bee.py" />
-        <item itemvalue="Python tests.pytest for test_busy_bee.TestBusyBee.test_find_all_words_three_letters_all_results_max_len_success" />
-        <item itemvalue="Python tests.pytest for test_busy_bee.TestBusyBee.test_find_all_words_three_letters_results_different_lengths_success" />
-        <item itemvalue="Python tests.pytest for test_busy_bee.TestBusyBee" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
       </list>
     </option>
   </component>
@@ -141,38 +90,23 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ea160917-6aa6-4729-8142-05f5b7500c28" name="Default Changelist" comment="" />
-      <created>1578160171604</created>
+      <changelist id="9dfe5afe-4d0f-4a0e-bbe4-f3fed9ea2422" name="Default Changelist" comment="" />
+      <created>1579144263375</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1578160171604</updated>
+      <updated>1579144263375</updated>
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="427" y="241" width="436" height="489" key="FileChooserDialogImpl" timestamp="1578326845599">
-      <screen x="0" y="24" width="1289" height="910" />
-    </state>
-    <state x="427" y="241" width="436" height="489" key="FileChooserDialogImpl/0.24.1289.910@0.24.1289.910" timestamp="1578326845599" />
-    <state width="1189" height="340" key="GridCell.Tab.0.bottom" timestamp="1578328076048">
-      <screen x="0" y="24" width="1210" height="910" />
-    </state>
-    <state width="1189" height="340" key="GridCell.Tab.0.bottom/0.24.1210.910@0.24.1210.910" timestamp="1578328076048" />
-    <state width="1189" height="340" key="GridCell.Tab.0.center" timestamp="1578328076046">
-      <screen x="0" y="24" width="1210" height="910" />
-    </state>
-    <state width="1189" height="340" key="GridCell.Tab.0.center/0.24.1210.910@0.24.1210.910" timestamp="1578328076046" />
-    <state width="1189" height="340" key="GridCell.Tab.0.left" timestamp="1578328076046">
-      <screen x="0" y="24" width="1210" height="910" />
-    </state>
-    <state width="1189" height="340" key="GridCell.Tab.0.left/0.24.1210.910@0.24.1210.910" timestamp="1578328076046" />
-    <state width="1189" height="340" key="GridCell.Tab.0.right" timestamp="1578328076047">
-      <screen x="0" y="24" width="1210" height="910" />
-    </state>
-    <state width="1189" height="340" key="GridCell.Tab.0.right/0.24.1210.910@0.24.1210.910" timestamp="1578328076047" />
-    <state x="133" y="116" key="SettingsEditor" timestamp="1578326859606">
-      <screen x="0" y="24" width="1289" height="910" />
-    </state>
-    <state x="133" y="116" key="SettingsEditor/0.24.1289.910@0.24.1289.910" timestamp="1578326859606" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

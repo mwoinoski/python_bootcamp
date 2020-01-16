@@ -2,22 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6f12e26-4c72-417a-ab9f-e8029f5cae1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/dictionaries/CORP_facilitator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex02_control_structures/process_csv_files.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex02_control_structures/test_process_csv_files.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facilities/populate_facilities.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/health_care_facilities.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_populate_facilities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01_unit_testing/.idea/ex01_unit_testing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/ex01_unit_testing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01_unit_testing/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01_unit_testing/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01_unit_testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01_unit_testing/date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_unit_testing/date_normalization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01_unit_testing/test_date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_unit_testing/test_date_normalization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex01_unit_testing/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_csv_processor/.idea/ex03_csv_processor.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_csv_processor/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_csv_processor/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_csv_processor/csv_processor/process_csv_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_csv_processor/driver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_csv_processor/hvbp_clinical_care.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_csv_processor/tests/test_process_csv_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_care_facilities.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ex03_oop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ex03_oop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facilities/populate_facilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/populate_facilities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/health_care_facilities.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_csv_processor/csv_processor/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_populate_facilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_populate_facilities.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +39,20 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ex03_csv_processor/csv_processor" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../ex03_csv_processor/csv_processor" />
+      <recent name="$PROJECT_DIR$/../ex03_csv_processor/tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../ex03_csv_processor" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -54,6 +65,48 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Python tests.pytest in test_populate_facilities.py">
+    <configuration name="pytest in test_address.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="ex03_oop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_address.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_populate_facilities.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="ex03_oop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;--show-capture all&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_populate_facilities.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python tests.pytest in test_address.py" />
+      <item itemvalue="Python tests.pytest in test_populate_facilities.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest in test_populate_facilities.py" />
+        <item itemvalue="Python tests.pytest in test_address.py" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -73,7 +126,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

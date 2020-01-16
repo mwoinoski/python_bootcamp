@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ex06_func_decomposition.iml" filepath="$PROJECT_DIR$/.idea/ex06_func_decomposition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ex05_testing_with_mocks.iml" filepath="$PROJECT_DIR$/.idea/ex05_testing_with_mocks.iml" />
     </modules>
   </component>
 </project>
