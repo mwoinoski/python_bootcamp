@@ -28,6 +28,6 @@ class LoaderCsv:
           .to_csv(self.path, header=True, index=False)
 
         # write the DataFrame as CSV to Hadoop HDFS:
-        # path = f'hdfs://user/sutter/data/customer-orders-totals'
+        # path = f'hdfs://localhost:9000/user/sutter/data/customer-orders-totals'
         # df.toDF('Customer ID', 'Total Orders') \
         #   .write.csv(path, mode='overwrite', header=True)

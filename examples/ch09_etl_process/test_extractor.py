@@ -19,8 +19,9 @@ class TestExtractor:
         cls.spark = SparkSession.builder.appName(app_name).getOrCreate()
 
     def test_extract_success(self):
-        path = f'file://{Path().absolute()}/customer-orders.csv'
-        # path = f'hdfs://user/sutter/data/{file}'  # read from Hadoop HDFS
+        file = 'customer-orders.csv'
+        path = f'file://{Path().absolute()}/{file}'
+        # path = f'hdfs://localhost:9000/user/sutter/data/{file}'  # read from Hadoop HDFS
 
         extractor = ExtractorCsv({'path': path})
 
