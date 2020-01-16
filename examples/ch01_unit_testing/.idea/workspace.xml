@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55a5af72-8fdc-4efa-869a-e275e0833cfc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../exercises/ex01_tdd/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/ex01_tdd/payroll_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/ex01_tdd/payroll_recs_week_4.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/ex01_tdd/provider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/ex01_tdd/test_payroll_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/ex01_tdd/test_provider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/ex01_unit_testing/payroll.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/ex01_unit_testing/test_payroll.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_control_structures/facility_locations.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_control_structures/hvbp_clinical_care_1.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_control_structures/process_csv_files.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_control_structures/test_process_csv_files.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/ex07_git_jenkins/git_practice/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch09_pyspark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch09_pyspark/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="55a5af72-8fdc-4efa-869a-e275e0833cfc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
