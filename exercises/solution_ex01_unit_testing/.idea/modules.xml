@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ex02_control_structures.iml" filepath="$PROJECT_DIR$/.idea/ex02_control_structures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/solution_ex01_unit_testing.iml" filepath="$PROJECT_DIR$/.idea/solution_ex01_unit_testing.iml" />
     </modules>
   </component>
 </project>

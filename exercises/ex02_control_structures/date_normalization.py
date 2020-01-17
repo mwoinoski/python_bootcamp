@@ -7,47 +7,24 @@ import re
 days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 
+# TODO: add the simplest possible code that will make the first test case pass
+
 def normalize_date(date, input_date_fmt='YMD'):
-    """ Converts a date to ISO 8601 format (YYYY-MM-DD) """
-    if input_date_fmt == 'YMD':
-        year = date[0:4]
-        month = int(date[5:7])
-        day = int(date[8:])
-    elif input_date_fmt == 'DMY':
-        year = get_four_digit_year(date[6:])
-        month = int(date[3:5])
-        day = int(date[0:2])
-    elif input_date_fmt == 'MDY':
-        year = get_four_digit_year(date[6:])
-        month = int(date[0:2])
-        day = int(date[3:5])
-    else:
-        print(f'Date format "{input_date_fmt}" not recognized')
-        return None
+    """
+    Converts a date to ISO 8601 format (YYYY-MM-DD)
 
-    if month < 1 or month > 12:
-        print(f'Date {date} has invalid month {month} for format '
-              f'{input_date_fmt}')
-        return None
-
-    max_day = days_in_month[month - 1]
-    if month == 2 and is_leap_year(year):
-        max_day += 1
-    if day < 1 or day > max_day:
-        print(f'Date {date} has invalid day {day} for format {input_date_fmt}')
-        return None
-
-    normalized_date = f'{year}-{month:02d}-{day:02d}'
-
-    return normalized_date
-
-
-def get_four_digit_year(year):
-    """ Converts two-digit years to four-digit years """
-    year = int(year)
-    if year < 100:
-        year += 2000
-    return year
+    Valid values for input_date_fmt:
+        YMD - YYYY-MM-DD
+        DMY - DD-MM-YYYY
+        MDY - MM-DD-YYYY
+    """
+    return None
+    # HINT: remember the Python syntax for substring operations:
+    #       input[0]    char 0 (the first character)
+    #       input[0:4]  chars 0 through 3 (that is, 0 up to but not including 4)
+    #       input[6:]   chars 6 through the end of the string
+    #       input[:4]   chars 0 through 3
+    #       input[-1]   last char
 
 
 def is_leap_year(year):

@@ -23,7 +23,10 @@ data_uri: str = 'hdfs://localhost:9000/user/sutter/data'
 
 config: ConfigParser = ConfigParser()
 config.read('config.ini')
-conf: Dict[str, str] = config['mssql']  # 'mysql'
+conf: Dict[str, str] = config['extract']  # 'mssql'
+
+db = conf['databaseName']
+url = conf['url']
 
 # initialize spark
 spark: SparkSession = SparkSession.builder \
@@ -37,12 +40,13 @@ df: DataFrame = spark.read \
                      .withColumn('payment_year', f.lit(payment_year))  # add column
 
 print(f'Reading {df.count()} records from {path}')
-print(f"Writing to {dbms.upper()} table {conf['dbtable'].upper()} at {conf['url']}")
+print(f"Writing to {dbms.upper()} table "
+      f"{db}.{target_table.upper()} at {url}")
 
 df.write.format('jdbc') \
         .option('dbtable', target_table) \
-        .option('url', conf['url']) \
-        .option('databaseName', conf['databaseName']) \
+        .option('url', url) \
+        .option('databaseName', db) \
         .option('driver', conf['driver']) \
         .option('user', conf['user']) \
         .option('password', conf['password']) \
@@ -50,3 +54,6 @@ df.write.format('jdbc') \
         .save()
 
 print('Done')
+
+# Get count of rows from bash:
+# sqlcmd -S localhost -U SA -Q "select count(*) from pybootcamp.dbo.esrd_qip"

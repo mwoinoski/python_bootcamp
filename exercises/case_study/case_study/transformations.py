@@ -163,7 +163,8 @@ def normalize_date(date: str, date_format: DateFormat = DateFormat.YMD) -> str:
 
 
 # pylint: disable=line-too-long,W0511
-# TODO: add timezone offset? See https://docs.python.org/3.7/library/datetime.html?highlight=timestamp#datetime.datetime.utcoffset
+# NOTE: this function doesn't handle a timezone offset. Do we need it?
+# See https://docs.python.org/3.7/library/datetime.html?highlight=timestamp#datetime.datetime.utcoffset
 def convert_date_to_timestamp(date: datetime) -> str:
     """ Return a timestamp string in ISO 8601 format YYYY-MM-DDTHH:MM:SS """
     timestamp: str = ''

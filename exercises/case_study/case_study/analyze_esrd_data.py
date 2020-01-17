@@ -7,6 +7,9 @@ from pyspark.sql import SparkSession, DataFrame, Row
 import pyspark.sql.functions as f
 
 
+# sc = spark.sparkContext
+# df = sc.parallelize([('Hosp A', '123'), ('Hosp B', '234'), ('Hosp C', '123')]).toDF().toDF('facility', 'ccn')
+
 # initialize spark
 spark: SparkSession = SparkSession.builder \
                                   .appName('ESRD QIP Data Analytics') \
@@ -78,14 +81,14 @@ result_df.show(n=10, truncate=False, vertical=True)
 ccn: str = 'CMS Certification Number (CCN)'
 # we need a new DataFrame to refer to the 'count' column for the call to cast()
 dupe_ccns: DataFrame = df.groupBy(df[ccn]) \
-                         .count()\
+                         .count() \
                          .filter('count > 1')
 dupes: int = dupe_ccns.count()
 if dupes == 0:
     print(f"No facilities with duplicate {ccn}")
 else:
     print(f"{dupes} facilities have a duplicate {ccn}:")
-    dupe_ccns.show(dupes)
+    dupe_ccns.show()
 print()
 
 # show facilities with highest Total Performance Score

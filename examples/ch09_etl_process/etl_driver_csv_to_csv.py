@@ -15,8 +15,8 @@ if __name__ == '__main__':
     logger.info('ETL Process starting')
 
     file = 'customer-orders.csv'
-    path: str = f'file://{Path().absolute()}/{file}'  # read local file
-    # path = f'hdfs://localhost:9000/user/sutter/data/{file}'  # read from Hadoop server
+    # path: str = f'file://{Path().absolute()}/{file}'  # read local file
+    path = f'hdfs://localhost:9000/user/sutter/data/{file}'  # read from Hadoop server
     extractor = ExtractorCsv({'path': path})
 
     transformer = TransformerTopFiveCust()

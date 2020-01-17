@@ -91,11 +91,11 @@ def main():
     # EXTRACT
 
     input_table: str = 'esrd_qip'
-    logger.info(f"Extracting from SQLServer {input_table.upper()} table "
-                f"at {extract_conf['url']}")
+    logger.info(f"Extracting from SQLServer {extract_conf['databaseName']}."
+                f"{input_table.upper()} at {extract_conf['url']}")
 
     # Read unfiltered data from SQLServer
-    input_df: DataFrame = spark.read\
+    input_df: DataFrame = spark.read \
         .format(extract_conf['format']) \
         .option('dbtable', input_table) \
         .option('url', extract_conf['url']) \
@@ -104,6 +104,9 @@ def main():
         .option('user', extract_conf['user']) \
         .option('password', extract_conf['password']) \
         .load()
+
+    # df = spark.read.format('jdbc').option('dbtable', 'esrd_qip').option('url', 'jdbc:sqlserver://localhost').option('databaseName', 'PyBootCamp').option('driver', 'com.microsoft.sqlserver.jdbc.SQLServerDriver').option('user', 'SA').option('password', '3#Sutter').load()
+    # df.select('Facility Name', 'CMS Certification Number (CCN)', 'Total Performance Score').show()
 
     logger.debug(f'Read {input_df.count()} records')
 
@@ -119,9 +122,10 @@ def main():
     #                 for c in input_df.columns]
     # input_df = input_df.select(renamed_cols)
 
-    # In this case, some 'Total Performace Score' values are 'No Score', so the
-    # column is identified as a string type. We'll need to filter out the
-    # non-numeric values and then convert to integers.
+    # In this case, some 'Total Performace Score' values are 'No Score', so
+    # Spark identifies the column as a string type. Because want to do math
+    # with those scores, we need to discard the rows with 'No Score' and then
+    # replace the string column with a numeric column.
     score: str = 'Total_Performance_Score'
     output_df: DataFrame = \
         input_df.where(input_df[score] != 'No Score') \
@@ -130,8 +134,8 @@ def main():
     # LOAD
 
     output_table: str = 'esrd_qip_clean'
-    logger.debug(
-        f"Loading MySQL {output_table.upper()} table at {load_conf['url']}")
+    logger.debug(f"Loading MySQL {load_conf['databaseName']}."
+                 f"{output_table.upper()} at {load_conf['url']}")
 
     # Write the DataFrame to a new MySQL table
     output_df.write.format(load_conf['format']) \
@@ -151,3 +155,8 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# Get count of rows from bash:
+#   dbpw='secret'
+# sqlcmd -S localhost -U SA -Q "select count(*) from pybootcamp.dbo.esrd_qip"
+# echo 'use etltarget; select count(*) from esrd_qip_clean' | mysql -uroot -p"$dbpw" 2>&1 | grep -v 'Warning'

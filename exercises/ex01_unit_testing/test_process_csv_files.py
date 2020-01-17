@@ -1,5 +1,5 @@
 """
-Example of decoupling file reads to simplify unit tests
+Example of how to decouple file reads from business logic to simplify unit tests
 """
 import io
 import textwrap
@@ -13,7 +13,7 @@ from process_csv_files import (
 
 
 def test_read_and_process_csv_file_file_success():
-    csv_file_path = 'facility_locations.csv'
+    csv_file_path = '../ex02_control_structures/facility_locations.csv'
 
     results = read_and_process_csv_file(csv_file_path)
 
@@ -25,7 +25,7 @@ def test_read_and_process_csv_file_file_success():
 
 
 def test_read_csv_file_file_success():
-    csv_file_path = 'facility_locations.csv'
+    csv_file_path = '../ex02_control_structures/facility_locations.csv'
 
     results = read_csv_file(csv_file_path)
 
@@ -147,7 +147,7 @@ def test_facilities_with_highest_achievement_points_by_column_name():
 
 
 def test_facilities_with_highest_performance_rate_from_file():
-    csv_file_path = 'hvbp_clinical_care_1.csv'
+    csv_file_path = '../ex02_control_structures/hvbp_clinical_care_1.csv'
 
     results = facilities_with_max_value(csv_file_path, "MORT-30-AMI Performance Rate")
 
@@ -157,7 +157,7 @@ def test_facilities_with_highest_performance_rate_from_file():
 
 
 def test_facilities_with_highest_achievement_points_from_file():
-    csv_file_path = 'hvbp_clinical_care_1.csv'
+    csv_file_path = '../ex02_control_structures/hvbp_clinical_care_1.csv'
 
     results = facilities_with_max_value(csv_file_path, "MORT-30-AMI Achievement Points")
 
@@ -168,7 +168,7 @@ def test_facilities_with_highest_achievement_points_from_file():
 
 
 def test_facilities_with_highest_performance_rate_hard_to_test():
-    csv_file_path = 'hvbp_clinical_care_1.csv'
+    csv_file_path = '../ex02_control_structures/hvbp_clinical_care_1.csv'
 
     results = facilities_with_max_value_hard_to_test(csv_file_path, "MORT-30-AMI Performance Rate")
 
@@ -178,7 +178,7 @@ def test_facilities_with_highest_performance_rate_hard_to_test():
 
 
 def test_facilities_with_highest_achievement_points_hard_to_test():
-    csv_file_path = 'hvbp_clinical_care_1.csv'
+    csv_file_path = '../ex02_control_structures/hvbp_clinical_care_1.csv'
 
     results = facilities_with_max_value_hard_to_test(csv_file_path, "MORT-30-AMI Achievement Points")
 

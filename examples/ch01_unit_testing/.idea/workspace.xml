@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55a5af72-8fdc-4efa-869a-e275e0833cfc" name="Default Changelist" comment="" />
+    <list default="true" id="55a5af72-8fdc-4efa-869a-e275e0833cfc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ch02_control_structs/init_dict_from_csv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_control_structures/facility_perf_scores.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_control_structures/find_dupe_cert_nums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex02_control_structures/test_find_dupe_cert_nums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/solution_ex02_control_structures/.idea/solution_ex02_control_structures.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch02_control_structs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02_control_structs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch09_etl_process/etl_driver_csv_to_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch09_etl_process/etl_driver_csv_to_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch09_pyspark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch09_pyspark/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/case_study/case_study/analyze_esrd_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/case_study/analyze_esrd_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/case_study/case_study/etl_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/case_study/etl_demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/case_study/case_study/write_csv_to_dbtable.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/case_study/write_csv_to_dbtable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ex02_control_structures/.idea/ex03_control_structors.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex02_control_structures/.idea/ex02_control_structures.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ex02_control_structures/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex02_control_structures/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ex02_control_structures/date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex02_control_structures/date_normalization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ex02_control_structures/process_csv_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex01_unit_testing/process_csv_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ex02_control_structures/test_date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex02_control_structures/test_date_normalization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ex02_control_structures/test_process_csv_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex01_unit_testing/test_process_csv_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ex08_parallelism/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ex08_parallelism/rate_facilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex08_parallelism/rate_facilities.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,23 +45,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../exercises/case_study" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../exercises/ex01_unit_testing" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -67,5 +90,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="220" y="300" width="436" height="489" key="FileChooserDialogImpl" timestamp="1579299412220">
+      <screen x="0" y="24" width="1593" height="934" />
+    </state>
+    <state x="220" y="300" width="436" height="489" key="FileChooserDialogImpl/0.24.1593.934@0.24.1593.934" timestamp="1579299412220" />
+    <state x="0" y="177" width="1022" height="735" key="SettingsEditor" timestamp="1579299401231">
+      <screen x="0" y="24" width="1593" height="934" />
+    </state>
+    <state x="0" y="177" width="1022" height="735" key="SettingsEditor/0.24.1593.934@0.24.1593.934" timestamp="1579299401231" />
   </component>
 </project>
