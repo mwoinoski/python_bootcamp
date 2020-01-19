@@ -1,4 +1,4 @@
-from employee_dao import DaoError
+from payroll_generator.employee_dao import DaoError
 
 
 class PayrollGenerator:
