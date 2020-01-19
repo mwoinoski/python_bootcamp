@@ -9,6 +9,12 @@ from payroll_generator import (
 )
 
 
+# TODO: this test case reproduces the bug
+def test_validate_payroll_record_status_lower_case_true():
+    pay_rec = {'id': 123, 'hours_worked': 40, 'tax_status': 'm'}
+    assert validate_payroll_record(pay_rec)
+
+
 def test_validate_payroll_record_all_fields_valid_true():
     pay_rec = {'id': 123, 'hours_worked': 40, 'tax_status': 'S'}
     assert validate_payroll_record(pay_rec)

@@ -55,7 +55,9 @@ def validate_payroll_record(payroll_record):
 
         is_valid = emp_id and emp_id > 0 and \
             hours is not None and 0 <= hours <= 168 and \
-            status and status in ('S', 'M')
+            status and status in ('S', 's', 'M', 'm')
+            # TODO: the above line fixes the bug 
+            # status and status in ('S', 'M')
 
     return is_valid
 
