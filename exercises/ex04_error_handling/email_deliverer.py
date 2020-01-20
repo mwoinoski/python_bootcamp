@@ -5,14 +5,12 @@ Example of sending HTML email via SMTP and SSL/TLS.
 import os
 import smtplib
 import ssl
-from dataclasses import dataclass
 from datetime import datetime as dt
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from typing import Dict, Tuple, ClassVar
 
 # TODO: import logging.config
-import logging.config
 
 
 class EmailDeliverer:
@@ -21,30 +19,25 @@ class EmailDeliverer:
     smtp_port: int
 
     # TODO: initialize a logging.Logger instance
-    # HINT: see course notes slide 121
-    logging_config_file: str = 'logging.ini'
-    logger_name: str = 'etl_process'
-    logger: logging.Logger
 
     def __init__(self, smtp_host: str, smtp_port: int) -> None:
         self.smtp_host = smtp_host
         self.smtp_port = smtp_port
         # TODO: Initialize the Logger.
         #       For the logger's name, use self.logger_name
-        logging.config.fileConfig(self.logging_config_file,
-                                  disable_existing_loggers=False)
-        self.logger = logging.getLogger(self.logger_name)
+
+        # TODO: assign the logger to self.logger
+
 
     def send(self, sender_addr: str, sender_password: str, to_addr: str,
              subject: str, plain_message: str, html_message: str):
 
         # TODO: write a debug message with the value of some of the arguments
         #       to this function
-        self.logger.debug('sending email from %s to %s, subject: ',
-                          sender_addr, to_addr, subject)
+
 
         # TODO: write a info message with the recipients address
-        self.logger.info('sending email to %s', to_addr)
+
 
         message: MIMEMultipart = MIMEMultipart('alternative')
         message['Subject'] = subject
@@ -70,16 +63,13 @@ class EmailDeliverer:
                     sender_addr, to_addr, message.as_string())
                 if not failed_recipients:
                     # TODO: write an info message
-                    self.logger.info('sent email to %s', sender_addr)
+                    pass
                 else:
                     # TODO: write a warning message
-                    msg = 'email to %s failed: SMTP status %d, message: %s'
-                    status, error = failed_recipients[sender_addr]
-                    self.logger.warning(msg, sender_addr, status, error)
+                    pass
 
         except Exception as ex:
             # TODO: write an error message
-            self.logger.error('problem sending email to %s: %s', to_addr, ex)
             raise
 
 

@@ -48,61 +48,54 @@ class TestPayrollGenerator:
         # HINT: copy the first test case and change values where needed
 
         # TODO: create mock objects for all the PayrollGenerator's dependencies
-        employee_dao = Mock()
-        pay_calculator = Mock()
-        check_printer = Mock()
+        ....
 
         # TODO: tell the mock employee_dao to return 999 records
         #       when its get_valid_payroll_records method is called
-        employee_dao.get_valid_payroll_records.return_value = ['emp record'] * 999
+        ....
 
         # TODO: tell the other mock objects to return the same values as the
         #       first test case. (In particular, employee_dao.get_payroll_batch_size
         #       should still return 1000).
-        employee_dao.get_payroll_batch_size.return_value = 1000
-        pay_calculator.calculate_net_pay.return_value = 'payroll check'
-        check_printer.print_check.return_value = 1
+        ....
 
         # TODO: call the PayrollGenerator constructor, passing the 3 mock objects
         #       as argments
-        payroll_generator = PayrollGenerator(employee_dao, pay_calculator, check_printer)
+        ....
 
         # TODO: call the PayrollGenerator's generate_payroll method
-        rec_count, valid_rec_count, check_data_count, printed_check_count = \
-            payroll_generator.generate_payroll()
+        ....
 
         # TODO: verify that the PayrollGenerator code handled the
         #       return values from the mock objects correctly.
         #       rec_count should be 1000
         #       The other values should be 999
-        assert rec_count == 1000
-        assert valid_rec_count == 999
-        assert check_data_count == 999
-        assert printed_check_count == 999
+        ....
 
-    # TODO: uncomment the following test case, then complete the code
+    # TODO: after the previous test cases passes,
+    #       uncomment the following test case, and then complete the code
 
-    def test_payroll_generator_employee_dao_raises_exception(self):
-        # TODO: this test case will verify that when the EmployeeDao raises an
-        #       exception, the PayrollGenerator correctly responds by raising
-        #       a PayrollGeneratorError
-
-        employee_dao = Mock()
-        pay_calculator = Mock()
-        check_printer = Mock()
-
-        payroll_generator = PayrollGenerator(employee_dao, pay_calculator, check_printer)
-
-        # TODO: tell the employee_dao that a call to its get_valid_payroll_records
-        #       should have the side effect of raising a DaoError
-        employee_dao.get_valid_payroll_records.side_effect = DaoError()
-
-        # TODO: use the pytest `raises` function to detect a PayrollGeneratorError
-        with raises(PayrollGeneratorError):
-            # TODO: call the payroll_generator.generate_payroll method
-            # HINT: you don't need to store the method's return value because
-            #       it will never be used
-            payroll_generator.generate_payroll()
+    # def test_payroll_generator_employee_dao_raises_exception(self):
+    #     # TODO: this test case will verify that when the EmployeeDao raises an
+    #     #       exception, the PayrollGenerator correctly responds by raising
+    #     #       a PayrollGeneratorError
+    #
+    #     employee_dao = Mock()
+    #     pay_calculator = Mock()
+    #     check_printer = Mock()
+    #
+    #     payroll_generator = PayrollGenerator(employee_dao, pay_calculator, check_printer)
+    #
+    #     # TODO: tell the employee_dao that a call to its get_valid_payroll_records
+    #     #       should have the side effect of raising a DaoError
+    #     employee_dao.get_valid_payroll_records.side_effect = DaoError()
+    #
+    #     # TODO: use the pytest `raises` function to detect a PayrollGeneratorError
+    #     with raises(PayrollGeneratorError):
+    #         # TODO: call the payroll_generator.generate_payroll method
+    #         # HINT: you don't need to store the method's return value because
+    #         #       it will never be used
+    #         payroll_generator.generate_payroll()
 
     # --------------------------------------------------------------------------
     # TODO: Review the following completed test cases and be sure you

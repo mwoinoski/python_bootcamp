@@ -1,0 +1,2 @@
+class CheckPrinter:
+    pass

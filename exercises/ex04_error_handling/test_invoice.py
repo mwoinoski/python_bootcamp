@@ -1,56 +1,36 @@
 """
 Test error handling in the invoice handling code.
 """
-from dataclasses import dataclass
-
-from pytest import raises
-from datetime import datetime, timedelta
-
-from invoice import Invoice, InvoiceDataAccessObject
 
 
-@dataclass
-class InvoiceDaoStub:
-    status: int = 0
-    exception: Exception = None
+from datetime import date, timedelta
+from pytest import mark, raises
 
-    def lookup_status(self, invoice_id: int) -> int:
-        if self.exception:
-            raise self.exception
-        return self.status
+from invoice import Invoice
 
 
-class TestInvoiceHandler:
-    nextweek: datetime = datetime.now() + timedelta(weeks=1)
+class TestInvoice:
+    def test_constructor_id_one(self):
+        invoice = Invoice(1, 'Awesome Medical Supply', date.today())
+        assert invoice
 
-    def test_is_invoice_release_status_1(self):
-        dao = InvoiceDaoStub(1)
-        invoice = Invoice(1, self.nextweek, dao)
+    def test_constructor_id_zero(self):
+        # TODO: put these statements inside a `try` statement
+        invoice = Invoice(0, 'Awesome Medical Supply', date.today())
+        assert invoice
 
-        is_released = invoice.is_invoice_released()
+        # TODO: add an `except` statement for ValueError, and
+        #       print an appropriate error message
 
-        assert is_released
 
-    def test_is_invoice_release_status_0(self):
-        dao = InvoiceDaoStub(0)
-        invoice = Invoice(1, self.nextweek, dao)
+        # TODO: add a `finally` statement, and
+        #       print an appropriate error message
 
-        is_released = invoice.is_invoice_released()
 
-        assert is_released
+    # @mark.skip
+    def test_constructor_payee_empty(self):
+        # TODO: put these statements inside a `try` statement.
+        #       Add a suitable `except` statement and a `finally` statement
 
-    def test_is_invoice_release_dao_raises_value_error(self):
-        dao = InvoiceDaoStub(ValueError('invoice invoice id -1'))
-        invoice = Invoice(1, self.nextweek, dao)
-
-        is_released = invoice.is_invoice_released()
-
-        assert not is_released
-
-    def test_is_invoice_release_dao_raises_runtime_error(self):
-        dao = InvoiceDaoStub(RuntimeError('something bad happened'))
-        invoice = Invoice(1, self.nextweek, dao)
-
-        is_released = invoice.is_invoice_released()
-
-        assert not is_released
+        invoice = Invoice(123, '', date.today())
+        assert invoice

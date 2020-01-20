@@ -1,56 +1,40 @@
 """
 Test error handling in the invoice handling code.
 """
-from dataclasses import dataclass
 
+
+from datetime import date, timedelta
 from pytest import raises
-from datetime import datetime, timedelta
 
 from invoice import Invoice
 
 
-@dataclass
-class InvoiceDaoStub:
-    status: int = 0
-    exception: Exception = None
+class TestInvoiceRaisesErrors:
+    # TODO Step 1: add a new test method
 
-    def lookup_status(self, invoice_id: int) -> int:
-        if self.exception:
-            raise self.exception
-        return self.status
+        # TODO: in the new test method, call the `raises` function to check for a ValueError
+
+            # TODO: call the Invoice constructor with a release_cutoff_date value of None
 
 
-class TestInvoiceHandler:
-    nextweek: datetime = datetime.now() + timedelta(weeks=1)
+    # --------------------------------------------------------------------------
+    # skip Step 2 until the first test case passes
+    # --------------------------------------------------------------------------
 
-    def test_is_invoice_release_status_1(self):
-        dao = InvoiceDaoStub(1)
-        invoice = Invoice(1, self.nextweek, dao)
+    # TODO Step 2: add a new test method to verify if you pass a release cutoff value
+    #       of yesterday's date to the Invoice constructor, it raises a ValueError
+    # HINT: calculate yesterday's date like this:
+    #       date.today() - timedelta(days=1)
 
-        is_released = invoice.is_ok_to_release()
 
-        assert is_released
 
-    def test_is_invoice_release_status_0(self):
-        dao = InvoiceDaoStub(0)
-        invoice = Invoice(1, self.nextweek, dao)
+    # TODO Step 2: add a new test method to verify if you pass a release cutoff date
+    #       of today's date to the Invoice constructor, it succeeds
 
-        is_released = invoice.is_ok_to_release()
 
-        assert is_released
 
-    def test_is_invoice_release_dao_raises_value_error(self):
-        dao = InvoiceDaoStub(ValueError('invoice invoice id -1'))
-        invoice = Invoice(1, self.nextweek, dao)
 
-        is_released = invoice.is_ok_to_release()
+    # TODO Step 2: add a new test method to verify if you pass a release cutoff date
+    #       of tomorrow's date to the Invoice constructor, it succeeds
 
-        assert not is_released
 
-    def test_is_invoice_release_dao_raises_runtime_error(self):
-        dao = InvoiceDaoStub(RuntimeError('something bad happened'))
-        invoice = Invoice(1, self.nextweek, dao)
-
-        is_released = invoice.is_ok_to_release()
-
-        assert not is_released

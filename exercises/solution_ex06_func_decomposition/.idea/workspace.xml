@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e87b711f-8af8-44d8-9c59-71571f85348b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ex06_func_decomposition/elt_process/data_frame.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex06_func_decomposition/elt_process/extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex06_func_decomposition/elt_process/loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex06_func_decomposition/elt_process/test_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex06_func_decomposition/elt_process/test_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex06_func_decomposition/elt_process/test_transformer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex06_func_decomposition/elt_process/transformer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex06_func_decomposition/etl_process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex06_func_decomposition/test_func_decomposition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex04_error_handling/email_deliverer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_error_handling/email_deliverer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex04_error_handling/invoice.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_error_handling/invoice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex04_error_handling/invoice_data_access_object.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_error_handling/invoice_data_access_object.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex04_error_handling/test_invoice.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_error_handling/test_invoice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex04_error_handling/test_invoice_raises_errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_error_handling/test_invoice_raises_errors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex05_testing_with_mocks/business_object/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex05_testing_with_mocks/business_object/business_object.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex05_testing_with_mocks/business_object/person.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex05_testing_with_mocks/business_object/test_business_object.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex05_testing_with_mocks/business_object/test_business_object_patch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex05_testing_with_mocks/payroll_generator/test_payroll_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex05_testing_with_mocks/payroll_generator/test_payroll_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex06_func_decomposition/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex06_func_decomposition/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex06_func_decomposition/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ex06_func_decomposition/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex06_func_decomposition/scrabble_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex06_func_decomposition/scrabble_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex06_func_decomposition/walk_directory.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex06_func_decomposition/walk_directory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex08_parallelism/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ex08_parallelism/README.md" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_func_decomposition.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/etl_process.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/walk_directory.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/solution_ex06_func_decomposition.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="187" />
+    <option name="y" value="-15" />
+    <option name="width" value="1014" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="solution_ex06_func_decomposition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="solution_ex06_func_decomposition" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e87b711f-8af8-44d8-9c59-71571f85348b" name="Default Changelist" comment="" />
+      <created>1579563039430</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579563039430</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="187" y="-15" width="1014" height="1056" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27151638" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/etl_process.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/walk_directory.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_func_decomposition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
