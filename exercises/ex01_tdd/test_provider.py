@@ -26,43 +26,43 @@ def test_is_valid_npi_empty_false() -> None:
 
 
 # TODO: remove the skip decorator, then modify provider.py so this test passes
-# @mark.skip
+@mark.skip
 def test_is_valid_npi_too_short_false() -> None:
     assert not is_valid_npi("123456789")
 
 
 # TODO: remove the skip decorator, then modify provider.py so this test passes
-# @mark.skip
+@mark.skip
 def test_is_valid_npi_too_long_true() -> None:
     assert not is_valid_npi("12234567893")
 
 
 # TODO: remove the skip decorator, then modify provider.py so this test passes
-# @mark.skip
+@mark.skip
 def test_is_valid_npi_does_not_start_with_1_or_2_false() -> None:
     assert not is_valid_npi("3234567893")
 
 
 # TODO: remove the skip decorator, then modify provider.py so this test passes
-# @mark.skip
+@mark.skip
 def test_is_valid_npi_contains_letter_false() -> None:
     assert not is_valid_npi("2a34567893")
 
 
 # TODO: remove the skip decorator, then modify provider.py so this test passes
-# @mark.skip
+@mark.skip
 def test_is_valid_npi_contains_commas_false() -> None:
     assert not is_valid_npi("23,456,783")
 
 
 # TODO: remove the skip decorator, then modify provider.py so this test passes
-# @mark.skip
+@mark.skip
 def test_is_valid_npi_bad_check_digit_false() -> None:
     assert not is_valid_npi("2234567893")
 
 
 # TODO: replace all the tests above with a single parameterized test case
-# @mark.skip
+@mark.skip
 @mark.parametrize(
     "npi, expected_result", [
         (None, False),           # can't be None

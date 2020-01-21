@@ -5,8 +5,6 @@ Provider class that defines the attributes of health care providers
 from datetime import datetime
 from typing import Optional
 
-from manage_accounts.model.person import Person
-
 
 def is_valid_npi(npi: str) -> bool:
     """
