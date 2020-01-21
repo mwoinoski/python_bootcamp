@@ -18,27 +18,19 @@ def test_is_leap_year_multiple_of_four():
 
 # TODO: write a test case that verifies that 2019 was not a leap year
 def test_is_leap_year_not_multiple_of_four():
-    assert not is_leap_year(2019)
+    ....
 
 
 # TODO: write a test case that verifies that 2100 will not be a leap year
-def test_is_leap_year_century_not_multiple_of_four_hundred():
-    assert not is_leap_year(2100)
+def ....
+    ....
 
 
 # TODO: write a test case that verifies that 2000 was a leap year
-def test_is_leap_year_century_multiple_of_four_hundred():
-    assert is_leap_year(2000)
+def ....
+    ....
 
 
 # BONUS TODO: write a single parameterized test case that performs the same
 #             tests as the above four separate test functions.
 # HINT: See page 27 in the course notes
-@mark.parametrize('year, expected', [
-    (2020, True),
-    (2019, False),
-    (2100, False),
-    (2000, True),
-])
-def test_is_leap_year(year, expected):
-    assert is_leap_year(year) == expected
