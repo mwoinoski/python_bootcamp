@@ -28,6 +28,7 @@ Gabriele Lanaro.
 This version has modifications to use the concurrent.futures module.
 """
 
+from timeit import timeit
 from concurrent.futures import (
     ProcessPoolExecutor,
     ThreadPoolExecutor,
@@ -51,10 +52,9 @@ def calculate_one_sample():
     # with random.random() and see how that changes the script's performance.
 
 
-# TODO: note the definition of the `pi_serial` method, which performs a
-# calculation without using processes or threads. It calls
-# calculate_one_sample() one million times and adds up all the return values.
-# (no code change required)
+# TODO: note the definition of the pi_serial function, which performs
+#       a calculation without using processes or threads. It calls
+#       calculate_one_sample() one million times and adds up all the return values.
 def pi_serial():
     """Perform the Monte Carlo technique in a serial fashion"""
     hits = 0
@@ -66,9 +66,8 @@ def pi_serial():
     return pi
 
 
-# TODO: note the definition of the `sample_multiple` method, which calls
-# calculate_one_sample() 250,000 times and adds up all the return values.
-# (no code change required)
+# TODO: note the definition of the sample_multiple function, which calls
+#       calculate_one_sample() 250,000 times and adds up all the return values.
 def sample_multiple(chunk_size):
     hits = 0
     for _ in range(chunk_size):
@@ -78,9 +77,8 @@ def sample_multiple(chunk_size):
     # return sum(calculate_one_sample() for _ in range(chunk_size))
 
 
-# TODO: note the definition of the `pi_async` method. You'll define this method
-# to call sample_multiple() with four parallel processes.
-# (no code change required)
+# TODO: note the definition of the pi_async function, which calls
+#      sample_multiple() with four parallel processes.
 def pi_async():
     """
     Divide calculation into 4 chunks and create 4 processes to execute
@@ -88,69 +86,47 @@ def pi_async():
     """
     ntasks = 4
     # ntasks = multiprocessing.cpu_count() # number of (virtual) CPU cores
-
-    # TODO: note the definition of `chunk_size`. This will be the number of
-    # calculations performed in each call to sample_multiple()
-    # (no code change required)
     chunk_size = total_samples // ntasks  # divide work into 4 chunks
-
-    # TODO: define an empty set of Future instances named `futures`
     futures = set()
 
-    # TODO: write a `with` statement to use a ProcessPoolExecutor.
-    # with ThreadPoolExecutor(max_workers=ntasks) as executor:
+    # TODO: note the `with` statement to use a ProcessPoolExecutor.
     with ProcessPoolExecutor() as executor:
+    # with ThreadPoolExecutor(max_workers=ntasks) as executor:
+        # TODO Step 2: after running this program and examining the output,
+        #      comment out the line above with ProcessPoolExecutor and
+        #      uncomment the line with ThreadPoolExecutor. Then run the program
+        #      again and note the execution times.
 
-        # TODO: set up a `for` loop that executes `ntasks` times.
         for _ in range(ntasks):
-
-            # TODO: for each loop iteration, use a Process to execute
-            # sample_multiple with the argument chunk_size.
-            # Save the returned Future in a local variable.
+            # for each loop iteration, use a Process to execute sample_multiple
+            # with the argument chunk_size. Save the returned Future in a local variable.
             future = executor.submit(sample_multiple, chunk_size)
-
-            # TODO: add the returned Future to the `futures` set.
             futures.add(future)
 
-        # Or, using a list comprehension:
-        # futures = [executor.submit(sample_multiple, chunk_size)
-        #            for _ in range(ntasks)]
-
-    # TODO: note the definition of `hits`
-    # (no code change required)
     hits = 0
-
-    # TODO: set up a `for` loop to get the result of each process as it
-    # completes.
     for future in concurrent.futures.as_completed(futures):
-
-        # TODO: add the process's result to `hits`
         hits += future.result()
 
-    # Or, if you prefer the compact generator expression syntax:
-    # hits = sum(future.result() for future in
-    #            concurrent.futures.as_completed(futures))
-
-    # TODO: note how the value of `hits` is used in the next statement
+    # note how the value of `hits` is used in the next statement
     # (no code change required)
     pi = 4.0 * hits/total_samples
     return pi
 
 
 if __name__ == '__main__':
-    print('pi_async() returned {}'.format(pi_async()))
-    print('pi_serial() returned {}'.format(pi_serial()))
+    # TODO: note the calls to pi_async() and pi_serial()
+    pi_from_pi_async = pi_async()
+    print(f'pi_async() returned {pi_from_pi_async}')
 
-    # Add calls to timeit here
-
-    from timeit import timeit
+    pi_from_pi_serial = pi_serial()
+    print(f'pi_serial() returned {pi_from_pi_serial}')
 
     time = timeit('pi_async()',
                   setup='from __main__ import pi_async',
                   number=1)
-    print('pi_async() finished in {:.3} seconds'.format(time))
+    print(f'pi_async() finished in {time:.3} seconds')
 
     time = timeit('pi_serial()',
                   setup='from __main__ import pi_serial',
                   number=1)
-    print('pi_serial() finished in {:.3} seconds'.format(time))
+    print(f'pi_serial() finished in {time:.3} seconds')
