@@ -9,7 +9,7 @@ days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 # TODO: add the simplest possible code that will make the first test case pass
 
-def normalize_date(date):
+def normalize_date(date, date_format='YMD'):
     """
     Converts a date to ISO 8601 format (YYYY-MM-DD)
 
