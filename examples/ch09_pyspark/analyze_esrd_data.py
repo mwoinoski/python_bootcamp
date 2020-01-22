@@ -139,10 +139,7 @@ for i, row in enumerate(result):
 print(f'+----+-----+----------------+-----------+')
 
 
-# MW TODO: measure mean performance by dialysis center owner
-
-# MW TODO: look at a different measure than TPS
-
+# Another analysis goal: measure mean performance by dialysis center owner
 
 # result: List[Row] = df.toDF('cust_id', 'order_id', 'amount') \
 #                       .select('cust_id', 'amount') \

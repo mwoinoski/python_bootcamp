@@ -17,7 +17,7 @@ from data_normalization import normalize_column_name, make_column_names_unique
 # 2. a name with length max
 # 3. a name with length (max + 1)
 
-def test_normalize_column_name_arg_is_none() -> None:
+def test_normalize_column_name_arg_is_none():
     # Arrange
     old_name = None
     # Act
@@ -26,67 +26,67 @@ def test_normalize_column_name_arg_is_none() -> None:
     assert results == ""
 
 
-def test_normalize_column_name_arg_is_empty() -> None:
+def test_normalize_column_name_arg_is_empty():
     old_name = ""
     results = normalize_column_name(old_name)
     assert results == ""
 
 
-def test_normalize_column_name_no_change() -> None:
+def test_normalize_column_name_no_change():
     old_name = 'street'
     results = normalize_column_name(old_name)
     assert results == 'street'
 
 
-def test_normalize_column_name_all_caps() -> None:
+def test_normalize_column_name_all_caps():
     old_name = 'STREET'
     results = normalize_column_name(old_name)
     assert results == 'street'
 
 
-def test_normalize_column_name_internal_space() -> None:
+def test_normalize_column_name_internal_space():
     old_name = 'Street Address'
     results = normalize_column_name(old_name)
     assert results == 'street_address'
 
 
-def test_normalize_column_name_leading_and_trailing_space() -> None:
+def test_normalize_column_name_leading_and_trailing_space():
     old_name = '    Street  Address   '
     results = normalize_column_name(old_name)
     assert results == 'street_address'
 
 
-def test_normalize_column_name_special_chars() -> None:
+def test_normalize_column_name_special_chars():
     old_name = 'State/Province (req)'
     results = normalize_column_name(old_name)
     assert results == 'state_province_req'
 
 
-def test_normalize_column_name_trailing_underscore() -> None:
+def test_normalize_column_name_trailing_underscore():
     old_name = 'STATE_'
     results = normalize_column_name(old_name)
     assert results == 'state'
 
 
-def test_normalize_column_name_length_max_minus_one() -> None:
+def test_normalize_column_name_length_max_minus_one():
     old_name = 'zip code'
     results = normalize_column_name(old_name, 9)
     assert results == 'zip_code'
 
 
-def test_normalize_column_name_length_max() -> None:
+def test_normalize_column_name_length_max():
     old_name = 'zip code'
     results = normalize_column_name(old_name, 8)
     assert results == 'zip_code'
 
 
-def test_normalize_column_name_length_max_plus_one() -> None:
+def test_normalize_column_name_length_max_plus_one():
     old_name = 'zip code'
     results = normalize_column_name(old_name, 7)
     assert results == 'zip_cod'
 
 
-def test_normalize_column_name_trailing_underscore_after_normalizing() -> None:
+def test_normalize_column_name_trailing_underscore_after_normalizing():
     old_name = 'zip code'
     results = normalize_column_name(old_name, 4)
     assert results == 'zip'
@@ -102,68 +102,68 @@ def test_normalize_column_name_trailing_underscore_after_normalizing() -> None:
 #          requirements
 #       3. then write at least one test for each of the other requirements
 
-def test_make_column_names_unique_empty_list() -> None:
+def test_make_column_names_unique_empty_list():
     old_cols = []
     results = make_column_names_unique(old_cols)
     assert results == []
 
 
-def test_make_column_names_unique_one_column_no_change() -> None:
+def test_make_column_names_unique_one_column_no_change():
     old_cols = ['street']
     results = make_column_names_unique(old_cols)
     assert results == ['street']
 
 
-def test_make_column_names_unique_one_column_all_caps() -> None:
+def test_make_column_names_unique_one_column_all_caps():
     old_cols = ['STREET']
     results = make_column_names_unique(old_cols)
     assert results == ['street']
 
 
-def test_make_column_names_unique_different_columns() -> None:
+def test_make_column_names_unique_different_columns():
     old_cols = ['Street', 'City', 'ZIP Code']
     results = make_column_names_unique(old_cols)
     assert results == ['street', 'city', 'zip_code']
 
 
-def test_make_column_names_unique_duplicate_names_before_normalizing() -> None:
+def test_make_column_names_unique_duplicate_names_before_normalizing():
     old_cols = ['Street', 'City', 'Street']
     results = make_column_names_unique(old_cols)
     assert results == ['street_1', 'city', 'street_2']
 
 
-def test_make_column_names_unique_duplicate_names_after_normalizing() -> None:
+def test_make_column_names_unique_duplicate_names_after_normalizing():
     old_cols = ['Street', 'Zip_Code', 'State', 'ZIP Code']
     results = make_column_names_unique(old_cols)
     assert results == ['street', 'zip_code_1', 'state', 'zip_code_2']
 
 
-def test_make_column_names_unique_duplicate_names_after_normalizing() -> None:
+def test_make_column_names_unique_duplicate_names_after_normalizing():
     old_cols = ['Street', 'Zip_Code', 'State', 'ZIP Code']
     results = make_column_names_unique(old_cols)
     assert results == ['street', 'zip_code_1', 'state', 'zip_code_2']
 
 
-def test_make_column_names_unique_duplicate_names_after_normalizing() -> None:
+def test_make_column_names_unique_duplicate_names_after_normalizing():
     old_cols = ['Street', 'Zip_Code', 'State', 'ZIP Code']
     results = make_column_names_unique(old_cols)
     assert results == ['street', 'zip_code_1', 'state', 'zip_code_2']
 
 
-def test_make_column_names_unique_duplicate_names_after_shortening() -> None:
+def test_make_column_names_unique_duplicate_names_after_shortening():
     old_cols = ['Performance Score Mean', 'Performance Score Std Dev']
     results = make_column_names_unique(old_cols, 18)
     assert results == ['performance_scor_1', 'performance_scor_2']
 
 
-def test_make_column_names_unique_ten_dupes() -> None:
+def test_make_column_names_unique_ten_dupes():
     old_cols = ['name'] * 10
     results = make_column_names_unique(old_cols, 18)
     assert results == ['name_01', 'name_02', 'name_03', 'name_04', 'name_05',
                        'name_06', 'name_07', 'name_08', 'name_09', 'name_10']
 
 
-def test_make_column_names_unique_ten_dupes() -> None:
+def test_make_column_names_unique_ten_dupes():
     old_cols = ['name'] * 10
     results = make_column_names_unique(old_cols, 6)
     assert results == ['nam_01', 'nam_02', 'nam_03', 'nam_04', 'nam_05',

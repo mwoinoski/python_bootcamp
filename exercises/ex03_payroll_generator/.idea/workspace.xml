@@ -2,27 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9aa420e-d2d0-4fe5-8bbe-2127cdad6c01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ex03_payroll_generator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01_tdd/payroll_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_tdd/payroll_generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01_tdd/payroll_recs_week_4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_tdd/payroll_recs_week_4.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01_tdd/provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_tdd/provider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01_tdd/test_payroll_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_tdd/test_payroll_generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01_tdd/test_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_tdd/test_provider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01_unit_testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01_unit_testing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ex03_csv_processor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_payroll_generator/.idea/ex03_payroll_generator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_payroll_generator/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_payroll_generator/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_payroll_generator/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_payroll_generator/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_payroll_generator/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_processor/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_processor/process_csv_files.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_payroll_generator/driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hvbp_clinical_care.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_payroll_generator/hvbp_clinical_care.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_process_csv_files.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex04_error_handling/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_error_handling/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex06_func_decomposition/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ex06_func_decomposition/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex02_control_structures/date_normalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex02_control_structures/date_normalization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03_oop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03_oop/tests/test_address.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/tests/test_address.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03_oop/tests/test_populate_facilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/tests/test_populate_facilities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +26,12 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ex03_payroll_generator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../ex03_payroll_generator" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$/csv_processor" />
@@ -83,11 +67,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ex03_payroll_generator" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ex03_payroll_generator/driver.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/driver.py" />
       <option name="PARAMETERS" value="payroll_recs_week_4.csv" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,13 +129,13 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ex03_payroll_generator" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/../ex03_payroll_generator/test_payroll_generator_procedural.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_payroll_generator_procedural.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -160,20 +144,20 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ex03_payroll_generator" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/../ex03_payroll_generator/test_payroll_generator.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_payroll_generator.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.driver" />
-      <item itemvalue="Python tests.pytest test_payroll_generator.py" />
       <item itemvalue="Python tests.pytest in test_payroll_generator_procedural.py" />
+      <item itemvalue="Python tests.pytest test_payroll_generator.py" />
     </list>
     <recent_temporary>
       <list>

@@ -19,13 +19,18 @@ def normalize_date(date):
         MDY - MM-DD-YYYY
     """
     return None
-    # HINT: remember the Python syntax for substring operations:
+    # HINT: Python syntax for substring operations:
     #       input[0]    char 0 (the first character)
     #       input[0:4]  chars 0 through 3 (that is, 0 up to but not including 4)
     #       input[6:]   chars 6 through the end of the string
     #       input[:4]   chars 0 through 3
     #       input[-1]   last char
-
+    #
+    # HINT: Python syntax for tests:
+    #       if ...  :
+    #           ...
+    #       else ...  :
+    #           ...
 
 def is_leap_year(year):
     """

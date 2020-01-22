@@ -26,13 +26,13 @@ class TestEtlProcess:
         etl_process.run()
 
         # TODO: verify that the extract() method of the mock extractor was called
-        assert extractor.extract.called
+        assert extractor.read_from_db.called
 
         # TODO: verify that the transform() method of the mock transformer was called
-        assert transformer.transform.called
+        assert transformer.clean_data.called
 
         # TODO: verify that the loader() method of the mock loader was called
-        assert loader.load.called
+        assert loader.write_to_db.called
 
     # TODO Step 2: write a test case that tests an error path of
     #      an execution of the EtlProcess run() method
@@ -44,7 +44,7 @@ class TestEtlProcess:
 
         # TODO: set the side effect of the mock extractor's extract() method
         #       to a RuntimeError
-        extractor.extract.side_effect = RuntimeError()
+        extractor.read_from_db.side_effect = RuntimeError()
 
         # TODO: create an EtlProcess
         etl_process = EtlProcess(extractor, transformer, loader)
@@ -59,9 +59,9 @@ class TestEtlProcess:
         # TODO: assert that the mock extractors extract method was called,
         #       but the transformer's transform method and the loader's load
         #       method were not called
-        assert extractor.extract.called
-        assert not transformer.transform.called
-        assert not loader.load.called
+        assert extractor.read_from_db.called
+        assert not transformer.clean_data.called
+        assert not loader.write_to_db.called
 
     # TODO Step 3: test a different an error path
 
@@ -74,16 +74,16 @@ class TestEtlProcess:
 
         # TODO: set the side effect of the mock transformers's transform() method
         #       to a RuntimeError
-        transformer.transform.side_effect = RuntimeError()
+        transformer.clean_data.side_effect = RuntimeError()
 
         etl_process = EtlProcess(extractor, transformer, loader)
 
         with raises(EtlProcessError):
             etl_process.run()
 
-        assert extractor.extract.called
-        assert transformer.transform.called
-        assert not loader.load.called
+        assert extractor.read_from_db.called
+        assert transformer.clean_data.called
+        assert not loader.write_to_db.called
 
     # TODO Step 4: verify that EtlProcess raises exceptions if any argument
     #      to its constructor is None

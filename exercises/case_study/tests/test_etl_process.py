@@ -54,7 +54,7 @@ class EtlProcessTest(TestCase):
             .option('driver', cls.db_config['driver']) \
             .option('user', cls.db_config['user']) \
             .option('password', cls.db_config['password']) \
-            .load()
+            .write_to_db()
 
     # pylint: disable=no-self-use,missing-function-docstring
     def test_load_success(self):

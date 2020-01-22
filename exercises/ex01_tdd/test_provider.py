@@ -7,7 +7,7 @@ from pytest import mark, raises
 from provider import is_valid_npi
 
 
-def test_is_valid_npi_true() -> None:
+def test_is_valid_npi_true():
     assert is_valid_npi("1234567893")
     assert is_valid_npi("2234567891")
     assert is_valid_npi("1000000004")
@@ -15,54 +15,54 @@ def test_is_valid_npi_true() -> None:
     assert is_valid_npi("1345678902")
 
 
-def test_is_valid_npi_none_false() -> None:
+def test_is_valid_npi_none_false():
     assert not is_valid_npi(None)
 
 
 # TODO: remove the skip decorator, then modify provider.py so this test passes
-# @mark.skip
-def test_is_valid_npi_empty_false() -> None:
+@mark.skip
+def test_is_valid_npi_empty_false():
     assert not is_valid_npi("")
 
 
 # TODO: remove the skip decorator, then modify provider.py so this test passes
-# @mark.skip
-def test_is_valid_npi_too_short_false() -> None:
+@mark.skip
+def test_is_valid_npi_too_short_false():
     assert not is_valid_npi("123456789")
 
 
 # TODO: remove the skip decorator, then modify provider.py so this test passes
-# @mark.skip
-def test_is_valid_npi_too_long_true() -> None:
+@mark.skip
+def test_is_valid_npi_too_long_true():
     assert not is_valid_npi("12234567893")
 
 
 # TODO: remove the skip decorator, then modify provider.py so this test passes
-# @mark.skip
-def test_is_valid_npi_does_not_start_with_1_or_2_false() -> None:
+@mark.skip
+def test_is_valid_npi_does_not_start_with_1_or_2_false():
     assert not is_valid_npi("3234567893")
 
 
 # TODO: remove the skip decorator, then modify provider.py so this test passes
-# @mark.skip
-def test_is_valid_npi_contains_letter_false() -> None:
+@mark.skip
+def test_is_valid_npi_contains_letter_false():
     assert not is_valid_npi("2a34567893")
 
 
 # TODO: remove the skip decorator, then modify provider.py so this test passes
-# @mark.skip
-def test_is_valid_npi_contains_commas_false() -> None:
+@mark.skip
+def test_is_valid_npi_contains_commas_false():
     assert not is_valid_npi("23,456,783")
 
 
 # TODO: remove the skip decorator, then modify provider.py so this test passes
-# @mark.skip
-def test_is_valid_npi_bad_check_digit_false() -> None:
+@mark.skip
+def test_is_valid_npi_bad_check_digit_false():
     assert not is_valid_npi("2234567893")
 
 
 # TODO: replace all the tests above with a single parameterized test case
-# @mark.skip
+@mark.skip
 @mark.parametrize(
     "npi, expected_result", [
         (None, False),           # can't be None
@@ -79,5 +79,5 @@ def test_is_valid_npi_bad_check_digit_false() -> None:
         ("2000000002", True),
         ("1345678902", True),
     ])
-def test_is_valid_npi(npi: str, expected_result: bool) -> None:
+def test_is_valid_npi(npi, expected_result: bool):
     assert is_valid_npi(npi) == expected_result

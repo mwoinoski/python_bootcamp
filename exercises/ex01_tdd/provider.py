@@ -5,10 +5,8 @@ Provider class that defines the attributes of health care providers
 from datetime import datetime
 from typing import Optional
 
-from manage_accounts.model.person import Person
 
-
-def is_valid_npi(npi: str) -> bool:
+def is_valid_npi(npi):
     """
     return True if npi is a valid NPI, False otherwise
 
@@ -19,7 +17,7 @@ def is_valid_npi(npi: str) -> bool:
     return True
 
 
-def calc_check_digit(npi_first9: str) -> str:
+def calc_check_digit(npi_first9):
     """
     Return the check digit for the given NPI.
     The check digit calculated by the Luhn algorithm; see

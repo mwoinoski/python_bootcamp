@@ -36,16 +36,16 @@ class EtlProcess:
         try:
             # TODO Step 1: call the extractor's extract method and save the
             #      return value in a variable named `data`
-            data = self.extractor.extract()
+            data = self.extractor.read_from_db()
 
             # TODO Step 1: call the transformer's transform method,
             #      passing `data` as the argument and saving the return value
             #      in a variable named `transformed_data`
-            transformed_data = self.transformer.transform(data)
+            transformed_data = self.transformer.clean_data(data)
 
             # TODO: Step 1: call the loader's load method, passing
             #      `tranformed_data` as the argument
-            self.loader.load(transformed_data)
+            self.loader.write_to_db(transformed_data)
 
         # TODO Step 2: define a handler for Exception
         except Exception as ex:
