@@ -10,6 +10,7 @@ from facilities.dialysis_facility import DialysisFacility
 
 class TestPopulateFacilities:
     def test_populate_facilities(self):
+        # TODO: note how we create a list of facilities
         facilities: List[Facility] = [
             DialysisFacility(98765, 'Acme Dialysis',
                              '123 Renal Rd Sacramento CA 93253', 40),
@@ -20,6 +21,7 @@ class TestPopulateFacilities:
             Hospital(98765, 'Community Hospital',
                      '234 Wellness Blvd Sacramento CA 93253', 40)
         ]
-
+        # TODO: note how we loop over the facilities and call the
+        #       calculate_quality_score method of each one
         for i, expected_score in enumerate([120, 80, 120, 80]):
             assert facilities[i].calculate_quality_score() == expected_score

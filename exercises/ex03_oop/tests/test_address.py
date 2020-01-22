@@ -18,3 +18,5 @@ class TestAddress:
         addr: Address = Address('123 Main St', 'Sacramento', 'CA', '94203')
 
         assert str(addr) == '123 Main St Sacramento CA 94203'
+
+
