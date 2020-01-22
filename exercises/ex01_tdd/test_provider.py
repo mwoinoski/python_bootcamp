@@ -62,7 +62,7 @@ def test_is_valid_npi_bad_check_digit_false():
 
 
 # TODO: replace all the tests above with a single parameterized test case
-# @mark.skip
+@mark.skip
 @mark.parametrize(
     "npi, expected_result", [
         (None, False),           # can't be None
