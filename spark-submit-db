@@ -1,0 +1,7 @@
+# run spark-submit with options to read and write to tables in SQLServer and MySQL
+
+sqlServerJar=$HOME/lib/mssql-jdbc-7.4.1.jre8.jar
+mysqlJar=$HOME/lib/mysql-connector-java-8.0.18.jar 
+jars="$sqlServerJar,$mysqlJar"
+
+spark-submit --driver-class-path "$jars" --jars "$jars" "$@"

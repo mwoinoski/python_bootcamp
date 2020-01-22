@@ -4,6 +4,6 @@
 export PYTHONPATH=..
 
 cd "$HOME/python_bootcamp/exercises/case_study"
-spark-submit case_study/etl_demo.py
+spark-submit case_study/pyspark_db.py
 cd tests
 pytest test_etl_process.py
