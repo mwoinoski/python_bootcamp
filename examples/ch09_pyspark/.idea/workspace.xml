@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0985c91c-3232-412a-92e0-b883a6942c04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../exercises/ex08_parallelism/rate_facilities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch09_etl_process/etl_driver_csv_to_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ch09_etl_process/etl_driver_csv_to_csv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/providers.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/providers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/case_study/case_study/write_csv_to_dbtable.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/case_study/case_study/write_csv_to_dbtable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/ex08_parallelism/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ex04_error_handling/test_invoice_raises_errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex04_error_handling/test_invoice_raises_errors.py" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,16 +35,30 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../exercises/case_study" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/etl_process" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/etl_process" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/etl_process" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Python tests.pytest in test_loader.py">
     <configuration name="etl_driver_csv_to_csv" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -152,18 +164,6 @@
         <item itemvalue="Python.total_cust_spend_to_csv" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
