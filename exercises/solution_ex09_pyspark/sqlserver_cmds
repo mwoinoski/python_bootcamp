@@ -1,0 +1,156 @@
+select [Facility Name],[CMS Certification Number (CCN)],[Alternate CCN 1],[Address 1],[Address 2],City,State,[Zip Code] from esrd_qip where city = 'Sacramento'
+select [Facility Name] from esrd_qip where city = 'Sacramento'
+
+Facility Name
+CMS Certification Number (CCN)
+Alternate CCN 1
+Address 1
+Address 2
+City
+State
+Zip Code
+Network
+VAT Catheter Measure Score
+VAT Catheter Achievement Measure Rate/Ratio
+Number of Patients Included in VAT Catheter Measure Score Achievement Period
+VAT Catheter Achievement Period Numerator
+VAT Catheter Achievement Period Denominator
+VAT Catheter Improvement Measure Rate/Ratio
+VAT Catheter Improvement Period Numerator
+VAT Catheter Improvement Period Denominator
+VAT Catheter Measure Score Applied
+National Avg VAT Catheter Measure Score
+VAT Fistula Measure Score
+VAT Fistula Achievement Measure Rate/Ratio
+Number of Patients Included in VAT Fistula Measure Score Achievement Period
+VAT Fistula Achievement Period Numerator
+VAT Fistula Achievement Period Denominator
+VAT Fistula Improvement Measure Rate/Ratio
+VAT Fistula Improvement Period Numerator
+VAT Fistula Improvement Period Denominator
+VAT Fistula Measure Score Applied
+National Avg Fistula Measure Score
+Vascular Access Combined Measure Score
+National Avg Vascular Access Combined Measure Score
+Kt/V Adult Hemodialysis Measure Score
+Kt/V Adult Hemodialysis Achievement Measure Rate/Ratio
+Number of Patients Included in Kt/V Adult Hemodialysis Measure Score Achievement Period
+Kt/V Adult Hemodialysis Achievement Period Numerator
+Kt/V Adult Hemodialysis Achievement Period Denominator
+Kt/V Adult Hemodialysis Improvement Measure Rate/Ratio
+Kt/V Adult Hemodialysis Improvement Period Numerator
+Kt/V Adult Hemodialysis Improvement Period Denominator
+Kt/V Adult Hemodialysis Measure Score Applied
+National Avg Kt/V Adult Hemodialysis Measure Score
+Kt/V Adult Peritoneal Dialysis Measure Score
+Kt/V Adult Peritoneal Dialysis Achievement Measure Rate/Ratio
+Number of Patients Included in Kt/V Adult Peritoneal Dialysis Measure Score Achievement Period
+Kt/V Adult Peritoneal Dialysis Achievement Period Numerator
+Kt/V Adult Peritoneal Dialysis Achievement Period Denominator
+Kt/V Adult Peritoneal Dialysis Improvement Measure Rate/Ratio
+Kt/V Adult Peritoneal Dialysis Improvement Period Numerator
+Kt/V Adult Peritoneal Dialysis Improvement Period Denominator
+Kt/V Adult Peritoneal Dialysis Measure Score Applied
+National Avg Kt/V Adult Peritoneal Dialysis Measure Score
+Kt/V Pediatric Hemodialysis Measure Score
+Kt/V Pediatric Hemodialysis Achievement Measure Rate/Ratio
+Number of Patients Included in Kt/V Pediatric Hemodialysis Measure Score Achievement Period
+Kt/V Pediatric Hemodialysis Achievement Period Numerator
+Kt/V Pediatric Hemodialysis Achievement Period Denominator
+Kt/V Pediatric Hemodialysis Improvement Measure Rate/Ratio
+Kt/V Pediatric Hemodialysis Improvement Period Numerator
+Kt/V Pediatric Hemodialysis Improvement Period Denominator
+Kt/V Pediatric Hemodialysis Measure Score Applied
+National Avg Kt/V Pediatric Hemodialysis Measure Score
+Kt/V Pediatric Peritoneal Dialysis Measure Score
+Kt/V Pediatric Peritoneal Dialysis Achievement Measure Rate/Ratio
+Number of Patients Included in Kt/V Pediatric Peritoneal Dialysis Measure Score Achievement Period
+Kt/V Pediatric Peritoneal Dialysis Achievement Period Numerator
+Kt/V Pediatric Peritoneal Dialysis Achievement Period Denominator
+Kt/V Pediatric Peritoneal Dialysis Improvement Measure Rate/Ratio
+Kt/V Pediatric Peritoneal Dialysis Improvement Period Numerator
+Kt/V Pediatric Peritoneal Dialysis Improvement Period Denominator
+Kt/V Pediatric Peritoneal Dialysis Measure Score Applied
+National Avg Kt/V Pediatric Peritoneal Dialysis Measure Score
+Kt/V Dialysis Adequacy Combined Measure Score
+National Avg Kt/V Dialysis Adequacy Combined Measure Score
+Hypercalcemia Measure Score
+Hypercalcemia Achievement Measure Rate/Ratio
+Number of Patients Included in Hypercalcemia Measure Score Achievement Period
+Hypercalcemia Achievement Period Numerator
+Hypercalcemia Achievement Period Denominator
+Hypercalcemia Improvement Measure Rate/Ratio
+Hypercalcemia Improvement Period Numerator
+Hypercalcemia Improvement Period Denominator
+Hypercalcemia Measure Score Applied
+National Avg Hypercalcemia Measure Score
+NHSN BSI Measure Score
+NHSN BSI Achievement Measure Rate/Ratio
+Number of Patients Eligible for NHSN BSI Measure Score Achievement Period
+NHSN BSI Achievement Period Numerator
+NHSN BSI Achievement Period Denominator
+NHSN BSI Improvement Measure Rate/Ratio
+NHSN BSI Improvement Period Numerator
+NHSN BSI Improvement Period Denominator
+NHSN BSI Measure Score Applied
+National Avg NHSN BSI Measure Score
+ICH CAHPS Measure Score
+National Avg ICH CAHPS Measure Score
+ICH CAHPS Count of Completed Surveys
+ICH CAHPS Neph Comm and Caring Achievement Rate
+ICH CAHPS Neph Comm and Caring Improvement Rate
+ICH CAHPS Neph Comm and Caring Measure Score Applied
+ICH CAHPS Quality of Dialysis Care and Ops Achievement Rate
+ICH CAHPS Quality of Dialysis Care and Ops Improvement Rate
+ICH CAHPS Quality of Dialysis Care and Ops Measure Score Applied
+ICH CAHPS Providing Info to Patients Achievement Rate
+ICH CAHPS Providing Info to Patients Improvement Rate
+ICH CAHPS Providing Info to Patients Measure Score Applied
+ICH CAHPS Overall Rating of Neph Achievement Rate
+ICH CAHPS Overall Rating of Neph Improvement Rate
+ICH CAHPS Overall Rating of Neph Measure Score Applied
+ICH CAHPS Overall Rating of Dialysis Staff Achievement Rate
+ICH CAHPS Overall Rating of Dialysis Staff Improvement Rate
+ICH CAHPS Overall Rating of Dialysis Staff Measure Score Applied
+ICH CAHPS Overall Rating of Dialysis Facility Achievement Rate
+ICH CAHPS Overall Rating of Dialysis Facility Improvement Rate
+ICH CAHPS Overall Rating of Dialysis Facility Measure Score Applied
+Mineral Metabolism Measure Score
+Number of Patients Included in Mineral Metabolism Measure Score Achievement Period
+National Avg Mineral Metabolism Measure Score
+Anemia Management Measure Score
+Number of Patients Included in Anemia Management Measure Score Achievement Period
+National Avg Anemia Management Measure Score
+Clinical Depression Screening and Follow-up Measure Score
+Number of Patients Included in Clinical Depression Screening and Follow-up Measure Score Achievement Period
+National Avg Clinical Depression Screening and Follow-up Measure Score
+NHSN Influenza Measure Score
+National Avg NHSN Influenza Measure Score
+Pain Assessment and Follow-up Measure Score
+Number of Patients Included in Pain Assessment and Follow-up Measure Score Achievement Period
+National Avg Pain Assessment and Follow-up Measure Score
+SRR Measure Score
+SRR Achievement Measure Rate/Ratio
+SRR Index Discharges included in Achievement Period
+SRR Achievement Period Numerator
+SRR Achievement Period Denominator
+SRR Improvement Measure Rate/Ratio
+SRR Improvement Period Numerator
+SRR Improvement Period Denominator
+SRR Measure Score Applied
+National Avg SRR Measure Score
+STrR Measure Score
+STrR Achievement Measure Rate/Ratio
+STrR Patient-Years at Risk
+STrR Achievement Period Numerator
+STrR Achievement Period Denominator
+STrR Improvement Measure Rate/Ratio
+STrR Improvement Period Numerator
+STrR Improvement Period Denominator
+STrR Measure Score Applied
+National Avg STrR Measure Score
+Total Performance Score
+PY2018 Payment Reduction Percentage
+CMS Certification Date
+Ownership as of December 31, 2016
+Date of Ownership Record Update

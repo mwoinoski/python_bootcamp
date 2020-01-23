@@ -77,7 +77,12 @@ def join_dataframes(facility_df: DataFrame, provider_df: DataFrame) -> DataFrame
     # TODO: join facility_df and provider_df on Facility Certification Number,
     #       then select active providers from facilities in Calfornia where the
     #       Total Performance Score is greater than 80
-    output_df = ....
+    output_df = provider_df.join(facility_df,
+        facility_df.CMS_Certification_Number == provider_df.FacilityCertNum) \
+        .select(facility_df.Facility_Name, provider_df.FirstName,
+                provider_df.LastName, provider_df.Status) \
+        .where(provider_df.Status == 'Active' and
+               facility_df.Total_Performance_Score > 80)
 
     return output_df
 

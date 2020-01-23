@@ -13,15 +13,19 @@ class TestSchedulerWithPatching:
 
     # Test case with no patching. The production ProviderDao constructor is called.
     def test_get_provider(self):
+        # -------- ARRANGE
         expected_result = Provider(16430104, 'Isaac', None, 'Newton')
+
         mock_dao = Mock(spec=ProviderDao)
         mock_dao.query_provider.return_value = expected_result
 
         bus_obj = Scheduler('mock_demo')
         bus_obj.provider_dao = mock_dao
 
+        # --------- ACT
         actual_result = bus_obj.get_provider(16430104)
 
+        # --------- ASSERT
         assert actual_result == expected_result
 
     # Patch the entire ProviderDao class; in other words, when Scheduler calls
