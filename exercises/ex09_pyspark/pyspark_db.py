@@ -18,6 +18,7 @@ from pyspark.sql import SparkSession, DataFrame
 
 input_table_name: str = 'ESRD_QIP'
 output_table_name: str = 'ESRD_QIP_CLEAN'
+facility_csv_table: str =
 logger: logging.Logger
 
 
@@ -26,8 +27,9 @@ def main():
 
     spark: SparkSession = initialize_spark_session()
 
-    input_df: DataFrame = read_from_db(input_table_name, spark)
-    output_df: DataFrame = clean_data(input_df)
+    esrd_qip_df: DataFrame = read_from_db(input_table_name, spark)
+    facility_df: DataFrame = read_from_csv(facility_csv_file, spark)
+    output_df: DataFrame = clean_data(esrd_qip_df)
     write_to_db(output_df, output_table_name)
 
     logger.info('process complete')
