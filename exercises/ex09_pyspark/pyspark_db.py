@@ -99,6 +99,7 @@ def join_dataframes(facility_df: DataFrame, provider_df: DataFrame,
 
     #  Normalize the column names
     # TODO: loop over all the column names in facility_df
+    # HINT: facility_df.columns is a list of all the column names
     for col in ....
         # TODO: pass each column name to the normalize_column_name function
         new_name: str = normalize_column_name(....)
@@ -131,7 +132,7 @@ def join_dataframes(facility_df: DataFrame, provider_df: DataFrame,
     #       the provider's status is 'ACTIVE'
     # HINT: facility column names:
     #          facility_name
-    #          cms_certification_number_cnn (maps to provider's facilitycertnum)
+    #          cms_certification_number_ccn (maps to provider's facilitycertnum)
     #          total_performance_score
     #      provider column names:
     #          credentialnumber
