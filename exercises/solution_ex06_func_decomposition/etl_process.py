@@ -34,23 +34,11 @@ class EtlProcess:
         """ Run the ETL process """
         # TODO Step 2: put the code inside a `try` statement
         try:
-            # TODO Step 1: call the extractor's extract method and save the
-            #      return value in a variable named `data`
             data = self.extractor.read_from_db()
-
-            # TODO Step 1: call the transformer's transform method,
-            #      passing `data` as the argument and saving the return value
-            #      in a variable named `transformed_data`
             transformed_data = self.transformer.clean_data(data)
-
-            # TODO: Step 1: call the loader's load method, passing
-            #      `tranformed_data` as the argument
             self.loader.write_to_db(transformed_data)
-
-        # TODO Step 2: define a handler for Exception
         except Exception as ex:
             print(f'Exception during ETL processing')
-            # TODO Step 2: raise an EtlProcessError
             raise EtlProcessError from ex
 
 

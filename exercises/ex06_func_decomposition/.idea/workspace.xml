@@ -2,46 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dfe5afe-4d0f-4a0e-bbe4-f3fed9ea2422" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/elt_process/data_frame.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elt_process/extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elt_process/loader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elt_process/test_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elt_process/test_loader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elt_process/test_transformer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elt_process/transformer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etl_process.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_func_decomposition.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../solution_ex06_func_decomposition/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../solution_ex06_func_decomposition/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../solution_ex06_func_decomposition/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../solution_ex06_func_decomposition/.idea/solution_ex06_func_decomposition.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../solution_ex06_func_decomposition/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../solution_ex06_func_decomposition/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex04_error_handling/email_deliverer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_error_handling/email_deliverer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex04_error_handling/invoice.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_error_handling/invoice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex04_error_handling/invoice_data_access_object.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_error_handling/invoice_data_access_object.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex04_error_handling/test_invoice.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_error_handling/test_invoice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex04_error_handling/test_invoice_raises_errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex04_error_handling/test_invoice_raises_errors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex05_testing_with_mocks/business_object/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex05_testing_with_mocks/business_object/business_object.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex05_testing_with_mocks/business_object/person.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex05_testing_with_mocks/business_object/test_business_object.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex05_testing_with_mocks/business_object/test_business_object_patch.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex05_testing_with_mocks/payroll_generator/test_payroll_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex05_testing_with_mocks/payroll_generator/test_payroll_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/case_study/etl/transformer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/case_study/etl/transformer_clean_qip_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case_study/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case_study/case_study/etl/etl_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/case_study/etl/etl_driver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case_study/case_study/etl/etl_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/case_study/etl/etl_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case_study/case_study/etl/extractor_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/case_study/etl/extractor_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case_study/case_study/etl/loader_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/case_study/etl/loader_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case_study/case_study/etl/transformer_top_5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case_study/tests/test_etl_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/tests/test_etl_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case_study/tests/test_transformations.py" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/tests/test_transformations.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrabble_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrabble_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/walk_directory.py" beforeDir="false" afterPath="$PROJECT_DIR$/walk_directory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex08_parallelism/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ex08_parallelism/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etl_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/elt_process/etl_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_func_decomposition.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_func_decomposition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../solution_ex09_pyspark/pyspark_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/../solution_ex09_pyspark/pyspark_db.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -65,61 +46,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/data_frame.py" />
-        <option value="$PROJECT_DIR$/transformer.py" />
-        <option value="$PROJECT_DIR$/extractor.py" />
-        <option value="$PROJECT_DIR$/test_loader.py" />
-        <option value="$PROJECT_DIR$/test_transformer.py" />
-        <option value="$PROJECT_DIR$/test_extractor.py" />
-        <option value="$PROJECT_DIR$/loader.py" />
-        <option value="$PROJECT_DIR$/test_etl_process.py" />
-        <option value="$PROJECT_DIR$/scrabble_helper.py" />
-        <option value="$PROJECT_DIR$/walk_directory.py" />
-        <option value="$PROJECT_DIR$/test_func_decomposition.py" />
-        <option value="$PROJECT_DIR$/etl_process.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="187" />
-    <option name="y" value="-15" />
-    <option name="width" value="1171" />
-    <option name="height" value="1056" />
-  </component>
   <component name="ProjectId" id="1WSY3OeSACF6Pp2yX8iKbSdF8xW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ex06_func_decomposition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex06_func_decomposition" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../solution_ex06_func_decomposition" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/elt_process" />
       <recent name="C:\Users\Mike\Classes\Articulate Design\Sutter Health Python\python_bootcamp\exercises\ex06_func_decomposition\elt_process" />
     </key>
   </component>
@@ -193,40 +132,12 @@
       <configuration name="pytest in test_etl_process.py" configurationId="tests" />
     </history-entry>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="187" y="-15" width="1171" height="1056" extended-state="0" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18005295" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.312026" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -247,80 +158,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/elt_process/data_frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elt_process/extractor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elt_process/transformer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elt_process/test_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="4" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elt_process/test_transformer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elt_process/test_extractor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elt_process/loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrabble_helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/walk_directory.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_func_decomposition.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/etl_process.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
   </component>
 </project>

@@ -2,7 +2,6 @@
 Test the results of the ETL process. These tests assume the ETL process has
 already completed.
 
-To run the ETL process and then follow it with these tests, use the sheel script
 run_integration_test.sh
 """
 
@@ -56,7 +55,7 @@ class EtlProcessTest(TestCase):
             .option('driver', cls.db_config['driver']) \
             .option('user', cls.db_config['user']) \
             .option('password', cls.db_config['password']) \
-            .write_to_db()
+            .load()
 
     # pylint: disable=no-self-use,missing-function-docstring
     def test_load_success(self):

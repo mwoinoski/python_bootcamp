@@ -12,6 +12,8 @@ JDBC drivers as the spark-submit options "--driver-class-path" and "--jars":
                  case_study/pyspark_db.py
 """
 
+from pathlib import Path
+
 import re
 import logging.config
 
@@ -46,6 +48,9 @@ def main():
         output_df: DataFrame = join_dataframes(facility_df, provider_df, spark)
 
         write_to_db(output_df, output_table_name)
+    except Exception as ex:
+        logger.error("problem! {ex}")
+        raise
     finally:
         spark.stop()
 
@@ -80,14 +85,14 @@ def read_from_db(table_name: str, spark: SparkSession) -> DataFrame:
 def read_from_csv(filename: str, spark: SparkSession) -> DataFrame:
     """ Read a CSV file from Hadoop file system """
     logger.info(f"Reading from CSV file {filename}")
-    url = f'hdfs://localhost:9000/user/sutter/data/'
+    # url = f'hdfs://localhost:9000/user/sutter/data/'
+    url = f'file://{Path().absolute()}/'
+
     # TODO: create the path by concatenating the URL and the filename
     path = f'{url}{filename}'
-    # TODO: read the CSV file from the path
-    # HINT: be sure that Spark know the file has a header
-    # HINT: tell Spark to determine the datatypes of the columns
-    # HINT: be sure to cache the DataFrame so you can create a temp view later
+
     df = spark.read.csv(path, inferSchema=True, header=True).cache()
+
     logger.debug(f'Read {df.count()} records from CSV file')
     # TODO: return the DataFrame that you just read
     return df
@@ -97,84 +102,50 @@ def join_dataframes(facility_df: DataFrame, provider_df: DataFrame,
                     spark: SparkSession) -> DataFrame:
     """ Transform and join two DataFrames """
 
+    facility_df, provider_df = clean_data(facility_df, provider_df)
+
+    output_df = join_datasets(facility_df, provider_df)
+
+    return output_df
+
+    # SQLServer querys for ESRD_QIP table:
+    # select [CMS Certification Number (CCN)] from esrd_qip where city = 'Sacramento'
+    # select [Facility Name] from esrd_qip where [CMS Certification Number (CCN)] = 12500
+
+
+def join_datasets(facility_df, provider_df):
+    output_df = provider_df.join(facility_df,
+                                 facility_df.cms_certification_number_ccn == provider_df.facilitycertnum) \
+        .select(facility_df.facility_name, facility_df.total_performance_score,
+                provider_df.firstname, provider_df.lastname, provider_df.status) \
+        .where((facility_df.total_performance_score > 90) &
+               (f.lower(provider_df.status) == 'active'))
+    logger.debug(f'join produced {output_df.count()} records')
+    if logger.getEffectiveLevel() == logging.DEBUG:
+        output_df.show()
+    return output_df
+
+
+def clean_data(facility_df, provider_df):
     #  Normalize the column names
     # TODO: loop over all the column names in facility_df
     for col in facility_df.columns:
         # TODO: pass each column name to the normalize_column_name function
         new_name: str = normalize_column_name(col, 64)
         facility_df = facility_df.withColumnRenamed(col, new_name)
-
     # Some 'Total Performace Score' values are 'No Score', so the
     # column's data type is string. You need to filter out the non-numeric
     # values and then convert the remaining values to integers.
     score: str = 'total_performance_score'
     facility_df = facility_df.where(facility_df[score] != 'No Score') \
         .withColumn(score, facility_df[score].cast('integer'))
-
     # TODO: loop over all the column names in provider_df
     # HINT: provider_df.columns is a list of all the column names
     for col in provider_df.columns:
         # TODO: pass each column name to the normalize_column_name function
         new_name = normalize_column_name(col, 64)
         provider_df = provider_df.withColumnRenamed(col, new_name)
-
-    # TODO: use facility_df to create or replace a temp view named 'facility'
-    facility_df.createOrReplaceTempView('facility')
-    # TODO: use provider_df to create or replace a temp view named 'provider'
-    provider_df.createOrReplaceTempView('provider')
-
-    # TODO: Write a SQL query that selects a facility's name and performance score,
-    #       and a provider's first name, last name, and status.
-    #       Join facility and provider on CMS Certification Number,
-    #       then select providers from facilities where the
-    #       facility's Total Performance Score is greater than 90 and
-    #       the provider's status is 'ACTIVE'
-    # HINT: facility column names:
-    #          facility_name
-    #          cms_certification_number_cnn (maps to provider's facilitycertnum)
-    #          total_performance_score
-    #      provider column names:
-    #          credentialnumber
-    #          firstname
-    #          lastname
-    #          status
-    #          facilitycertnum (foreign key on facility's cms_certification_number_cnn)
-
-    query = """
-        select fac.facility_name, 
-               fac.total_performance_score,
-               prov.firstname,
-               prov.lastname, 
-               prov.status
-          from facility fac
-          join provider prov
-            on fac.cms_certification_number_ccn = prov.facilitycertnum
-         where fac.total_performance_score > 90
-               and lower(prov.status) = 'active'
-    """
-    # TODO: execute the query to create a DataFrame
-    output_df = spark.sql(query)
-
-    # BONUS TODO: comment out the SQL query you wrote, and re-write the
-    #             join operation using the DataFrame Python API
-    # HINT:       look in the PySpark documentation for examples of
-    #             the DataFrame join() method
-    # output_df = provider_df.join(facility_df,
-    #                              facility_df.cms_certification_number_ccn == \
-    #                              provider_df.facilitycertnum) \
-    #     .select(facility_df.facility_name, facility_df.total_performance_score,
-    #             provider_df.firstname, provider_df.lastname, provider_df.status) \
-    #     .where((facility_df.total_performance_score > 90) &
-    #            (f.lower(provider_df.status) == 'active'))
-
-    logger.debug(f'join produced {output_df.count()} records')
-    if logger.getEffectiveLevel() == logging.DEBUG:
-        output_df.show()
-    return output_df
-
-    # SQLServer querys for ESRD_QIP table:
-    # select [CMS Certification Number (CCN)] from esrd_qip where city = 'Sacramento'
-    # select [Facility Name] from esrd_qip where [CMS Certification Number (CCN)] = 12500
+    return facility_df, provider_df
 
 
 def normalize_column_name(name: str, max_len: int) -> str:
@@ -189,7 +160,9 @@ def normalize_column_name(name: str, max_len: int) -> str:
 
 def write_to_db(output_df: DataFrame, table_name: str) -> None:
     """ Create/overwrite a MySQL table """
+
     logger.info(f"Writing to MySQL {table_name} table")
+
     # TODO: note how you write a DataFrame to a database table
     output_df.write.format('jdbc') \
         .option('dbtable', table_name) \

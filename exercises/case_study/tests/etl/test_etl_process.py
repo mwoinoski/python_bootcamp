@@ -7,10 +7,10 @@ from unittest.mock import Mock
 from pyspark.sql import SparkSession
 from pytest import raises
 
-from etl_process import EtlProcess, EtlProcessError
-from extractor import ExtractorCsv
-from loader import LoaderCsv
-from transformer import TransformerTopFiveCust
+from case_study.etl.etl_process import EtlProcess, EtlProcessError
+from case_study.etl.extractor import ExtractorCsv
+from case_study.etl.loader import LoaderCsv
+from case_study.etl.transformer import TransformerTopFiveCust
 
 
 class TestEtlProcess:

@@ -1,10 +1,12 @@
 """
 setup.py - Set up script for sample project
 """
+
+from setuptools import setup, find_packages, Command
+
 import codecs  # To use a consistent encoding
 from glob import glob
 import os
-from setuptools import setup, find_packages, Command
 import shutil
 from typing import ClassVar, List
 

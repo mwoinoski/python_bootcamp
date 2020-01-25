@@ -45,7 +45,7 @@ class EtlProcessTest(TestCase):
         cls.spark.stop()
 
     @classmethod
-    def load_from_database(cls, table_name: str) -> DataFrame:
+    def read_from_database(cls, table_name: str) -> DataFrame:
         """ Loads a Spark DataFrame from a database table """
         return EtlProcessTest.spark.read \
             .format(cls.db_config['format']) \
@@ -54,12 +54,12 @@ class EtlProcessTest(TestCase):
             .option('driver', cls.db_config['driver']) \
             .option('user', cls.db_config['user']) \
             .option('password', cls.db_config['password']) \
-            .write_to_db()
+            .load()
 
     # pylint: disable=no-self-use,missing-function-docstring
     def test_load_success(self):
         etl_demo.main()  # Run the ETL process
 
-        df: DataFrame = EtlProcessTest.load_from_database('esrd_qip_clean')
+        df: DataFrame = EtlProcessTest.read_from_database('esrd_qip_clean')
 
         assert df.count() == 6549

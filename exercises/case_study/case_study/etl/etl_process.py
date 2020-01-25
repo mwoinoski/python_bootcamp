@@ -1,12 +1,13 @@
 """
 Defines class for ETL processing
 """
+
 from typing import Union, Any
 from unittest.mock import Mock
 
 from pyspark.sql import SparkSession, DataFrame
 
-from etl_logger import EtlLogger
+from case_study.etl.etl_logger import EtlLogger
 
 
 def create_spark_session() -> SparkSession:
@@ -40,13 +41,17 @@ class EtlProcess:
     def run(self) -> None:
         """ Run the ETL process """
         self.logger.debug('starting run')
+
         try:
-            initial_df: DataFrame = self.extractor.read_from_db(self.spark)
+            initial_df: DataFrame = self.extractor.extract(self.spark)
 
             transformed_df: DataFrame = \
-                self.transformer.clean_data(self.spark, initial_df)
+                self.transformer.transform(self.spark, initial_df)
 
-            self.loader.write_to_db(self.spark, transformed_df)
+            self.loader.load(self.spark, transformed_df)
+        except Exception as ex:
+            self.logger.error(f'ETL Process error: {ex}')
+            raise ex
         finally:
             self.spark.stop()
 

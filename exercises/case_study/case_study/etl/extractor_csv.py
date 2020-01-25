@@ -3,15 +3,15 @@ Extractor class implementation.
 """
 
 from typing import ClassVar, Dict, Any
-from etl_logger import EtlLogger
 
 from pyspark.sql import DataFrame, SparkSession
+
+from case_study.etl.etl_logger import EtlLogger
 
 
 class ExtractorCsv:
     """ Extractor implements the "extract" process of ETL """
-    input_schema: ClassVar[str] = \
-        '`Customer ID` integer, `Order ID` integer, `Order Total` double'
+    # input_schema: ClassVar[str] = ""
     path: str
     logger: EtlLogger
 
@@ -20,8 +20,13 @@ class ExtractorCsv:
         self.logger = EtlLogger()
 
     def extract(self, spark: SparkSession) -> DataFrame:
-        self.logger.info(f'Extract: {self.path}')
-
-        df: DataFrame = spark.read.csv(self.path, header=True,
-                                       schema=ExtractorCsv.input_schema)
-        return df
+        self.logger.debug(f'Extract: {self.path}')
+        try:
+            df: DataFrame = spark.read.csv(self.path, header=True)
+            self.logger.debug(f'read {df.count()} rows from {self.path}')
+            return df
+        except Exception as ex:
+            self.logger.error(f'ETL Process error: {ex}')
+            raise
+        finally:
+            spark.stop()

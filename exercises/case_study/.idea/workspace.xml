@@ -2,15 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5912c98a-4c28-46c6-89eb-462ef13c5fbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/etl/test_transformer_active_providers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/etl/test_transformer_top_5_cust.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/etl/extract/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/etl/transformer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/etl/transformer_clean_qip_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/etl/etl_driver_csv_to_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/etl_driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/etl/extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/extractor_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/etl/loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/loader_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/etl/transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/transformer_top_5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/test_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/etl/test_extractor_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/test_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/etl/test_loader_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MANIFEST.in" beforeDir="false" afterPath="$PROJECT_DIR$/MANIFEST.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/etl/etl_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/etl_driver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/etl/etl_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/etl_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/etl/extractor_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/extractor_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/etl/loader_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/loader_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/etl/transformer_top_5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/etl/test_etl_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/etl/test_etl_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_etl_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_etl_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_etl_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_etl_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_transformations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_transformations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex06_func_decomposition/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex06_func_decomposition/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex06_func_decomposition/etl_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex06_func_decomposition/elt_process/etl_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex06_func_decomposition/test_func_decomposition.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ex06_func_decomposition/test_func_decomposition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../solution_ex06_func_decomposition/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../solution_ex06_func_decomposition/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../solution_ex06_func_decomposition/etl_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/../solution_ex06_func_decomposition/etl_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../solution_ex09_pyspark/pyspark_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/../solution_ex09_pyspark/pyspark_db.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +59,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ex09_pyspark" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ex06_func_decomposition" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
