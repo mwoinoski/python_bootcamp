@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e89ee21-f797-49d3-8773-9461b7056866" name="Default Changelist" comment="">
+    <list default="true" id="6c5adfad-7b2d-4928-b804-2ac7862021de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../case_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ex03_oop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,10 +18,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1X5OrIkLj4pR8YEtsOI8f08Y8TC" />
+  <component name="ProjectId" id="1X5POQ7d46Dah09IgW8dQW8ls5R" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../solution_ex03_oop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -35,11 +41,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2e89ee21-f797-49d3-8773-9461b7056866" name="Default Changelist" comment="" />
-      <created>1580332685442</created>
+      <changelist id="6c5adfad-7b2d-4928-b804-2ac7862021de" name="Default Changelist" comment="" />
+      <created>1580332949171</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1580332685442</updated>
+      <updated>1580332949171</updated>
     </task>
     <servers />
   </component>

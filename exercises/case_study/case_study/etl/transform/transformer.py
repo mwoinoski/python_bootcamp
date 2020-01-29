@@ -17,10 +17,11 @@ class Transformer:
 
     def normalize_column_name(self, name: str, max_len: int) -> str:
         """ Return a normalized version of the column name """
-        name = name.lower()
-        name = re.sub(r'\W', '_', name)
-        name = name.strip('_')
-        name = name[:max_len]
+        name = name.lower()               # convert to lowercase
+        name = re.sub(r'\W', '_', name)   # replace non-word chars with '_'
+        name = re.sub(r'__+', '_', name)  # replace multiple '_' with a single '_'
+        name = name.strip('_')            # delete leading and trailing '_'
+        name = name[:max_len]             # shorten to max_len
         return name
 
     def count_occurrences(self, cols: List[str]) -> Dict[str, int]:
@@ -43,9 +44,6 @@ class Transformer:
         for col in how_many:
             if how_many[col] > 1:
                 how_many_dupes_left[col] = how_many[col]
-        # You can replace the `for` loop with a dictionary comprehension:
-        # how_many_dupes_left = {col: col_counter[col] for col in col_counter.keys()
-        #                        if col_counter[col] > 1}
         return how_many_dupes_left
 
     def make_column_names_unique(self, cols: List[str], max_len: int = 64) -> List[str]:

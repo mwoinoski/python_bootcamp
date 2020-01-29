@@ -34,5 +34,6 @@ class TransformerCleanQipData(Transformer):
 
             return df
 
-        finally:
-            spark.stop()
+        except Exception as ex:
+            self.logger.error(f'error while transforming: {ex}')
+            raise

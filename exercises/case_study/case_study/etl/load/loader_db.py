@@ -14,6 +14,7 @@ class LoaderDb:
     """ Loader implements the "load" process of ETL """
     output_cols: ClassVar[List[str]] = ['Customer ID', 'Total Orders']
     logger: EtlLogger
+    path: str
 
     def __init__(self, config: Dict[str, Any]):
         """ Initialize the Loader """
@@ -28,5 +29,6 @@ class LoaderDb:
             raise NotImplementedError()
             # TODO: write DataFrame to database table
             # self.logger.debug(f'wrote {df.count()} rows to {self.path}')
-        finally:
-            spark.stop()
+        except Exception as ex:
+            self.logger.error(f'error while loading {self.path}')
+            raise

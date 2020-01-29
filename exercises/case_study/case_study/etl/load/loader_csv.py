@@ -14,6 +14,7 @@ class LoaderCsv:
     """ Loader implements the "load" process of ETL """
     output_cols: ClassVar[List[str]] = ['Customer ID', 'Total Orders']
     logger: EtlLogger
+    path: str
 
     def __init__(self, config: Dict[str, Any]):
         """ Initialize the Loader """
@@ -26,8 +27,8 @@ class LoaderCsv:
 
         try:
             # Write the CSV file to a distributed HDFS file. This produces
-            # a directory, not just a single text file
-            path = f'file://{Path().absolute()}/customer-orders-totals'
+            # a Hadoop directory on the local disk, not just a single text file
+            path = f'file://{Path().absolute()}/data/customer-orders-totals'
             df.write.csv(path, mode='overwrite', header=True)
 
             # Convert Spark DataFrame to Pandas DataFrame, because Pandas can write
@@ -43,5 +44,6 @@ class LoaderCsv:
             #   .write.csv(path, mode='overwrite', header=True)
 
             self.logger.debug(f'wrote {df.count()} rows to {self.path}')
-        finally:
-            spark.stop()
+        except Exception as ex:
+            self.logger.error(f'error while loading {self.path}')
+            raise

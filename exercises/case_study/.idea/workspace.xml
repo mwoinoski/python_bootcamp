@@ -2,30 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5912c98a-4c28-46c6-89eb-462ef13c5fbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/case_study/etl/extract/extractor_db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/etl/load/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/etl/load/loader_db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/etl/transform/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/etl/extract/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/etl/load/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/etl/transform/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/etl/etl_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/etl_driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/etl/extractor_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/extract/extractor_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/etl/loader_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/load/loader_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/etl/transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/transform/transformer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/etl/transformer_clean_qip_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/transform/transformer_clean_qip_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/test_etl_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/etl/test_etl_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/test_extractor_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/etl/extract/test_extractor_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/test_loader_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/etl/load/test_loader_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/test_transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/etl/transform/test_transformer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/test_transformer_active_providers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/etl/transform/test_transformer_active_providers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/test_transformer_top_5_cust.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/etl/transform/test_transformer_top_5_cust.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_transformations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_transformations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/etl/extract/extractor_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/extract/extractor_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/etl/extract/extractor_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/extract/extractor_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/etl/load/loader_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/load/loader_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/etl/load/loader_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/load/loader_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/etl/transform/transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/transform/transformer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/etl/transform/transformer_clean_qip_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/transform/transformer_clean_qip_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03_oop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_oop/.idea/workspace.xml" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,6 +64,18 @@
       <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Python.scratch_1">
     <configuration name="scratch_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -177,18 +175,6 @@
         <item itemvalue="Python tests.pytest in test_send_email.py" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />

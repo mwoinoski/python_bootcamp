@@ -28,7 +28,5 @@ class ExtractorCsv:
             self.logger.debug(f'read {df.count()} rows from {self.path}')
             return df
         except Exception as ex:
-            self.logger.error(f'ETL Process error: {ex}')
+            self.logger.error(f'error while extracting {self.path}')
             raise
-        finally:
-            spark.stop()
