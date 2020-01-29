@@ -3,13 +3,19 @@ Transform class implementation.
 """
 
 from pyspark.sql import DataFrame, SparkSession
-from pyspark.sql.functions import sum
 
-from case_study.etl.transformer import Transformer
+from case_study.etl.transform.transformer import Transformer
 
 
 class TransformerCleanQipData(Transformer):
     """ Transform implements the "transform" process of ETL """
+
+    # in this case, we don't really need to define __init__, because it just
+    # calls the superclass constructor, and python automatically calls the
+    # superclass constructor if a subclass doesn't define __init__
+    def __init__(self):
+        """ Initialize the Transformer """
+        super().__init__()
 
     def transform(self, spark: SparkSession, df: DataFrame) -> DataFrame:
         """ Apply transformations to a DataFrame """
