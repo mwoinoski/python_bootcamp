@@ -3,11 +3,10 @@ Unit tests for transformation logic
 """
 from datetime import datetime
 from typing import List, Dict, Any
-from unittest import TestCase
 import pytest
 from pytest import mark
 
-from case_study.etl.transformer import Transformer
+from case_study.etl.transform.transformer import Transformer
 
 
 @mark.parametrize('name, max_len, expected', [

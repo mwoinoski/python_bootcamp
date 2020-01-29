@@ -5,9 +5,9 @@ Driver for an ETL process that extracts a CSV file and loads a CSV file.
 from pathlib import Path
 
 from case_study.etl.etl_process import EtlProcess
-from case_study.etl.extractor_csv import ExtractorCsv
-from case_study.etl.transformer_clean_qip_data import TransformerCleanQipData
-from case_study.etl.loader_csv import LoaderCsv
+from case_study.etl.extract.extractor_csv import ExtractorCsv
+from case_study.etl.transform.transformer_clean_qip_data import TransformerCleanQipData
+from case_study.etl.load.loader_csv import LoaderCsv
 from case_study.etl.etl_logger import EtlLogger
 
 

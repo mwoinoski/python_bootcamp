@@ -1,5 +1,21 @@
 """
-setup.py - Set up script for sample project
+setup.py - Set up script for sample project.
+
+To delete all build artifacts:
+    python setup.py clean
+To build source and wheel distributions:
+    pip install --user wheel
+    python setup.py build sdist bdist_wheel
+        Writes source distro to dist/*.tar.gz
+        Writes wheel distro to dist/*.whl
+Test with virtual env:
+    python -m venv test_env
+    source test_env/bin/activate
+    test_env/bin/activate
+    python setup.py install
+    ... # test your installed package
+    deactivate
+    rm -r test_env
 """
 
 from setuptools import setup, find_packages, Command
@@ -24,7 +40,8 @@ class CleanCommand(Command):
 
     def run(self):
         assert os.getcwd() == self.cwd, 'Must be in package root: ' + self.cwd
-        for pattern in ['build', 'dist', '*.egg-info', '*.pyc', '*.tgz']:
+        for pattern in ['build', 'dist', '*.egg-info', '*.pyc', '*.tgz',
+                        '.coverage', '*.log', '.pytest_cache']:
             for name in glob(pattern):
                 if os.path.isdir(name):
                     shutil.rmtree(name)

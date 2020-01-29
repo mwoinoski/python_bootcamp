@@ -16,15 +16,20 @@ class LoaderCsv:
     logger: EtlLogger
 
     def __init__(self, config: Dict[str, Any]):
+        """ Initialize the Loader """
         self.path = config['path']
         self.logger = EtlLogger()
 
     def load(self, spark: SparkSession, df: DataFrame):
+        """ Load the DataFrame to a CSV file """
         self.logger.debug(f'Load: {self.path}')
 
         try:
+            # Write the CSV file to a distributed HDFS file. This produces
+            # a directory, not just a single text file
             path = f'file://{Path().absolute()}/customer-orders-totals'
             df.write.csv(path, mode='overwrite', header=True)
+
             # Convert Spark DataFrame to Pandas DataFrame, because Pandas can write
             # to a single, plain CSV file instead of writing a distributed HDFS file
             # (for demo purposes only; usually HDFS is the right way to go)
@@ -36,6 +41,7 @@ class LoaderCsv:
             # path = f'hdfs://localhost:9000/user/sutter/data/customer-orders-totals'
             # df.toDF('Customer ID', 'Total Orders') \
             #   .write.csv(path, mode='overwrite', header=True)
+
             self.logger.debug(f'wrote {df.count()} rows to {self.path}')
         finally:
             spark.stop()
