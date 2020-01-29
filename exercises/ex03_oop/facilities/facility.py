@@ -6,6 +6,7 @@ from facilities.address import Address
 
 
 # TODO: define a class named Facility
+# HINT: see slide 89
 class ....
     # TODO: define three data attribute named cert_number (an int), name (a string),
     #       and address (a string)

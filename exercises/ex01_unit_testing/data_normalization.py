@@ -6,7 +6,6 @@ from collections import Counter
 from datetime import datetime
 from enum import Enum, unique
 import re
-from typing import List, Dict
 
 
 # TODO: this is the first function you'll test (no code changes required here)

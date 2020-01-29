@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0985c91c-3232-412a-92e0-b883a6942c04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/providers.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/providers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercises/ex09_pyspark/sqlserver_cmds" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/ex04_error_handling/test_invoice_raises_errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex04_error_handling/test_invoice_raises_errors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ex09_pyspark/pyspark_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex09_pyspark/pyspark_db.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../exercises/solution_ex03_oop" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">

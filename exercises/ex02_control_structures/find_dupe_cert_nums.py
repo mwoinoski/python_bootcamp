@@ -57,7 +57,7 @@ def main(filepath) -> int:
     # NEXT TASK: create a `flipped` dictionary where each key is a certification
     # number and each value is a list of all facilities with that cert number.
     # `flipped` will look like this:
-    # flipped = {'123': ['General Hospital', 'Best ER'], '532': ['Acme Clinic': '532']}
+    # flipped = {'123': ['General Hospital', 'Best ER'], '532': ['Acme Clinic']}
     # ------------------------------------------------------------------------------
 
     # HINT: code to loop over dictionary items:

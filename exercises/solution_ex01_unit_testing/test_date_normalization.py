@@ -6,6 +6,7 @@ from pytest import mark  # required for @mark.skip
 
 from data_normalization import is_leap_year
 
+
 # TODO: note the rules for leap years:
 #       A year is leap year if it's a multiple of 4 and
 #       (it's not a multiple of 100 or it's a multiple of 400)
@@ -13,7 +14,13 @@ from data_normalization import is_leap_year
 
 # TODO: complete the following test case so it verifies that 2020 is a leap year
 def test_is_leap_year_multiple_of_four():
-    assert is_leap_year(2020)
+    # Arrange
+
+    # Act
+    is_leap = is_leap_year(2020)
+
+    # Assert
+    assert is_leap
 
 
 # TODO: write a test case that verifies that 2019 was not a leap year

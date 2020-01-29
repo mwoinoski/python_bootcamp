@@ -3,18 +3,21 @@ Provider class that defines the attributes of health care providers
 """
 
 from datetime import datetime
-from typing import Optional
 
 
 def is_valid_npi(npi):
     """
     return True if npi is a valid NPI, False otherwise
-
     NPI must be 10 digits long
     First digit must be a 1 or 2
     Last digit is check digit
     """
     return True
+    # HINT: remember the Python syntax for string operations:
+    #     len(npi)    length of string
+    #     npi[0]      first char
+    #     npi[0:9]    first 9 chars
+    #     npi[-1]     last char
 
 
 def calc_check_digit(npi_first9):

@@ -22,4 +22,6 @@ class TestPopulateFacilities:
         ]
 
         for i, expected_score in enumerate([120, 80, 120, 80]):
-            assert facilities[i].calculate_quality_score() == expected_score
+            facility = facilities[i]
+            print(facility)
+            assert facility.calculate_quality_score() == expected_score
