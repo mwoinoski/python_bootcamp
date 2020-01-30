@@ -41,7 +41,8 @@ class CleanCommand(Command):
     def run(self):
         assert os.getcwd() == self.cwd, 'Must be in package root: ' + self.cwd
         for pattern in ['build', 'dist', '*.egg-info', '*.pyc', '*.tgz',
-                        '.coverage', '*.log', '.pytest_cache']:
+                        '*.tar.gz', '.coverage', '*.log', '.pytest_cache',
+                        '__pycache__']:
             for name in glob(pattern):
                 if os.path.isdir(name):
                     shutil.rmtree(name)

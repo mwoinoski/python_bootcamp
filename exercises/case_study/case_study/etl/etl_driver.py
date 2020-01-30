@@ -26,7 +26,7 @@ def main():
         transformer = TransformerCleanQipData()
 
         # Create Loader
-        load_path = './customer-orders-totals.csv'
+        load_path = './ESRD_QIP_2018_clean.csv'
         loader = LoaderCsv({'path': load_path})
 
         # Kick off the ETL process

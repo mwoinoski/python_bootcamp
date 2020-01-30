@@ -105,7 +105,7 @@ def test_get_valid_year(year_str: str, expected: int) -> None:
     assert Transformer().get_valid_year(year_str) == expected
 
 
-class TransformationsTest:
+class TransformerTest:
     """ Unit test cases for functions in transformer.py """
 
     # def test_make_column_names_unique_no_dupes(self) -> None:

@@ -9,7 +9,7 @@ from typing import Optional, Dict, Tuple
 from unittest import TestCase
 
 
-class SendEmailTest(TestCase):
+class SendEmailTest:
     username: str = environ['USER'].replace('CORP\\', '')
     sender_email: str = f'{username}.python.bootcamp@gmail.com'
     # For GMail, you'll need to enable "Allow less secure apps" in the sender's
