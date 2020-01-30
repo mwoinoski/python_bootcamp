@@ -28,6 +28,27 @@ by the Python Packaging Authority (PyPA). See pypa.org
   * README.md - overview of this project in MarkDown format
   * setup.cfg - configuration for setup.py script
 
+## ETL Components
+
+Note the ETL classes under ``case_study.etl.extract`` and related packages.
+The extractors for CSV files and database tables have the same interface,
+and can be combined with different transformers and extractors. See 
+``case_study/etl/etl_driver.py`` for an example of usage.
+
+## Unit tests for ETL components 
+
+See ``tests/case_study/etl/load/test_loader_csv.py`` for examples of
+using PySpark DataFrames for validating ETL results. In this, the 
+extract and load operations use CSV files, but the same technique 
+can be used for operations on database tables. 
+
+Because Pytest is not integrated with Spark, the DataFrames created
+in the unit tests are not distributed on a cluster, so the size of the
+DataFrames is limited. This in-memory DataFrame technique will still work
+for farily large datasets (possibly up to a few million rows). However, 
+for very large datasets, you'll need to write your test scripts and 
+launch them with ``spark-submit``.
+
 ## Running Unit Tests 
 
 ```
@@ -63,3 +84,10 @@ pip install dist/*.whl
 ```
 
 After testing, you can delete the ``testvenv`` directory.
+
+## TODO
+
+* Define abstract base classes ``Extractor``, ``Loader``, and ``Transformer``. 
+  Move duplicate code from ``ExtractorCsv`` and ``ExtractorDb``, etc., 
+  to the appropriate base class.
+* Define test cases for database operations. 

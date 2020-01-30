@@ -2,38 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5912c98a-4c28-46c6-89eb-462ef13c5fbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/case_study/etl/extract/data/ESRD_QIP-Complete_QIP_Data-Payment_Year_2018.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/case_study/etl/extract/test_extractor_csv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/case_study/etl/load/test_loader_csv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/case_study/etl/transform/test_transformer_clean_qip_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/etl/etl_driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/etl_driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/etl/load/loader_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/load/loader_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/etl/logging.ini" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logging.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logging.ini" beforeDir="false" afterPath="$PROJECT_DIR$/logging.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_integration_tests.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/config-integration-test.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/extract/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/extract/test_extractor_csv.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/load/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/load/test_loader_csv.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/test_etl_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/case_study/etl/test_etl_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/transform/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/transform/test_transformer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/transform/test_transformer_active_providers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/etl/transform/test_transformer_top_5_cust.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_etl_process.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_etl_results.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_send_email.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_transformations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/case_study/etl/transform/test_transformer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/etl/extract/extractor_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/extract/extractor_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/etl/load/loader_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/etl/load/loader_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/case_study/etl/load/test_loader_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/case_study/etl/load/test_loader_csv.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/case_study/etl/extract/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../solution_ex09_pyspark" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -86,18 +60,6 @@
       <recent name="$PROJECT_DIR$/tests/case_study" />
       <recent name="$PROJECT_DIR$/tests/etl/transform" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python tests.pytest in test_loader_csv.py">
     <configuration name="scratch_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -198,6 +160,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -232,26 +206,35 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="579" y="251" width="436" height="489" key="FileChooserDialogImpl" timestamp="1579280492391">
-      <screen x="0" y="24" width="1593" height="934" />
+    <state x="434" y="249" width="436" height="489" key="FileChooserDialogImpl" timestamp="1580395912986">
+      <screen x="0" y="24" width="1195" height="926" />
     </state>
+    <state x="434" y="249" key="FileChooserDialogImpl/0.24.1195.926@0.24.1195.926" timestamp="1580395912986" />
     <state x="579" y="251" width="436" height="489" key="FileChooserDialogImpl/0.24.1593.934@0.24.1593.934" timestamp="1579280492391" />
-    <state width="1572" height="240" key="GridCell.Tab.0.bottom" timestamp="1579280494159">
-      <screen x="0" y="24" width="1593" height="934" />
+    <state width="1174" height="237" key="GridCell.Tab.0.bottom" timestamp="1580400373134">
+      <screen x="0" y="24" width="1195" height="926" />
     </state>
+    <state width="1174" height="237" key="GridCell.Tab.0.bottom/0.24.1195.926@0.24.1195.926" timestamp="1580400373134" />
     <state width="1572" height="240" key="GridCell.Tab.0.bottom/0.24.1593.934@0.24.1593.934" timestamp="1579280494159" />
-    <state width="1572" height="240" key="GridCell.Tab.0.center" timestamp="1579280494157">
-      <screen x="0" y="24" width="1593" height="934" />
+    <state width="1174" height="237" key="GridCell.Tab.0.center" timestamp="1580400373133">
+      <screen x="0" y="24" width="1195" height="926" />
     </state>
+    <state width="1174" height="237" key="GridCell.Tab.0.center/0.24.1195.926@0.24.1195.926" timestamp="1580400373133" />
     <state width="1572" height="240" key="GridCell.Tab.0.center/0.24.1593.934@0.24.1593.934" timestamp="1579280494157" />
-    <state width="1572" height="240" key="GridCell.Tab.0.left" timestamp="1579280494155">
-      <screen x="0" y="24" width="1593" height="934" />
+    <state width="1174" height="237" key="GridCell.Tab.0.left" timestamp="1580400373132">
+      <screen x="0" y="24" width="1195" height="926" />
     </state>
+    <state width="1174" height="237" key="GridCell.Tab.0.left/0.24.1195.926@0.24.1195.926" timestamp="1580400373132" />
     <state width="1572" height="240" key="GridCell.Tab.0.left/0.24.1593.934@0.24.1593.934" timestamp="1579280494155" />
-    <state width="1572" height="240" key="GridCell.Tab.0.right" timestamp="1579280494158">
-      <screen x="0" y="24" width="1593" height="934" />
+    <state width="1174" height="237" key="GridCell.Tab.0.right" timestamp="1580400373134">
+      <screen x="0" y="24" width="1195" height="926" />
     </state>
+    <state width="1174" height="237" key="GridCell.Tab.0.right/0.24.1195.926@0.24.1195.926" timestamp="1580400373134" />
     <state width="1572" height="240" key="GridCell.Tab.0.right/0.24.1593.934@0.24.1593.934" timestamp="1579280494158" />
+    <state x="86" y="124" width="1022" height="735" key="SettingsEditor" timestamp="1580395868448">
+      <screen x="0" y="24" width="1195" height="926" />
+    </state>
+    <state x="86" y="124" width="1022" height="735" key="SettingsEditor/0.24.1195.926@0.24.1195.926" timestamp="1580395868448" />
     <state x="233" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1579263970903">
       <screen x="0" y="24" width="1593" height="934" />
     </state>

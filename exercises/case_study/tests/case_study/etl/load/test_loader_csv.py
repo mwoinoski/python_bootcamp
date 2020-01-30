@@ -33,7 +33,13 @@ class TestLoaderCsv:
         except Exception:
             pass
 
-    def test_load_success(self, mock_class):
+    def test_load_success_small_dataset(self, mock_class):
+        """
+        This test case verifies the exact contents of an entire dataset.
+        This technique is useful for checking a small, representative subset of
+        the data to be processed.
+        """
+
         # ARRANGE
         input_data = """
             CHILDRENS HOSPITAL DIALYSIS,012306,013300,1600 7TH AVENUE SOUTH,-,BIRMINGHAM,AL,35233,99
@@ -62,6 +68,60 @@ class TestLoaderCsv:
             ['TUSCALOOSA UNIVERSITY DIALYSIS', '012502', '-', '220 15TH STREET', '-', 'TUSCALOOSA', 'AL', '35401', '0'],
             ['DOTHAN DIALYSIS', '012506', '-', '216 GRACELAND DR.', '-', 'DOTHAN', 'AL', '36305', '88'],
         ])
+
+    def test_load_success_large_dataset(self, mock_class):
+        """
+        This test case verifies a few selected rows of a dataset.
+        In this case, the dataset is very small, but the verification technique
+        will work on much larger, production-scale load operations.
+        """
+
+        # ARRANGE
+        input_data = """
+            CHILDRENS HOSPITAL DIALYSIS,012306,013300,1600 7TH AVENUE SOUTH,-,BIRMINGHAM,AL,35233,99
+            GADSDEN DIALYSIS,012501,-,409 SOUTH FIRST STREET,-,GADSDEN,AL,35901,100
+            TUSCALOOSA UNIVERSITY DIALYSIS,012502,-,220 15TH STREET,-,TUSCALOOSA,AL,35401,0
+            DOTHAN DIALYSIS,012506,-,216 GRACELAND DR.,-,DOTHAN,AL,36305,88
+        """
+        input_df: DataFrame = self.create_data_frame_from_csv_string(input_data)
+
+        # ACT
+        loader: LoaderCsv = LoaderCsv({'path': TestLoaderCsv.output_file})
+        loader.load(TestLoaderCsv.spark, input_df)
+
+        # ASSERT
+        path = f'file://{TestLoaderCsv.output_file}'
+        df: DataFrame = TestLoaderCsv.spark.read.csv(path, header=True)
+        # TODO: you can replace the above statement with code to read from
+        #       a database table; see case_study/etl/extract/extractor_db.py
+
+        assert df.columns == [
+            'facility_name', 'cms_certification_number_ccn', 'alternate_ccn_1', 'address_1',
+            'address_2', 'city', 'state', 'zip_code', 'total_performance_score'
+        ]
+        assert df.count() == 4
+
+        df.createOrReplaceTempView('loaded_data')  # used in SQL queries below
+
+        # verify one value of one row
+        result: Row = self.spark.sql("""
+                select total_performance_score score 
+                  from loaded_data
+                 where cms_certification_number_ccn == '012306'
+             """).collect()[0]
+        assert result.score == '99'
+
+        # assert df.select(df.total_performance_score) \
+        #          .where(df.cms_certification_number_ccn == '012306')\
+        #          .collect()[0] == '99'
+
+        # verify that a record is not present (i.e., it should have been
+        # filtered out by the tranform operation)
+        assert not self.spark.sql("""
+                select * 
+                  from loaded_data
+                 where cms_certification_number_ccn == '012307'
+             """).collect()
 
     def create_data_frame_from_csv_string(self, csv_string: str) -> DataFrame:
         """ Read a CSV string into a DataFrame """
