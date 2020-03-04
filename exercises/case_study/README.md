@@ -5,7 +5,7 @@
 ## Project Directory Structure
 
 This is an example of the Python project directory structure recommended
-by the Python Packaging Authority (PyPA). See pypa.org
+by the Python Packaging Authority (PyPA). See ``pypa.org``.
 
 * case_study - project root directory
   * case_study - source code directory; root of package hierachy
@@ -38,7 +38,7 @@ and can be combined with different transformers and extractors. See
 ## Unit tests for ETL components 
 
 See ``tests/case_study/etl/load/test_loader_csv.py`` for examples of
-using PySpark DataFrames for validating ETL results. In this, the 
+using PySpark DataFrames for validating ETL results. In this case, the 
 extract and load operations use CSV files, but the same technique 
 can be used for operations on database tables. 
 
@@ -73,8 +73,8 @@ python setup.py build sdist bdist_wheel
 ```
 
 After building the project, you can install it in the current 
-Python config using ``pip`` as usual. As usual, test the 
-installation in a virtual directory before installing in a 
+Python config using ``pip`` as usual. The best practice is to test the 
+installation in a virtual environment before installing in a 
 production Python:
 
 ```
@@ -83,7 +83,7 @@ source testvenv/bin/activate
 pip install dist/*.whl
 ```
 
-After testing, you can delete the ``testvenv`` directory.
+After verifying the installation, you can simply delete the ``testvenv`` directory.
 
 ## TODO
 
